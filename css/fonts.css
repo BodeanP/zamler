@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "PF Highway Sans Pro";
+  src: url("../fonts/PFHighwaySansPro-Regular.eot?") format("eot"), url("../fonts/PFHighwaySansPro-Regular.woff2") format("woff2"), url("../fonts/PFHighwaySansPro-Regular.woff") format("woff"), url("../fonts/PFHighwaySansPro-Regular.ttf") format("truetype"), url("../fonts/PFHighwaySansPro-Regular.svg#PF_Highway_Sans_Pro") format("svg");
+}
+
+@font-face {
+  font-family: "proximanova-regular";
+  src: url("../fonts/ProximaNova-Regular.eot?") format("eot"), url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype"), url("../fonts/ProximaNova-Regular.svg#proximanova-regular") format("svg");
+}
+/*# sourceMappingURL=fonts.css.map */

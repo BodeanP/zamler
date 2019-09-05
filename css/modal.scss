@@ -1,0 +1,97 @@
+@import 'variables.scss';
+
+.modal{
+    display: block;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0px 3px 50px 0px rgba(71,91,96, .16);
+
+    &_login{
+        max-width: 395px;
+        padding: 38px 53px 0 53px;
+    }
+
+    &_cart{
+        max-width: 495px;
+        padding: 35px 37px;
+
+        .buttons-row{
+            display: flex;
+        }
+    }
+
+    &__head{
+        // font-family: 'medium'
+        font-size: 22px;
+        margin-bottom: 24px;
+    }
+
+    &__close{
+        position: absolute;
+        right: 12px;
+        top: 12px;
+    }
+
+    &__bottom{
+        min-height: 60px;
+        border-top: 1px solid #CCD5DE;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: calc(100% + 106px);
+        transform: translateX(-53px);
+        font-size: 16px;
+
+        a{
+            color: $blue;
+        }
+    }
+
+    .forgot-link{
+        width: 100%;
+        margin: 20px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .button{
+        margin-top: 7px;
+    }
+
+    .one-modal-item{
+        display: flex;
+
+        &__right{
+            padding-top: 25px;
+        }
+
+        &__article{
+            font-size: 12px;
+            color: #949FAF;
+            margin-bottom: 5px;
+        }
+
+        &__name{
+            // font-family: 'medium';
+            font-size: 18px;
+            line-height: 22px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+
+        &__counter{
+            margin-bottom: 20px;
+        }
+
+        &__price{
+             // font-family: 'medium';
+             font-size: 20px;
+        }
+    }
+}

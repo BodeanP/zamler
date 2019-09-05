@@ -1,0 +1,35 @@
+@import 'variables.scss';
+@import 'fonts.scss';
+
+.breadcumbs {
+    font-family: $proximanova-regular;
+
+    ul {
+        display: flex;
+        align-items: center;
+        min-height: 60px;
+    }
+
+    li {
+        margin-right: 6px;
+        font-size: 14px;
+
+        a {
+            color: #A3A3A3;
+        }
+    }
+
+    li:not(:nth-last-child(1))::after {
+        content: "/";
+        color: #A3A3A3;
+        padding-left: 9px;
+        font-size: 17px;
+    }
+
+    .disable a,
+    .disable {
+        color: #333;
+        pointer-events: none;
+        cursor: default;
+    }
+}

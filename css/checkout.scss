@@ -1,0 +1,155 @@
+@import '_mixins.scss';
+@import 'variables.scss';
+
+.checkout-outer{
+    background-color: $green-light;
+
+    h1{
+        // font-family: 'medium'
+        margin-bottom: 22px;
+    }
+
+    .checkout-fields-outer{
+        display: grid;
+        grid-template-columns: 355px 290px;
+        grid-column-gap: 67px;
+
+        @include tablet{
+            grid-template-columns: 100%
+        }
+    }
+    .checkout-fields{
+    
+        &__head{
+            // font-family: 'medium'
+            font-size: 22px;
+            margin-bottom: 25px;
+            display: block;
+        }
+
+        .input-group_street{
+            display: inline-flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .input-group__label{
+                display: block;
+            }
+        }
+
+        .input-group__input_street{
+            width: 190px;
+        }
+
+        .input-group__input_house{
+            width: 88px;
+        }
+        
+    }
+
+    .input-group{
+        margin-bottom: 33px;
+
+        &__label{
+            margin-bottom: 16.5px;
+        }
+    }
+
+    .call-back{
+        margin-bottom: 37px;
+    
+        .button{
+            min-height: 25px;
+            padding: 11px 0px;
+        }
+    
+        &>span{
+            font-size: 16px;
+            margin-right: 13px;
+        }
+    }
+}
+
+.order-wrapper{
+    display: grid;
+    grid-template-columns: 800px 395px;
+    grid-column-gap: 15px;
+    padding-top: 60px;
+    padding-bottom: 35px;
+
+    @include tablet{
+        grid-template-columns: 440px 290px;
+    }
+}
+
+.checkout-main, .checkout-aside{
+    background-color: #fff;
+}
+
+
+.checkout-main{
+    padding: 42px 37px;
+}
+
+.checkout-aside {
+    
+    height: fit-content;
+    position: sticky;
+    top: 0;
+
+    &-in{
+        padding: 37px 17px 0px 37px;
+    }
+
+    &__head{
+        font-size: 16px;
+        // font-family: 'medium'
+        margin-bottom: 35px;
+        display: block;
+    }
+
+    &__total{
+        border-top: 1px solid #DEE9F4;
+
+        .total-head{
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        .total-price{
+            font-size: 30px;
+            font-weight: bold;
+            margin-right: 18px;
+        }
+
+        .total-description{
+            max-width: 70px;
+            color: #969D97;
+            font-size: 12px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .checkout-aside-in{
+            padding-top: 25px;
+            padding-bottom: 20px;
+        }
+    }
+
+    .bonus-code{
+        .input-group__input{
+            display: flex;
+            justify-content: flex-start;
+
+            input{
+                margin-right: 15px;
+                flex: 1 0 190px;
+                max-width: 190px;
+            }
+
+            .button{
+                max-width: 115px;
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "PF Highway Sans Pro";
+  src: url("../fonts/PFHighwaySansPro-Regular.eot?") format("eot"), url("../fonts/PFHighwaySansPro-Regular.woff2") format("woff2"), url("../fonts/PFHighwaySansPro-Regular.woff") format("woff"), url("../fonts/PFHighwaySansPro-Regular.ttf") format("truetype"), url("../fonts/PFHighwaySansPro-Regular.svg#PF_Highway_Sans_Pro") format("svg");
+}
+
+@font-face {
+  font-family: "proximanova-regular";
+  src: url("../fonts/ProximaNova-Regular.eot?") format("eot"), url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype"), url("../fonts/ProximaNova-Regular.svg#proximanova-regular") format("svg");
+}
+
+.breadcumbs {
+  font-family: "proximanova-regular";
+}
+
+.breadcumbs ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 60px;
+}
+
+.breadcumbs li {
+  margin-right: 6px;
+  font-size: 14px;
+}
+
+.breadcumbs li a {
+  color: #A3A3A3;
+}
+
+.breadcumbs li:not(:nth-last-child(1))::after {
+  content: "/";
+  color: #A3A3A3;
+  padding-left: 9px;
+  font-size: 17px;
+}
+
+.breadcumbs .disable a,
+.breadcumbs .disable {
+  color: #333;
+  pointer-events: none;
+  cursor: default;
+}
+/*# sourceMappingURL=breadcumbs.css.map */

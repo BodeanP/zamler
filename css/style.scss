@@ -1,0 +1,26 @@
+@import 'variables.scss';
+@import 'fonts.scss';
+@import 'common.scss';
+@import 'header.scss';
+@import 'footer.scss';
+@import 'modal.scss';
+@import 'sub.scss';
+@import 'breadcumbs.scss';
+@import 'checkout.scss';
+
+
+
+body{
+    background: #fff;
+    color: #333;
+    font-family: $default_font_name;
+    font-size: $default_font_size;
+}
+
+.container{
+    width: $container-width;
+    margin: 0 auto;
+    @include tablet{
+        width: $container-tablet-width;
+    }
+}
