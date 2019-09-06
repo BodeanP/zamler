@@ -1,38 +1,89 @@
 @import 'variables.scss';
 
-.modal{
+.modal {
     display: block;
     position: relative;
     background-color: #fff;
-    box-shadow: 0px 3px 50px 0px rgba(71,91,96, .16);
+    box-shadow: 0px 3px 50px 0px rgba(71, 91, 96, .16);
 
-    &_login{
+    &_login {
         max-width: 395px;
         padding: 38px 53px 0 53px;
     }
 
-    &_cart{
+    &_cart {
         max-width: 495px;
-        padding: 35px 37px;
+        padding: 35px;
 
-        .buttons-row{
+        .buttons-row {
             display: flex;
+
+            .button:nth-child(1) {
+                margin-right: 20px;
+            }
+        }
+
+        .order-list {
+            width: calc(100% + 35px);
+
+            .order-item {
+                grid-template-columns: 77px 177px 140px 50px;
+                grid-template-rows: 1fr;
+                grid-template-areas: 'preview name price close';
+                grid-row-gap: 0;
+
+                &>div {
+                    display: flex;
+                    align-items: center;
+                }
+
+                &__preview {
+                    padding-right: 10px;
+                    align-items: flex-start;
+
+                    img {
+                        object-fit: scale-down;
+                        max-width: 100%;
+                        max-height: inherit;
+                    }
+                }
+
+                &__name {
+                    padding-right: 0;
+
+                    a {
+                        font-size: 14px;
+                        line-height: 22px;
+                        //    font-family: 'medium'
+                    }
+                }
+
+                &__del {
+                    grid-area: close;
+                    position: relative;
+                    right: unset;
+                    left: unset;
+                    align-self: center;
+                    justify-self: center;
+                    transform: translateY(-5px);
+                }
+            }
         }
     }
 
-    &__head{
+    &__head {
         // font-family: 'medium'
         font-size: 22px;
         margin-bottom: 24px;
     }
 
-    &__close{
+    &__close {
         position: absolute;
         right: 12px;
         top: 12px;
     }
 
-    &__bottom{
+    &__bottom {
         min-height: 60px;
         border-top: 1px solid #CCD5DE;
         display: flex;
@@ -42,12 +93,12 @@
         transform: translateX(-53px);
         font-size: 16px;
 
-        a{
+        a {
             color: $blue;
         }
     }
 
-    .forgot-link{
+    .forgot-link {
         width: 100%;
         margin: 20px 0px;
         display: flex;
@@ -57,27 +108,39 @@
         cursor: pointer;
     }
 
-    .button{
+    .button {
         margin-top: 7px;
     }
 
-    .one-modal-item{
+    .one-modal-item {
+        margin-bottom: 15px;
         display: flex;
 
-        &__right{
+        &__right {
             padding-top: 25px;
         }
 
-        &__article{
-            font-size: 12px;
-            color: #949FAF;
-            margin-bottom: 5px;
+        &__preview {
+            margin-right: 10px;
+
+            img {
+                object-fit: scale-down;
+                max-width: 100%;
+                max-height: inherit;
+            }
         }
 
-        &__name{
+        &__article {
+            font-size: 12px;
+            color: #949FAF;
+            margin-bottom: 1px;
+        }
+
+        &__name {
             // font-family: 'medium';
             font-size: 18px;
             line-height: 22px;
+            margin-bottom: 14px;
             overflow: hidden;
             text-overflow: ellipsis;
             display: -webkit-box;
@@ -85,13 +148,13 @@
             -webkit-box-orient: vertical;
         }
 
-        &__counter{
+        &__counter {
             margin-bottom: 20px;
         }
 
-        &__price{
-             // font-family: 'medium';
-             font-size: 20px;
+        &__price {
+            // font-family: 'medium';
+            font-size: 20px;
         }
     }
 }

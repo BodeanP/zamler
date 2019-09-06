@@ -7,7 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="node_modules/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="/node_modules/nouislider/distribute/nouislider.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/catalog-item.css">
+    <link rel="stylesheet" href="css/filter.css">
 </head>
 
 <body>
@@ -412,318 +416,503 @@
             <ul>
                 <li class="disable"><a href="">Главная</a></li>
                 <li><a href="">Кухонные плиты с электрической духовкой</a></li>
-                <li><a href="">Плита электрическая NZ-456 334</a></li>
+
             </ul>
         </div>
     </div>
     <!-- breadcumbs end -->
-    <main>
-        <h1>заголовок1</h1>
-        <h2>заголовок2</h2>
-        <h3>заголовок3</h3>
-        <h4>заголовок4</h4>
-        <h5>заголовок5</h5>
 
-        <!-- модалки -->
-
-        <!-- модалка вход -->
-        <div class="modal modal_login">
-            <div class="modal__close close"></div>
-
-            <div class="modal-in">
-                <div class="modal__head">Вход</div>
-
-                <!-- input-group -->
-                <div class="input-group">
-                    <div class="input-group__label">Телефон или email</div>
-                    <div class="input-group__input">
-                        <input type="text" placeholder="Введите телефон или email">
-                    </div>
-                </div>
-                <!-- input-group end  -->
-
-                <!-- input-group -->
-                <div class="input-group">
-                    <div class="input-group__label">Пароль</div>
-                    <div class="input-group__input">
-                        <input type="password">
-                    </div>
-                </div>
-                <!-- input-group end  -->
-
-                <div class="button" role="button">
-                    <span>Войти</span>
-                </div>
-
-                <span class="txt-grey txt-centered forgot-link">Забыли пароль?</span>
-
-                <div class="modal__bottom">
-                    <span class="txt-grey"> Еще нет акаунта? <a href="">Зарегистрироваться</a></span>
-                </div>
-            </div>
-        </div>
-        <!-- модалка вход -->
-
-        <!-- модалка вход -->
-        <div class="modal modal_login">
-            <div class="modal__close"></div>
-
-            <div class="modal-in">
-                <div class="modal__head">Вход</div>
-
-                <!-- input-group -->
-                <div class="input-group">
-                    <div class="input-group__label">Телефон или email</div>
-                    <div class="input-group__input">
-                        <input type="text" placeholder="Введите телефон или email">
-                    </div>
-                </div>
-                <!-- input-group end  -->
-
-                <!-- input-group -->
-                <div class="input-group">
-                    <div class="input-group__label">Пароль</div>
-                    <div class="input-group__input">
-                        <input type="password">
-                    </div>
-                </div>
-                <!-- input-group end  -->
-
-                <div class="button" role="button">
-                    <span>Войти</span>
-                </div>
-
-                <span class="txt-grey txt-centered forgot-link">Забыли пароль?</span>
-
-                <div class="modal__bottom">
-                    <span class="txt-grey"> Еще нет акаунта? <a href="">Зарегистрироваться</a></span>
-                </div>
-            </div>
-        </div>
-        <!-- модалка вход -->
-
-
-
-
-        <!-- модалка регистрация -->
-        <div class="modal modal_login">
-            <div class="modal__close close"></div>
-
-            <div class="modal-in">
-                <div class="modal__head">Вход</div>
-
-                <!-- input-group -->
-                <div class="input-group">
-                    <div class="input-group__label">Ваше имя</div>
-                    <div class="input-group__input">
-                        <input type="text" placeholder="Введите имя">
-                    </div>
-                </div>
-                <!-- input-group end  -->
-
-                <!-- input-group -->
-                <div class="input-group">
-                    <div class="input-group__label">телефон</div>
-                    <div class="input-group__input">
-                        <input type="text" placeholder="38 (ХХХ) ХХХ ХХ ХХ">
-                    </div>
-                </div>
-                <!-- input-group end  -->
-
-                <!-- input-group -->
-                <div class="input-group">
-                    <div class="input-group__label">Email</div>
-                    <div class="input-group__input">
-                        <input type="text" placeholder="Введите телефон или email">
-                    </div>
-                </div>
-                <!-- input-group end  -->
-
-                <!-- input-group -->
-                <div class="input-group">
-                    <div class="input-group__label">Пароль</div>
-                    <div class="input-group__input">
-                        <input type="password">
-                    </div>
-                </div>
-                <!-- input-group end  -->
-
-                <!-- input-group -->
-                <div class="input-group">
-                    <div class="input-group__label">Пароль еще раз</div>
-                    <div class="input-group__input">
-                        <input type="password">
-                    </div>
-                </div>
-                <!-- input-group end  -->
-
-                <div class="button" role="button">
-                    <span>Зарегистрироваться</span>
-                </div>
-
-                <span class="txt-grey txt-centered forgot-link">Забыли пароль?</span>
-
-                <div class="modal__bottom">
-                    <span class="txt-grey"> Уже зарегистрированны? <a href="">Войти</a></span>
-                </div>
-            </div>
-        </div>
-        <!-- модалка регистрация -->
-
-
-        <!-- модалка добавлен в корзину -->
-        <div class="modal modal_cart">
-            <div class="modal__close close"></div>
-
-            <div class="modal-in">
-                <div class="modal__head">Один товар добавлен в корзину</div>
-
-                <div class="one-modal-item">
-                    <div class="one-modal-item__left">
-                        <div class="one-modal-item__preview">
-                            <img src="img/Image 137.jpg" alt="">
-                        </div>
-
-                    </div>
-                    <div class="one-modal-item__right">
-                        <div class="one-modal-item__article">RV34536365</div>
-                        <div class="one-modal-item__name">Газовая панель NA3000H
-                            с конфоркой 3.8 кВт</div>
-                        <div class="one-modal-item__counter">
-                            <div class="counter">
-                                <div class="counter__button counter__button_minus"></div>
-                                <input type="text" class="counter__input" value="1">
-                                <div class="counter__button counter__button_plus"></div>
+    <div class="catalog-outer">
+        <div class="container">
+            <div class="catalog-wrapper">
+                <aside class="filter">
+                    <!-- список категорий -->
+                    <div class="category-list">
+                        <!-- раздел -->
+                        <div class="category-list__one-categoty active">
+                            <div class="category__head">Крупная бытовая техника</div>
+                            <div class="category-list__subcategory">
+                                <div class="active"><a href="">Варочные поверхности</a></div>
+                                <div><a href="">Варочные поверхности</a></div>
+                                <div><a href="">Варочные поверхности</a></div>
+                                <div><a href="">Варочные поверхности</a></div>
+                                <div><a href="">Варочные поверхности</a></div>
+                                <div><a href="">Варочные поверхности</a></div>
+                                <div><a href="">Варочные поверхности</a></div>
+                                <div><a href="">Варочные поверхности</a></div>
+                                <div><a href="">Варочные поверхности</a></div>
+                                <div><a href="">Варочные поверхности</a></div>
+                                <div><a href="">Варочные поверхности</a></div>
+                                <div><a href="">Варочные поверхности</a></div>
+                                <div><a href="">Варочные поверхности</a></div>
                             </div>
                         </div>
-                        <div class="one-modal-item__price">
-                            14 500 грн
+                        <!-- раздел end-->
+                        <!-- раздел -->
+                        <div class="category-list__one-categoty">
+                            <div class="category__head">Встраиваемая техника</div>
+                            <div class="category-list__subcategory">
+                                <div class="active"><a href="">Варочные поверхности</a></div>
+                                <div><a href="">Варочные поверхности</a></div>
+                                <div><a href="">Варочные поверхности</a></div>
+                                <div><a href="">Варочные поверхности</a></div>
+                                <div><a href="">Варочные поверхности</a></div>
+                                <div><a href="">Варочные поверхности</a></div>
+                                <div><a href="">Варочные поверхности</a></div>
+                                <div><a href="">Варочные поверхности</a></div>
+                                <div><a href="">Варочные поверхности</a></div>
+                                <div><a href="">Варочные поверхности</a></div>
+                            </div>
+                        </div>
+                        <!-- раздел end-->
+                        <!-- раздел -->
+                        <div class="category-list__one-categoty">
+                            <div class="category__head active">Климатическая техника</div>
+                            <div class="category-list__subcategory">
+                                <div class="active"><a href="">Варочные поверхности</a></div>
+                                <div><a href="">Варочные поверхности</a></div>
+                                <div><a href="">Варочные поверхности</a></div>
+                                <div><a href="">Варочные поверхности</a></div>
+                                <div><a href="">Варочные поверхности</a></div>
+                                <div><a href="">Варочные поверхности</a></div>
+                                <div><a href="">Варочные поверхности</a></div>
+                                <div><a href="">Варочные поверхности</a></div>
+                                <div><a href="">Варочные поверхности</a></div>
+                                <div><a href="">Варочные поверхности</a></div>
+                            </div>
+                        </div>
+                        <!-- раздел end-->
+                    </div>
+                    <!-- список категорий end -->
+                    <!-- фильтр цена  -->
+                    <div class="filter__price">
+                        <div class="filter__head">Цена</div>
+                        <div class="filter__slide-component">
+                            <div id="range"></div>
+                            <div class="filter-prices-area">
+                                <input type="text" id="price_from">
+                                <span>до</span>
+                                <input type="text" id="price_to">
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <!-- фильтр цена end -->
+                    <!-- фильтр c чекбоксами  -->
+                    <div class="filter__options">
+                        <div class="filter__head">Тип варочной поверхности</div>
 
-                <div class="buttons-row">
-                    <div class="button"><span>Оформить заказ</span></div>
-                    <div class="button button_light-grey no-shadow"><span>Продолжить покупки</span></div>
-                </div>
+                        <div class="input-group">
+                            <div class="input-group__checkbox">
+                                <input type="checkbox" name="type" id="gas">
+                                <label for="gas">
+                                    <i class="styled-checkbox"></i>
+                                    <span class="checkbox-caption">Электрическая </span><span class="filter-count">/
+                                        84</span>
+                                </label>
+                            </div>
+                            <div class="input-group__checkbox">
+                                <input type="checkbox" name="type" id="induct">
+                                <label for="induct">
+                                    <i class="styled-checkbox"></i>
+                                    <span class="checkbox-caption">Индукционная </span><span class="filter-count">/
+                                        25</span>
+                                </label>
+                            </div>
+                            <div class="input-group__checkbox">
+                                <input type="checkbox" name="type" id="electro">
+                                <label for="electro">
+                                    <i class="styled-checkbox"></i>
+                                    <span class="checkbox-caption">Электрическая </span><span class="filter-count">/
+                                        55</span>
+                                </label>
+                            </div>
 
+                        </div>
 
+                    </div>
+                    <!-- фильтр c чекбоксами end -->
+                    <!-- фильтр c чекбоксами  -->
+                    <div class="filter__options">
+                        <div class="filter__head">Форма</div>
+
+                        <div class="input-group">
+                            <div class="input-group__checkbox">
+                                <input type="checkbox" name="form" id="round">
+                                <label for="round">
+                                    <i class="styled-checkbox"></i>
+                                    <span class="checkbox-caption">Круглая </span><span class="filter-count">/ 84</span>
+                                </label>
+                            </div>
+                            <div class="input-group__checkbox">
+                                <input type="checkbox" name="type" id="square">
+                                <label for="square">
+                                    <i class="styled-checkbox"></i>
+                                    <span class="checkbox-caption">Квадратная </span><span class="filter-count">/
+                                        25</span>
+                                </label>
+                            </div>
+                            <div class="input-group__checkbox">
+                                <input type="checkbox" name="type" id="triangle">
+                                <label for="triangle">
+                                    <i class="styled-checkbox"></i>
+                                    <span class="checkbox-caption">Треугольная </span><span class="filter-count">/
+                                        55</span>
+                                </label>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- фильтр c чекбоксами end -->
+
+                    <!-- блок применить   -->
+                    <div class="apply-filter">
+                        <div class="button" id="apply"><span>Применить</span></div>
+                        <span class="clear-filter" id="clear">Сбросить все</span>
+                    </div>
+                    <!-- блок применить   -->
+                </aside>
+                <main class="catalog-main">
+                    <h1>Кухонные плиты с электрической духовкой</h1>
+                    <div class="catalog-main__head-row">
+                        <span class="catalog-total">В катлоге 1545 позиций</span>
+                        <div class="catalog-sort">
+                            <!-- сортировка компонент -->
+                        </div>
+
+                    </div>
+                    <div class="catalog-product-list">
+
+                        <!-- catalog-item -->
+                        <div class="catalog-item">
+                            <div class="catalog-item__in">
+                                <div class="catalog-item__preview">
+                                    <a href=""><img src="img/Image 121.jpg" alt=""></a>
+                                </div>
+                                <div class="catalog-item__info">
+                                    <div class="catalog-item__info__article">
+                                        RV34536365
+                                    </div>
+                                    <div class="catalog-item__info__name">
+                                        <a href="">
+                                            Газовая панель NA3000H
+                                            с конфоркой 3.8 кВт</a>
+                                    </div>
+                                    <div class="catalog-item__info__status status-out_of_production">
+                                        Снято с производства
+                                    </div>
+                                    <div class="catalog-item__info__colors">
+                                        <a href="" class="one-product-color product-color-grey"></a>
+                                        <a href="" class="one-product-color product-color-black"></a>
+                                        <a href="" class="one-product-color product-color-white"></a>
+                                    </div>
+                                    <div class="catalog-item__info__price">
+                                        <div class="item-price">14 500 грн</div>
+                                        <a href="" class="item-buy button_arrow button_arrow_blue">Купить<i></i></a>
+                                    </div>
+
+                                </div>
+                                <div class="slider-preview-component">
+                                    <!-- slider-preview-component, картинкой для наглядности-->
+                                    <img src="img/Group 7585.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- catalog-item end -->
+                        <!-- catalog-item -->
+                        <div class="catalog-item">
+                            <div class="catalog-item__in">
+                                <div class="catalog-item__preview">
+                                    <div class="voblers">
+                                        <div class="vobler green">FastCook</div>
+                                        <div class="vobler orange">4 комфорки</div>
+                                    </div>
+                                    <a href=""><img src="https://intertop.ua/load/7I9/MAIN.jpg" alt=""></a>
+                                </div>
+                                <div class="catalog-item__info">
+                                    <div class="catalog-item__info__article">
+                                        RV34536365
+                                    </div>
+                                    <div class="catalog-item__info__name">
+                                        <a href="">
+                                            Газовая панель NA3000H
+                                            с конфоркой 3.8 кВт</a>
+                                    </div>
+                                    <div class="catalog-item__info__status status-out_of_production">
+                                        Снято с производства
+                                    </div>
+                                    <div class="catalog-item__info__colors">
+                                        <a href="" class="one-product-color product-color-grey"></a>
+                                        <a href="" class="one-product-color product-color-black"></a>
+                                        <a href="" class="one-product-color product-color-white"></a>
+                                    </div>
+                                    <div class="catalog-item__info__price">
+                                        <div class="item-price">14 500 грн</div>
+                                        <a href="" class="item-buy button_arrow button_arrow_blue">Купить<i></i></a>
+                                    </div>
+
+                                </div>
+                                <div class="slider-preview-component">
+                                    <!-- slider-preview-component, картинкой для наглядности-->
+                                    <img src="img/Group 7585.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- catalog-item end -->
+                        <!-- catalog-item -->
+                        <div class="catalog-item">
+                            <div class="catalog-item__in">
+                                <div class="catalog-item__preview">
+                                    <a href=""><img
+                                            src="https://intertop.ua/upload/iblock/2da/2dafbe830bfbd65792662ef654f0300f.webp"
+                                            alt=""></a>
+                                </div>
+                                <div class="catalog-item__info">
+                                    <div class="catalog-item__info__article">
+                                        RV34536365
+                                    </div>
+                                    <div class="catalog-item__info__name">
+                                        <a href="">
+                                            Газовая панель NA3000H
+                                            с конфоркой 3.8 кВт</a>
+                                    </div>
+                                    <div class="catalog-item__info__status status-out_of_production">
+                                        Снято с производства
+                                    </div>
+                                    <div class="catalog-item__info__colors">
+                                        <a href="" class="one-product-color product-color-grey"></a>
+                                        <a href="" class="one-product-color product-color-black"></a>
+                                        <a href="" class="one-product-color product-color-white"></a>
+                                    </div>
+                                    <div class="catalog-item__info__price">
+                                        <div class="item-price">14 500 грн</div>
+                                        <a href="" class="item-buy button_arrow button_arrow_blue">Купить<i></i></a>
+                                    </div>
+
+                                </div>
+                                <div class="slider-preview-component">
+                                    <!-- slider-preview-component, картинкой для наглядности-->
+                                    <img src="img/Group 7585.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- catalog-item end -->
+                        <!-- catalog-item -->
+                        <div class="catalog-item">
+                            <div class="catalog-item__in">
+                                <div class="catalog-item__preview">
+                                    <div class="voblers">
+                                        <div class="vobler green">FastCook</div>
+                                        <div class="vobler orange">4 комфорки</div>
+                                    </div>
+                                    <a href=""><img
+                                            src="https://intertop.ua/upload/iblock/d66/d6670b432a319e266961ad340d66fc1e.webp"
+                                            alt=""></a>
+                                </div>
+                                <div class="catalog-item__info">
+                                    <div class="catalog-item__info__article">
+                                        RV34536365
+                                    </div>
+                                    <div class="catalog-item__info__name">
+                                        <a href="">
+                                            Газовая панель NA3000H
+                                            с конфоркой 3.8 кВт</a>
+                                    </div>
+                                    <div class="catalog-item__info__status status-out_of_production">
+                                        Снято с производства
+                                    </div>
+                                    <div class="catalog-item__info__colors">
+                                        <a href="" class="one-product-color product-color-grey"></a>
+                                        <a href="" class="one-product-color product-color-black"></a>
+                                        <a href="" class="one-product-color product-color-white"></a>
+                                    </div>
+                                    <div class="catalog-item__info__price">
+                                        <div class="item-price">14 500 грн</div>
+                                        <a href="" class="item-buy button_arrow button_arrow_blue">Купить<i></i></a>
+                                    </div>
+
+                                </div>
+                                <div class="slider-preview-component">
+                                    <!-- slider-preview-component, картинкой для наглядности-->
+                                    <img src="img/Group 7585.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- catalog-item end -->
+                        <!-- catalog-item -->
+                        <div class="catalog-item">
+                            <div class="catalog-item__in">
+                                <div class="catalog-item__preview">
+                                    <a href=""><img src="img/Image 121.jpg" alt=""></a>
+                                </div>
+                                <div class="catalog-item__info">
+                                    <div class="catalog-item__info__article">
+                                        RV34536365
+                                    </div>
+                                    <div class="catalog-item__info__name">
+                                        <a href="">
+                                            Газовая панель NA3000H
+                                            с конфоркой 3.8 кВт</a>
+                                    </div>
+                                    <div class="catalog-item__info__status status-out_of_production">
+                                        Снято с производства
+                                    </div>
+                                    <div class="catalog-item__info__colors">
+                                        <a href="" class="one-product-color product-color-grey"></a>
+                                        <a href="" class="one-product-color product-color-black"></a>
+                                        <a href="" class="one-product-color product-color-white"></a>
+                                    </div>
+                                    <div class="catalog-item__info__price">
+                                        <div class="item-price">14 500 грн</div>
+                                        <a href="" class="item-buy button_arrow button_arrow_blue">Купить<i></i></a>
+                                    </div>
+
+                                </div>
+                                <div class="slider-preview-component">
+                                    <!-- slider-preview-component, картинкой для наглядности-->
+                                    <img src="img/Group 7585.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- catalog-item end -->
+                        <!-- catalog-item -->
+                        <div class="catalog-item">
+                            <div class="catalog-item__in">
+                                <div class="catalog-item__preview">
+                                    <div class="voblers">
+                                        <div class="vobler green">FastCook</div>
+                                        <div class="vobler orange">4 комфорки</div>
+                                    </div>
+                                    <a href=""><img src="https://intertop.ua/load/7I9/MAIN.jpg" alt=""></a>
+                                </div>
+                                <div class="catalog-item__info">
+                                    <div class="catalog-item__info__article">
+                                        RV34536365
+                                    </div>
+                                    <div class="catalog-item__info__name">
+                                        <a href="">
+                                            Газовая панель NA3000H
+                                            с конфоркой 3.8 кВт</a>
+                                    </div>
+                                    <div class="catalog-item__info__status status-out_of_production">
+                                        Снято с производства
+                                    </div>
+                                    <div class="catalog-item__info__colors">
+                                        <a href="" class="one-product-color product-color-grey"></a>
+                                        <a href="" class="one-product-color product-color-black"></a>
+                                        <a href="" class="one-product-color product-color-white"></a>
+                                    </div>
+                                    <div class="catalog-item__info__price">
+                                        <div class="item-price">14 500 грн</div>
+                                        <a href="" class="item-buy button_arrow button_arrow_blue">Купить<i></i></a>
+                                    </div>
+
+                                </div>
+                                <div class="slider-preview-component">
+                                    <!-- slider-preview-component, картинкой для наглядности-->
+                                    <img src="img/Group 7585.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- catalog-item end -->
+                        <!-- catalog-item -->
+                        <div class="catalog-item">
+                            <div class="catalog-item__in">
+                                <div class="catalog-item__preview">
+                                    <a href=""><img
+                                            src="https://intertop.ua/upload/iblock/2da/2dafbe830bfbd65792662ef654f0300f.webp"
+                                            alt=""></a>
+                                </div>
+                                <div class="catalog-item__info">
+                                    <div class="catalog-item__info__article">
+                                        RV34536365
+                                    </div>
+                                    <div class="catalog-item__info__name">
+                                        <a href="">
+                                            Газовая панель NA3000H
+                                            с конфоркой 3.8 кВт</a>
+                                    </div>
+                                    <div class="catalog-item__info__status status-out_of_production">
+                                        Снято с производства
+                                    </div>
+                                    <div class="catalog-item__info__colors">
+                                        <a href="" class="one-product-color product-color-grey"></a>
+                                        <a href="" class="one-product-color product-color-black"></a>
+                                        <a href="" class="one-product-color product-color-white"></a>
+                                    </div>
+                                    <div class="catalog-item__info__price">
+                                        <div class="item-price">14 500 грн</div>
+                                        <a href="" class="item-buy button_arrow button_arrow_blue">Купить<i></i></a>
+                                    </div>
+
+                                </div>
+                                <div class="slider-preview-component">
+                                    <!-- slider-preview-component, картинкой для наглядности-->
+                                    <img src="img/Group 7585.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- catalog-item end -->
+                        <!-- catalog-item -->
+                        <div class="catalog-item">
+                            <div class="catalog-item__in">
+                                <div class="catalog-item__preview">
+                                    <div class="voblers">
+                                        <div class="vobler green">FastCook</div>
+                                        <div class="vobler orange">4 комфорки</div>
+                                    </div>
+                                    <a href=""><img
+                                            src="https://intertop.ua/upload/iblock/d66/d6670b432a319e266961ad340d66fc1e.webp"
+                                            alt=""></a>
+                                </div>
+                                <div class="catalog-item__info">
+                                    <div class="catalog-item__info__article">
+                                        RV34536365
+                                    </div>
+                                    <div class="catalog-item__info__name">
+                                        <a href="">
+                                            Газовая панель NA3000H
+                                            с конфоркой 3.8 кВт</a>
+                                    </div>
+                                    <div class="catalog-item__info__status status-out_of_production">
+                                        Снято с производства
+                                    </div>
+                                    <div class="catalog-item__info__colors">
+                                        <a href="" class="one-product-color product-color-grey"></a>
+                                        <a href="" class="one-product-color product-color-black"></a>
+                                        <a href="" class="one-product-color product-color-white"></a>
+                                    </div>
+                                    <div class="catalog-item__info__price">
+                                        <div class="item-price">14 500 грн</div>
+                                        <a href="" class="item-buy button_arrow button_arrow_blue">Купить<i></i></a>
+                                    </div>
+
+                                </div>
+                                <div class="slider-preview-component">
+                                    <!-- slider-preview-component, картинкой для наглядности-->
+                                    <img src="img/Group 7585.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- catalog-item end -->
+                    </div>
+                    <div class="pagination">
+                        <ul>
+                            <li class="prev"><a href=""></a></li>
+                            <li><a href="">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">4</a></li>
+                            <li><a href="">5</a></li>
+                            <li class="dots"><a href="">...</a></li>
+                            <li><a href="">22</a></li>
+                            <li class="next"><a href=""></a></li>
+                        </ul>
+                    </div>
+                </main>
             </div>
         </div>
-        <!-- модалка добавлен в корзину -->
-
-
-        <!-- модалка добавлен в корзину -->
-        <div class="modal modal_cart">
-            <div class="modal__close close"></div>
-
-            <div class="modal-in">
-                <div class="modal__head">Ваша корзина</div>
-
-                <div class="order-list">
-                    <!-- item in cart -->
-
-                    <div class="order-item">
-                        <div class="order-item__preview">
-                            <img src="img/Image 140.jpg" alt="">
-                        </div>
-                        <div class="order-item__name"><a href=""> Газовая панель NA3000H
-                            с конфоркой 3.8 кВт</a></div>
-                        <div class="order-item__counter">
-                        
-                        </div>
-                        <div class="order-item__price">12 500 грн</div>
-                        <div class="order-item__del close"></div>
-                    </div>
-                    <!-- item in cart end-->
-                    <!-- item in cart -->
-                    <div class="order-item">
-                        <div class="order-item__preview">
-                            <img src="img/Image 141.jpg" alt="">
-                        </div>
-                        <div class="order-item__name"><a href=""> Тостер Braun
-                            FS 3000 Black</a></div>
-
-                        <div class="order-item__counter">
-                         
-                        </div>
-                        <div class="order-item__price">4 500 грн</div>
-                        <div class="order-item__del close"></div>
-                    </div>
-                    <!-- item in cart end-->
-                    <!-- item in cart -->
-                    <div class="order-item">
-                        <div class="order-item__preview">
-                            <img src="img/MG-272Y_HD1.jpg" alt="">
-                        </div>
-                        <div class="order-item__name"><a href=""> Тостер Braun
-                            FS 3000 Black</a></div>
-                      
-                        <div class="order-item__price">4 500 грн</div>
-                        <div class="order-item__del close"></div>
-                    </div>
-                    <!-- item in cart end-->
-                    <!-- item in cart -->
-                    <div class="order-item">
-                        <div class="order-item__preview">
-                            <img src="img/MG-272Y_HD1.jpg" alt="">
-                        </div>
-                        <div class="order-item__name"><a href=""> Тостер Braun
-                            FS 3000 Black</a></div>
-                       
-                        <div class="order-item__price">4 500 грн</div>
-                        <div class="order-item__del close"></div>
-                    </div>
-                    <!-- item in cart end-->
-                    <!-- item in cart -->
-                    <div class="order-item">
-                        <div class="order-item__preview">
-                            <img src="img/MG-272Y_HD1.jpg" alt="">
-                        </div>
-                        <div class="order-item__name"><a href=""> Тостер Braun
-                            FS 3000 Black</a></div>
-                       
-                        <div class="order-item__price">4 500 грн</div>
-                        <div class="order-item__del close"></div>
-                    </div>
-                    <!-- item in cart end-->
-                </div>
-
-                <div class="buttons-row">
-                    <div class="button"><span>Оформить заказ</span></div>
-                    <div class="button button_light-grey no-shadow"><span>Продолжить покупки</span></div>
-                </div>
-
-            </div>
-        </div>
-        <!-- модалка добавлен в корзину -->
-
-
-        <!-- модалки -->
-
-        <div class="container">
-            <!-- блок подписки  -->
-            <div class="sub">
-                <div class="sub__left">
-                    <div class="sub__head">Участвуй в акции, выиграй блендер Philips</div>
-                    <div class="sub__description">Мы организовали крутой розыгрыш деcяти новых блендеров Philips!
-                        Не пропустите и станьте обладателем крутого прибора для вашей кухни!</div>
-                    <div class="button button_round"><span>подробнее</span></div>
-                </div>
-                <div class="sub__right">
-                    <div class="sub__head">Подпишитесь на рассылку</div>
-                    <div class="sub__description">Чтобы узнавать о новых поступлениях, скидках и акциях.
-                        А так же не пропускать наши бонусные программы!</div>
-                    <div class="input-area">
-                        <input type="text" class="input input_round" placeholder="Ваш email">
-                        <div class="button button_round button_light-blue">Подписаться</div>
-                    </div>
-                </div>
-            </div>
-            <!-- блок подписки end -->
-        </div>
-    </main>
-
+    </div>
     <!-- footer  -->
     <footer class="footer">
         <div class="footer__content">
@@ -777,7 +966,6 @@
             </div>
             <div class="footer__main__column">
                 <div class="footer-head"></div>
-                <!-- тут footer-head нужно оставить пустым для одинаковых отступов -->
                 <ul>
                     <li><a href="">Пункты выдачи
                         </a></li>
@@ -812,5 +1000,10 @@
     <!-- footer end -->
 
 </body>
+
+<script src="/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="/node_modules/nouislider/distribute/nouislider.min.js"></script>
+<script src="/node_modules/wnumb/wNumb.js"></script>
+<script src="/js/index.js"></script>
 
 </html>

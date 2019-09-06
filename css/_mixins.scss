@@ -55,3 +55,11 @@
 @mixin tablet {
 	@media (max-width: 1399px) { @content; }
 }
+
+@mixin row-dots($rows){
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: $rows;
+	-webkit-box-orient: vertical;
+}

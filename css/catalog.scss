@@ -1,0 +1,36 @@
+@import 'variables.scss';
+@import 'pagination.scss';
+
+
+.catalog-outer{
+    background-color: $green-light;
+    padding-top: 45px;
+
+    h1{
+        margin-bottom: 30px;
+    }
+}
+
+.catalog-wrapper {
+    display: grid;
+    grid-template-columns: 295px auto;
+    grid-column-gap: 12px;
+}
+
+.catalog-total{
+    font-size: 18px;
+    color: #949FAF;
+}
+
+.catalog-main {
+
+    &__head-row{
+        margin-bottom: 18px;
+    }
+
+    .catalog-product-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 15px;
+    }
+}

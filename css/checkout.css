@@ -164,4 +164,8 @@
 .checkout-aside .bonus-code .input-group__input .button {
   max-width: 115px;
 }
+
+.input-group__radio:not(:nth-last-child(1)), .input-group__checkbox:not(:nth-last-child(1)) {
+  margin-right: 37px;
+}
 /*# sourceMappingURL=checkout.css.map */
