@@ -1,6 +1,8 @@
 @import '_mixins.scss';
 
 .pagination{
+    margin-bottom: 50px;
+    
     ul{
         display: flex;
         min-height: 60px;
@@ -18,8 +20,17 @@
             border-right: 1px solid rgba(112, 112, 112, .1);
             margin-left: -1px;
 
+            &:nth-child(1){
+                border-left: none;
+            } 
+            &:nth-last-child(1){
+                border-right: none;
+            }
+
             &:hover{
-                background-color: rgba(112, 112, 112, .1);
+                background-color: #F4F5F7;
+                border-left: 1px solid rgba(112, 112, 112, 0);
+                border-right: 1px solid rgba(112, 112, 112, 0)
             }
 
             &.prev, &.next{

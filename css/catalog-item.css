@@ -17,6 +17,7 @@
 .catalog-item__preview {
   position: relative;
   max-height: 205px;
+  min-height: 25px;
   margin-bottom: 25px;
   display: -webkit-box;
   display: -ms-flexbox;

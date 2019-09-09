@@ -1,10 +1,12 @@
 @import 'variables.scss';
 @import 'pagination.scss';
+@import 'catalog-article.scss';
 
 
 .catalog-outer{
     background-color: $green-light;
     padding-top: 45px;
+    padding-bottom: 88px;
 
     h1{
         margin-bottom: 30px;
@@ -32,5 +34,21 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 15px;
+        margin-bottom: 12px;
+    }
+}
+
+.links-list{
+    padding-left: 60px;
+    
+    a{
+        font-size: 26px;
+        font-weight: 100;
+        color: #949FAF;
+        border-bottom: 1px solid rgba(112,112,112,.1);
+
+        &:not(:nth-last-child(1)){
+            margin-right: 40px;
+        }
     }
 }

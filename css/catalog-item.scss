@@ -18,6 +18,7 @@
     &__preview{
         position: relative;
         max-height: 205px;
+        min-height: 25px;
         margin-bottom: 25px;
         display: flex;
         align-items: center;

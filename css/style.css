@@ -36,6 +36,7 @@ a {
 
 main {
   min-height: 100vh;
+  background-color: #F5F8F9;
 }
 
 .input-group {
@@ -243,6 +244,20 @@ main {
   color: #949FAF;
 }
 
+.section-title {
+  font-size: 30px;
+}
+
+.section-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
 .counter {
   border: 1px solid #CCD5DE;
   width: 105px;
@@ -439,6 +454,18 @@ main {
 .order-list .order-item__del:hover {
   -webkit-filter: opacity(0.7);
           filter: opacity(0.7);
+}
+
+.grid-cols-4 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4] !important;
+      grid-template-columns: repeat(4, 1fr) !important;
+}
+
+.all-link {
+  margin-left: auto;
+  color: #1876FB;
 }
 
 .menu {

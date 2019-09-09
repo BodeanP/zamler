@@ -31,6 +31,7 @@ a {
 
 main {
     min-height: 100vh;
+    background-color: #F5F8F9;
 }
 
 .input-group {
@@ -217,6 +218,17 @@ main {
     }
 }
 
+.section-title{
+    font-size: 30px;
+    // font-family: 'medium'
+}
+
+.section-head{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
 .counter {
     border: 1px solid #CCD5DE;
     width: 105px;
@@ -376,4 +388,14 @@ main {
             }
         }
     }
+}
+
+.grid-cols-4{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) !important;
+}
+
+.all-link{
+    margin-left: auto;
+    color: $blue;
 }
