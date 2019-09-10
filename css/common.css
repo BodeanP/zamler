@@ -345,7 +345,7 @@ main {
   text-align: center;
 }
 
-.no-shadow {
+.no-shadow, .no-shadow:hover {
   -webkit-box-shadow: unset;
           box-shadow: unset;
 }
@@ -505,6 +505,8 @@ main {
 .rating__num {
   font-size: 12px;
   display: inline-block;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .rating .star {

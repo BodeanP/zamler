@@ -107,6 +107,68 @@
         }
     }
 
+    &__description{
+        grid-column: 1 / span 3;
+
+        .description__tabs{
+            display: flex;
+            justify-content: space-between;
+
+            .one-tab{
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                border-bottom: 2px solid transparent;
+                font-size: 16px;
+                // font-family: 'medium';
+                min-height: 67px;
+                align-items: center;
+                cursor: pointer;
+
+                &.active{
+                    border-bottom: 2px solid $blue;
+                }
+            }
+        }
+        .description__table{
+            padding: 0px 37px;
+
+            table{
+                font-size: 16px;
+                // font-family: 'medium'
+                border-collapse: collapse;
+                width: 100%;
+
+                th{
+                    font-weight: normal;
+                }
+
+                td{
+                    padding: 10px;
+                }
+
+                tr{
+                    min-height: 40px;
+                    display: flex;
+                    align-items: center;
+
+                    td:nth-child(1){
+                        min-width: 60%;
+                    }
+
+                    &:nth-child(2n){
+                        background-color: #F5F8F9;
+                    }
+                }
+            }
+        }
+    }
+
+    .reviews{
+        grid-column: 1 / span 3;
+    }
+
     .delivery-description{
         margin-bottom: 40px;
         

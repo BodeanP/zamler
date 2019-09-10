@@ -1,0 +1,175 @@
+@import '_mixins.scss';
+@import 'variables.scss';
+
+.reviews {
+    padding: 40px 37px;
+
+    &__list{
+        margin-top: 45px;
+    }
+
+    &__pagination{
+        display: flex;
+        justify-content: center;
+
+        .button{
+            width: 240px;
+            background-color: #F5F8F9;
+            color: #949FAF;
+
+            &:hover{
+                filter: brightness(.9)
+            }
+        }
+    }
+
+    .section-title{
+        font-size: 22px;
+    }
+
+    .one-review {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .add-review{
+        max-width: 150px;
+    }
+
+    .review-avatar {
+
+
+        display: flex;
+        flex: 0 0 140px;
+        justify-content: center;
+
+        &-in {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .review-block {
+        font-size: 16px;
+        background-color: #F5F8F9;
+        width: 100%;
+
+        &__head {
+            padding: 20px 17px;
+            border-bottom: 1px solid #D9E6EA;
+
+            .user-name {
+                margin-bottom: 16px;
+                // font-family: 'medium'
+
+            }
+        }
+
+        &__main {
+            padding: 20px 17px;
+            border-bottom: 1px solid #D9E6EA;
+
+            .review-text {
+                margin-bottom: 30px;
+            }
+
+            .pros-cons {
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 25px;
+
+                .label, .descr{
+                    display: block;
+                    width: 100%;
+                    flex: 1 0 100%;
+                }
+
+                .ico-cons,
+                .ico-pros {
+                    flex: 0 0 50px;
+                    display: flex;
+                    justify-content: center;
+
+                    .ico-in{
+                        display: inline-block;
+                        width: 24px;
+                        height: 24px;
+
+
+                    }
+                }
+
+                .ico-cons {
+                   .ico-in {
+                        @include background_img('../img/Group 8130.svg');
+
+                    }
+                }
+
+                .ico-pros {
+                    .ico-in {
+                        @include background_img('../img/Group 8129.svg');
+
+                    }
+                }
+
+                .label {
+                    font-size: 16px;
+                    margin-bottom: 16px;
+                }
+
+                .comment-content{
+                    .descr{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        &__bottom{
+            display: flex;
+            min-height: 55px;
+            align-items: center;
+            padding: 20px 17px;
+
+            .reply{
+                cursor: pointer;
+                color: $blue;
+            }
+
+            .review-rating{
+                margin-left: auto;
+
+                i{
+                    display: inline-block;
+                    width: 16px;
+                    height: 16px;
+
+                    &.good{
+                        @include background_img('../img/Like_2.svg');
+                    }
+
+                    &.bad{
+                        @include background_img('../img/Like_2.svg'); //dislike
+                    }
+
+                }
+
+                span{
+                    color: #949FAF;
+                }
+
+                .rating-count{
+                    color: #333
+                }
+            }
+        }
+    }
+
+}

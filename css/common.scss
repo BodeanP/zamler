@@ -311,7 +311,7 @@ main {
     text-align: center
 }
 
-.no-shadow {
+.no-shadow, .no-shadow:hover {
     box-shadow: unset;
 }
 
@@ -442,6 +442,7 @@ main {
     &__num{
         font-size: 12px;
         display: inline-block;
+        transform: translateY(-2px);
     }
 
     .star{
