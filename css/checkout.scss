@@ -12,7 +12,7 @@
     .checkout-fields-outer{
         display: grid;
         grid-template-columns: 355px 290px;
-        grid-column-gap: 67px;
+        column-gap: 67px;
 
         @include tablet{
             grid-template-columns: 100%
@@ -73,7 +73,7 @@
 .order-wrapper{
     display: grid;
     grid-template-columns: 800px 395px;
-    grid-column-gap: 15px;
+    column-gap: 15px;
     padding-top: 60px;
     padding-bottom: 35px;
 

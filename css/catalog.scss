@@ -16,7 +16,7 @@
 .catalog-wrapper {
     display: grid;
     grid-template-columns: 295px auto;
-    grid-column-gap: 12px;
+    column-gap: 12px;
 }
 
 .catalog-total{
@@ -33,7 +33,7 @@
     .catalog-product-list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 15px;
+        gap: 15px;
         margin-bottom: 12px;
     }
 }

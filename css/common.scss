@@ -226,7 +226,7 @@ main {
 .section-head{
     display: flex;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
 }
 
 .counter {
@@ -285,6 +285,7 @@ main {
         flex: 1 0 35px;
         width: 35px;
         text-align: center;
+        max-width: 35px;
         // font-family: 'pt-sans'
     }
 }
@@ -326,7 +327,7 @@ main {
         grid-template-areas: 'preview name name'
             'preview counter price';
         grid-template-columns: 117px 100px auto;
-        grid-row-gap: 10px;
+        row-gap: 10px;
         margin-bottom: 30px;
 
         &__preview {
@@ -398,4 +399,65 @@ main {
 .all-link{
     margin-left: auto;
     color: $blue;
+    font-size: 16px;
+
+    i{
+        margin-left: 12px;
+    }
+}
+
+.voblers{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: max-content;
+
+    .vobler{
+        font-size: 14px;
+        color: #fff;
+        border-radius: 55px;
+        min-width: 60px;
+        width: max-content;
+        padding: 3px 7px;
+        margin-bottom: 10px;
+
+        &_rounded{
+            border-radius: 4px;
+        }
+
+        &.orange{
+            background-color: #F58858;
+        }
+        &.green{
+            background-color: #67C3B1;
+        }
+        &.cyan{
+            background-color: #37D7E3;
+        }
+    }
+}
+
+.rating{
+
+    &__num{
+        font-size: 12px;
+        display: inline-block;
+    }
+
+    .star{
+        display: inline-block;
+        margin-right: 0px;
+        width: 14px;
+        height: 14px;
+           
+        @include background_img('../img/star-inactive.svg');
+
+        &.active{
+            @include background_img('../img/star-active.svg');
+        }
+    }
+}
+
+.font-grey{
+    color: #949FAF
 }

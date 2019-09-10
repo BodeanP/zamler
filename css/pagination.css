@@ -15,10 +15,10 @@
   display: -ms-inline-flexbox;
   display: inline-flex;
   width: 60px;
-  height: 60px;
+  height: 62px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 60px;
-          flex: 0 1 60px;
+      -ms-flex: 0 1 62px;
+          flex: 0 1 62px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

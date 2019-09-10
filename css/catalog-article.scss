@@ -1,0 +1,30 @@
+.catalog-article{
+    padding: 44px 42px;
+    background-color: #fff;
+
+    &__img{
+        max-width: 100%;
+        margin-bottom: 28.5px;
+    }
+
+    &__title{
+        // font-family: 'medium'
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
+
+    p.main{
+        font-size: 18px;
+        font-weight: 100;
+        line-height: 26px;
+    }
+
+    p.sub-paragraph{
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    p:not(:nth-last-child(1)){
+        margin-bottom: 32px;
+    }
+}

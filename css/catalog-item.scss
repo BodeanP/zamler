@@ -19,7 +19,7 @@
         position: relative;
         max-height: 205px;
         min-height: 25px;
-        margin-bottom: 25px;
+        margin-bottom: 40px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -49,6 +49,20 @@
         &__status {
             font-size: 12px;
             margin-bottom: 12px;
+
+            &.available{
+
+                color: #51B15C;
+
+                &::before{
+                    content: '';
+                    display: inline-block;
+                    width: 9px;
+                    height: 7px;
+                    @include background_img('../img/green-check.svg');
+                    margin-right: 10px;
+                }
+            }
         }
 
         &__colors {
@@ -57,6 +71,7 @@
             margin-bottom: 17px;
             width: max-content;
             clear: both;
+            flex-wrap: wrap;
 
             .product-color{
                 &-grey{
@@ -110,30 +125,6 @@
             -webkit-box-shadow: 0px 3px 50px 0px rgba(71, 91, 96, 0.24);
             -moz-box-shadow: 0px 3px 50px 0px rgba(71, 91, 96, 0.24);
             box-shadow: 0px 3px 50px 0px rgba(71, 91, 96, 0.24);
-        }
-    }
-}
-
-.voblers{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: max-content;
-
-    .vobler{
-        font-size: 14px;
-        color: #fff;
-        border-radius: 55px;
-        min-width: 60px;
-        width: max-content;
-        padding: 3px 7px;
-        margin-bottom: 10px;
-
-        &.orange{
-            background-color: #F58858;
-        }
-        &.green{
-            background-color: #67C3B1;
         }
     }
 }

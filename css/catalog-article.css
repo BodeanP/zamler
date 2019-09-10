@@ -1,0 +1,30 @@
+.catalog-article {
+  padding: 44px 42px;
+  background-color: #fff;
+}
+
+.catalog-article__img {
+  max-width: 100%;
+  margin-bottom: 28.5px;
+}
+
+.catalog-article__title {
+  font-size: 30px;
+  margin-bottom: 35px;
+}
+
+.catalog-article p.main {
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 26px;
+}
+
+.catalog-article p.sub-paragraph {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.catalog-article p:not(:nth-last-child(1)) {
+  margin-bottom: 32px;
+}
+/*# sourceMappingURL=catalog-article.css.map */

@@ -1,0 +1,123 @@
+@import 'variables.scss';
+
+.popular-sections {
+
+    margin-bottom: 105px;
+
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .one-popular-section {
+        position: relative;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+
+        div:not(.one-popular-section__img){
+            z-index: 10;
+        }
+
+        &_big {
+            background-size: cover;
+            min-height: 450px;
+            justify-content: flex-start;
+            color: #fff; //??
+
+            span{
+                color: #fff !important //??
+            }
+
+            .voblers{
+                position: relative;
+            }
+
+            .description-area{
+                padding-left: 40px;
+                padding-top: 40px;
+                padding-bottom: 45px;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .one-popular-section__img {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+
+        &>a {
+            padding: 45px 0; //по шаблону непонятный разный отступ у каждого из элементов
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        &:hover {
+            box-shadow: 0px 3px 50px 0px rgba(71, 91, 96, 0.24);
+        }
+
+        &_big {
+            grid-column: 1 / span 2
+        }
+
+        &__img {
+            height: 205px;
+            display: flex;
+            justify-content: center;
+
+            img {
+                object-fit: scale-down;
+                object-position: top;
+            }
+        }
+
+        &__caption {
+            font-size: 18px;
+            // font-family: 'medium';
+            margin-bottom: 15px;
+            margin-top: auto;
+        }
+
+        &__price {
+            font-size: 16px;
+            color: #949FAF;
+            margin-bottom: 25px;
+        }
+
+        &__description {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        &__link {
+
+            i{
+                transform: translateX(12px);
+            }
+
+            &>span {
+                font-size: 16px;
+                color: $blue;
+                border-bottom: 1px solid #D8E8FF;
+            }
+
+        }
+    }
+
+}

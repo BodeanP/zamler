@@ -18,7 +18,7 @@
   position: relative;
   max-height: 205px;
   min-height: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,6 +59,20 @@
   margin-bottom: 12px;
 }
 
+.catalog-item__info__status.available {
+  color: #51B15C;
+}
+
+.catalog-item__info__status.available::before {
+  content: '';
+  display: inline-block;
+  width: 9px;
+  height: 7px;
+  background: url("../img/green-check.svg") no-repeat center;
+  background-size: contain;
+  margin-right: 10px;
+}
+
 .catalog-item__info__colors {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,6 +85,8 @@
   width: -moz-max-content;
   width: max-content;
   clear: both;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .catalog-item__info__colors .product-color-grey {
@@ -124,34 +140,5 @@
   min-height: 100%;
   -webkit-box-shadow: 0px 3px 50px 0px rgba(71, 91, 96, 0.24);
   box-shadow: 0px 3px 50px 0px rgba(71, 91, 96, 0.24);
-}
-
-.voblers {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-}
-
-.voblers .vobler {
-  font-size: 14px;
-  color: #fff;
-  border-radius: 55px;
-  min-width: 60px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  padding: 3px 7px;
-  margin-bottom: 10px;
-}
-
-.voblers .vobler.orange {
-  background-color: #F58858;
-}
-
-.voblers .vobler.green {
-  background-color: #67C3B1;
 }
 /*# sourceMappingURL=catalog-item.css.map */

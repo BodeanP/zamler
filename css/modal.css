@@ -36,7 +36,7 @@
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
       grid-template-areas: 'preview name price close';
-  grid-row-gap: 0;
+  row-gap: 0;
 }
 
 .modal_cart .order-list .order-item > div {

@@ -244,7 +244,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 }
 
 .counter {
@@ -316,6 +316,7 @@ main {
           flex: 1 0 35px;
   width: 35px;
   text-align: center;
+  max-width: 35px;
 }
 
 .close {
@@ -362,7 +363,7 @@ main {
       grid-template-areas: 'preview name name' 'preview counter price';
   -ms-grid-columns: 117px 100px auto;
       grid-template-columns: 117px 100px auto;
-  grid-row-gap: 10px;
+  row-gap: 10px;
   margin-bottom: 30px;
 }
 
@@ -457,5 +458,70 @@ main {
 .all-link {
   margin-left: auto;
   color: #1876FB;
+  font-size: 16px;
+}
+
+.all-link i {
+  margin-left: 12px;
+}
+
+.voblers {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.voblers .vobler {
+  font-size: 14px;
+  color: #fff;
+  border-radius: 55px;
+  min-width: 60px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 3px 7px;
+  margin-bottom: 10px;
+}
+
+.voblers .vobler_rounded {
+  border-radius: 4px;
+}
+
+.voblers .vobler.orange {
+  background-color: #F58858;
+}
+
+.voblers .vobler.green {
+  background-color: #67C3B1;
+}
+
+.voblers .vobler.cyan {
+  background-color: #37D7E3;
+}
+
+.rating__num {
+  font-size: 12px;
+  display: inline-block;
+}
+
+.rating .star {
+  display: inline-block;
+  margin-right: 0px;
+  width: 14px;
+  height: 14px;
+  background: url("../img/star-inactive.svg") no-repeat center;
+  background-size: contain;
+}
+
+.rating .star.active {
+  background: url("../img/star-active.svg") no-repeat center;
+  background-size: contain;
+}
+
+.font-grey {
+  color: #949FAF;
 }
 /*# sourceMappingURL=common.css.map */
