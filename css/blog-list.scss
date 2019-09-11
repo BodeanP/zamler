@@ -1,68 +1,203 @@
 @import 'variables.scss';
 @import '_mixins.scss';
 
-.blog{
-    .section-head{
+.catalog-outer.blog,
+.catalog-outer.brands {
+    padding-top: 60px;
+}
+
+
+
+.blog {
+    .catalog-main__head-row {
+        margin-bottom: 30px;
+    }
+
+    .section-head {
         margin-bottom: 40px;
     }
 
-    .all-link{
+    .all-link {
         margin-right: 10px;
         transform: translateY(-5px);
     }
 
-    .blog-list{
+    .catalog-wrapper {
+        grid-template-columns: 100%;
+    }
+
+    .catalog-wrapper.aside {
+        grid-template-columns: 295px auto;
+        column-gap: 12px;
+    }
+
+    .blog-list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 15px;
+        margin-bottom: 18px;
 
-        &__item{
+        &_simple {
+            .voblers {
+                bottom: 20px;
+                left: 20px;
+                top: unset;
+            }
+
+            a,
+            img {
+                width: 100%;
+                max-width: unset;
+            }
+        }
+
+        &__item {
+            position: relative;
             background-color: #fff;
             transition: box-shadow .2s;
 
-            &:hover{
-                box-shadow: 0px 3px 50px 0px rgba(216,220,221,1);
+            &:hover {
+                box-shadow: 0px 3px 50px 0px rgba(216, 220, 221, 1);
             }
 
-            .preview-pic{
+            .preview-pic {
                 margin-bottom: 25px;
 
-                img{
+                img {
                     width: 100%;
                     object-fit: contain;
                 }
             }
 
-            .blog-item-description{
+            .blog-item-description {
                 padding: 0px 34px 34px 34px;
                 display: flex;
                 flex-direction: column;
             }
 
-            .title{
+            .title {
                 font-size: 18px;
                 // font-family: 'meduim'
                 margin-bottom: 25px;
             }
 
-            .preview-text{
+            .preview-text {
                 font-size: 16px;
                 line-height: 22px;
                 margin-bottom: 25px;
                 @include row-dots(7);
             }
 
-            .read-link{
+            .read-link {
                 color: $blue;
                 display: flex;
                 align-items: center;
                 margin-top: auto;
                 font-size: 16px;
 
-                i{
+                i {
                     margin-left: auto;
                 }
             }
+
+            &_large {
+                grid-column: auto / span 2;
+
+                .preview-pic {
+                    margin-bottom: 0;
+                }
+
+                .blog-item-description {
+                    margin-top: 60px;
+                    padding: 0px 35px 34px 40px;
+                }
+
+                .title {
+                    font-size: 26px;
+                    // font-family: 'medium';
+                }
+
+                img {
+                    object-fit: cover !important;
+                    height: 100%;
+                }
+            }
+
+            &_large,
+            &_large a {
+                display: flex;
+
+
+                .preview-pic {
+                    flex: 0 0 390px;
+                }
+            }
+        }
+    }
+}
+
+.blog-photo-cards {
+
+  
+}
+
+.blog-photo-card {
+    @include clearfix;
+    margin: 100px 0px;
+
+    &_right {
+        .blog-photo-card__img{
+            right: 0;
+            top: 0;
+            transform: rotate(-6deg);
+        }
+    }
+
+    &_left {
+        .blog-photo-card__img{
+            left: 0;
+            top: 0;
+            transform: rotate(-352deg);
+        }
+
+        .blog-photo-card__description{
+            float: right;
+        }
+    }
+    
+    position: relative;
+    background-color: #fff;
+
+
+    &__description {
+        padding: 42px 52px;
+        max-width: 580px;
+        @include clearfix;
+
+        .description__head{
+            font-size: 30px;
+            margin-bottom: 27px;
+        }
+
+        .description__text{
+            font-weight: 100;
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        width: auto;
+        max-width: 330px;
+        height: auto;
+        padding: 14px;
+        -webkit-box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.16);
+        -moz-box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.16);
+        box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.16);
+
+        img{
+            width: 100%;
         }
     }
 }

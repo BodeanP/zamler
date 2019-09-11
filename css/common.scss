@@ -174,6 +174,16 @@ main {
         max-width: 153px;
     }
 
+    &_cyan{
+
+        background-color: #F5F8F9;
+        border: 1px solid #CCD5DE;
+        color: #333;
+
+        &:hover{ background-color: #37D7E3; color: #fff; }
+       
+    }
+
     &_arrow {
         i {
             display: inline-block;

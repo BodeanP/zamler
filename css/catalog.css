@@ -136,6 +136,20 @@
   margin-bottom: 18px;
 }
 
+.catalog-main__head-row p {
+  color: #949FAF;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.catalog-main__head-row .button {
+  min-height: 35px;
+  padding: 8px 0px;
+  width: auto;
+  min-width: 110px;
+  margin-right: 5px;
+}
+
 .catalog-main .catalog-product-list {
   display: -ms-grid;
   display: grid;

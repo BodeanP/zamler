@@ -3,7 +3,8 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  column-gap: 15px;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
 }
 
 .special-offers__item {

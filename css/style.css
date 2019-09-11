@@ -201,6 +201,17 @@ main {
   max-width: 153px;
 }
 
+.button_cyan {
+  background-color: #F5F8F9;
+  border: 1px solid #CCD5DE;
+  color: #333;
+}
+
+.button_cyan:hover {
+  background-color: #37D7E3;
+  color: #fff;
+}
+
 .button_arrow i {
   display: inline-block;
   margin-left: 10px;
