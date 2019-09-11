@@ -2,9 +2,11 @@
 
 .detail{
     padding-top: 60px;
+    padding-bottom: 45px;
 
     section{
         background-color: #fff;
+        padding-bottom: 30px;
     }
     &-in{
         display: grid;
@@ -23,21 +25,26 @@
 
     &__main-card{
         grid-column: 2;
-        padding: 30px 35px;
+        padding: 35px;
+
+        .catalog-item__info__status{
+            margin-bottom: 6px;
+        }
 
         .product-name{
             font-size: 22px;
+            margin-bottom: 5px;
         }
 
         .rating{
-            margin-bottom: 22px;
+            margin-bottom: 17px;
         }
 
         .product-color{
             font-size: 16px;
 
             &__caption{
-                margin-bottom: 14px;
+                margin-bottom: 12px;
             }
 
             .active{
@@ -45,7 +52,11 @@
             }
 
             .catalog-item__info__colors .one-product-color:not(:nth-last-child(1)){
-                margin-right: 10px;
+                margin-right: 15px;
+            }
+
+            .catalog-item__info__colors{
+                margin-bottom: 30px;
             }
         }
 
@@ -58,7 +69,8 @@
         .product-price{
             display: flex;
             align-items: center;
-            margin-bottom: 38px;
+            margin-bottom: 30px;
+            
 
             &__value{
                 font-size: 30px;
@@ -78,6 +90,10 @@
 
             .product-buy-btn{
                 width: 130px;
+
+                i{
+                    margin-left: 15px;
+                }
             }
 
             .product-counter{
@@ -109,10 +125,13 @@
 
     &__description{
         grid-column: 1 / span 3;
+        padding-bottom: 55px !important;
+        margin-bottom: 5px;
 
         .description__tabs{
             display: flex;
             justify-content: space-between;
+            margin-bottom: 25px;
 
             .one-tab{
                 flex: 1;
@@ -145,7 +164,7 @@
                 }
 
                 td{
-                    padding: 10px;
+                    padding: 12px 17px;
                 }
 
                 tr{
@@ -154,7 +173,7 @@
                     align-items: center;
 
                     td:nth-child(1){
-                        min-width: 60%;
+                        min-width: 71%;
                     }
 
                     &:nth-child(2n){
@@ -165,28 +184,33 @@
         }
     }
 
-    .reviews{
+    .reviews, .add-feedback-block{
         grid-column: 1 / span 3;
     }
 
     .delivery-description{
-        margin-bottom: 40px;
+        margin-bottom: 32px;
         
 
-        .delivery-options{
+        &.delivery-options{
             li{
-                list-style: circle;
+                list-style: inside;
+                margin-bottom: 5px;
             }
         }
-        .delivery-types{}
-        .delivery-terms{}
+        &.delivery-types{}
+        &.delivery-terms{}
 
 
         
         &__head{
             font-size: 16px;
             // font-family: 'medium'
-            margin-bottom: 12px;
+            margin-bottom: 7px;
         }
+    }
+
+    .questions{
+        padding-top: 10px;
     }
 }

@@ -19,6 +19,10 @@ body{
     font-size: $default_font_size;
 }
 
+img{
+    max-width: 100%;
+}
+
 .container{
     width: $container-width;
     margin: 0 auto;

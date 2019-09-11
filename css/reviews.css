@@ -13,6 +13,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 10px;
+  margin-bottom: 25px;
 }
 
 .reviews__pagination .button {
@@ -41,16 +43,25 @@
   max-width: 150px;
 }
 
+.reviews .add-review .button {
+  font-size: 15px;
+}
+
+.reviews .add-review_bottom {
+  margin-top: 5px;
+  max-width: 190px;
+}
+
 .reviews .review-avatar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 140px;
-          flex: 0 0 140px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+      -ms-flex: 0 0 100px;
+          flex: 0 0 100px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .reviews .review-avatar-in {
@@ -71,21 +82,23 @@
 }
 
 .reviews .review-block__head {
-  padding: 20px 17px;
+  padding: 17px;
   border-bottom: 1px solid #D9E6EA;
 }
 
 .reviews .review-block__head .user-name {
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .reviews .review-block__main {
-  padding: 20px 17px;
+  padding: 17px;
+  padding-bottom: 0;
   border-bottom: 1px solid #D9E6EA;
 }
 
 .reviews .review-block__main .review-text {
   margin-bottom: 30px;
+  line-height: 22px;
 }
 
 .reviews .review-block__main .pros-cons {
@@ -97,7 +110,8 @@
   margin-bottom: 25px;
 }
 
-.reviews .review-block__main .pros-cons .label, .reviews .review-block__main .pros-cons .descr {
+.reviews .review-block__main .pros-cons .label,
+.reviews .review-block__main .pros-cons .descr {
   display: block;
   width: 100%;
   -webkit-box-flex: 1;
@@ -105,39 +119,9 @@
           flex: 1 0 100%;
 }
 
-.reviews .review-block__main .pros-cons .ico-cons,
-.reviews .review-block__main .pros-cons .ico-pros {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 50px;
-          flex: 0 0 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.reviews .review-block__main .pros-cons .ico-cons .ico-in,
-.reviews .review-block__main .pros-cons .ico-pros .ico-in {
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-}
-
-.reviews .review-block__main .pros-cons .ico-cons .ico-in {
-  background: url("../img/Group 8130.svg") no-repeat center;
-  background-size: contain;
-}
-
-.reviews .review-block__main .pros-cons .ico-pros .ico-in {
-  background: url("../img/Group 8129.svg") no-repeat center;
-  background-size: contain;
-}
-
 .reviews .review-block__main .pros-cons .label {
   font-size: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 5px;
 }
 
 .reviews .review-block__main .pros-cons .comment-content .descr {
@@ -152,7 +136,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 17px;
+  padding: 17px;
 }
 
 .reviews .review-block__bottom .reply {
@@ -162,6 +146,7 @@
 
 .reviews .review-block__bottom .review-rating {
   margin-left: auto;
+  margin-right: 22px;
 }
 
 .reviews .review-block__bottom .review-rating i {
@@ -186,5 +171,110 @@
 
 .reviews .review-block__bottom .review-rating .rating-count {
   color: #333;
+}
+
+.add-feedback-block {
+  padding: 40px 37px;
+}
+
+.add-feedback-block .input-group__label {
+  margin-bottom: 16.5px;
+}
+
+.add-feedback-block .add-feedback-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(auto, 510px) minmax(auto, 510px);
+      grid-template-columns: minmax(auto, 510px) minmax(auto, 510px);
+  -ms-grid-rows: (auto)[4];
+      grid-template-rows: repeat(4, auto);
+      grid-template-areas: 'score score' 'text-review pros' 'text-review empty' 'name email';
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+}
+
+.add-feedback-block .add-feedback-container .my-score {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: score;
+  margin-bottom: 20px;
+}
+
+.add-feedback-block .add-feedback-container .my-score .input-group__label {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.add-feedback-block .add-feedback-container .my-score .star {
+  width: 24px;
+  height: 24px;
+  margin-right: 3px;
+  cursor: pointer;
+}
+
+.add-feedback-block .add-feedback-container .my-score .rating__num {
+  font-size: 21px;
+  margin-left: 8px;
+}
+
+.add-feedback-block .add-feedback-container .my-review {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: text-review;
+}
+
+.add-feedback-block .add-feedback-container .my-name {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: text-review;
+}
+
+.add-feedback-block .add-feedback-container .pros-cons {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: pros;
+}
+
+.add-feedback-block .add-feedback-container .pros-cons .input-group__input {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.add-feedback-block .add-feedback-container .pros-cons .ico-pros,
+.add-feedback-block .add-feedback-container .pros-cons .ico-cons {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+}
+
+.add-feedback-block .add-feedback-container .pros-cons input {
+  padding-left: 45px;
+}
+
+.add-feedback-block .add-feedback-container .my-email, .add-feedback-block .add-feedback-container .my-name {
+  margin-top: 30px;
+}
+
+.add-feedback-block .add-feedback-container .my-name {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: name;
+}
+
+.add-feedback-block .add-feedback-container .my-email {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: email;
+}
+
+#my-review {
+  padding-bottom: 0;
+}
+
+.add-review_bottom {
+  max-width: 190px;
 }
 /*# sourceMappingURL=reviews.css.map */

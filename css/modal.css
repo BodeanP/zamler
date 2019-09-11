@@ -153,6 +153,7 @@
 
 .modal .one-modal-item__preview {
   margin-right: 10px;
+  width: 150px;
 }
 
 .modal .one-modal-item__preview img {

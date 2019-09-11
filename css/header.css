@@ -56,6 +56,7 @@
 .menu .submenu__left li {
   border: 1px solid #F5F8F9;
   margin-bottom: -1px;
+  max-width: 245px;
 }
 
 .menu .submenu__left li.active, .menu .submenu__left li:hover {
@@ -147,12 +148,19 @@
 .menu .submenu__right_grid .submenu-grid-item__preview {
   margin-top: auto;
   margin-bottom: auto;
+  max-width: 120px;
 }
 
 .menu .submenu__right_grid .submenu-grid-item__caption {
   font-size: 18px;
   margin-bottom: 14px;
   margin-top: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-align: center;
 }
 
 .menu__item {

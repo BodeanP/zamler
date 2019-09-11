@@ -4,26 +4,28 @@
 .reviews {
     padding: 40px 37px;
 
-    &__list{
+    &__list {
         margin-top: 45px;
     }
 
-    &__pagination{
+    &__pagination {
         display: flex;
         justify-content: center;
+        padding-top: 10px;
+        margin-bottom: 25px;
 
-        .button{
+        .button {
             width: 240px;
             background-color: #F5F8F9;
             color: #949FAF;
 
-            &:hover{
+            &:hover {
                 filter: brightness(.9)
             }
         }
     }
 
-    .section-title{
+    .section-title {
         font-size: 22px;
     }
 
@@ -32,16 +34,25 @@
         margin-bottom: 20px;
     }
 
-    .add-review{
+    .add-review {
         max-width: 150px;
+
+        .button{
+            font-size: 15px;
+        }
+
+        &_bottom{
+            margin-top: 5px;
+            max-width: 190px;
+        }
     }
 
     .review-avatar {
 
 
         display: flex;
-        flex: 0 0 140px;
-        justify-content: center;
+        flex: 0 0 100px;
+        justify-content: flex-start;
 
         &-in {
             width: 60px;
@@ -61,22 +72,24 @@
         width: 100%;
 
         &__head {
-            padding: 20px 17px;
+            padding: 17px;
             border-bottom: 1px solid #D9E6EA;
 
             .user-name {
-                margin-bottom: 16px;
+                margin-bottom: 10px;
                 // font-family: 'medium'
 
             }
         }
 
         &__main {
-            padding: 20px 17px;
+            padding: 17px;
+            padding-bottom: 0;
             border-bottom: 1px solid #D9E6EA;
 
             .review-text {
                 margin-bottom: 30px;
+                line-height: 22px;
             }
 
             .pros-cons {
@@ -84,92 +97,156 @@
                 flex-wrap: wrap;
                 margin-bottom: 25px;
 
-                .label, .descr{
+                .label,
+                .descr {
                     display: block;
                     width: 100%;
                     flex: 1 0 100%;
                 }
 
-                .ico-cons,
-                .ico-pros {
-                    flex: 0 0 50px;
-                    display: flex;
-                    justify-content: center;
-
-                    .ico-in{
-                        display: inline-block;
-                        width: 24px;
-                        height: 24px;
-
-
-                    }
-                }
-
-                .ico-cons {
-                   .ico-in {
-                        @include background_img('../img/Group 8130.svg');
-
-                    }
-                }
-
-                .ico-pros {
-                    .ico-in {
-                        @include background_img('../img/Group 8129.svg');
-
-                    }
-                }
-
                 .label {
                     font-size: 16px;
-                    margin-bottom: 16px;
+                    margin-bottom: 5px;
                 }
 
-                .comment-content{
-                    .descr{
+                .comment-content {
+                    .descr {
                         font-size: 14px;
                     }
                 }
             }
         }
 
-        &__bottom{
+        &__bottom {
             display: flex;
             min-height: 55px;
             align-items: center;
-            padding: 20px 17px;
+            padding: 17px;
 
-            .reply{
+            .reply {
                 cursor: pointer;
                 color: $blue;
             }
 
-            .review-rating{
+            .review-rating {
                 margin-left: auto;
+                margin-right: 22px;
 
-                i{
+                i {
                     display: inline-block;
                     width: 16px;
                     height: 16px;
 
-                    &.good{
+                    &.good {
                         @include background_img('../img/Like_2.svg');
                     }
 
-                    &.bad{
+                    &.bad {
                         @include background_img('../img/Like_2.svg'); //dislike
                     }
 
                 }
 
-                span{
+                span {
                     color: #949FAF;
                 }
 
-                .rating-count{
+                .rating-count {
                     color: #333
                 }
             }
         }
     }
+}
 
+.add-feedback-block {
+    padding: 40px 37px;
+
+    .input-group__label {
+        margin-bottom: 16.5px;
+    }
+
+
+    .add-feedback-container {
+        display: grid;
+        grid-template-columns: minmax(auto, 510px) minmax(auto, 510px);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: 'score score'
+            'text-review pros'
+            'text-review empty'
+            'name email';
+        column-gap: 15px;
+
+
+        .my-score {
+            grid-area: score;
+            margin-bottom: 20px;
+
+            .input-group__label {
+                font-size: 14px;
+                margin-bottom: 16px;
+            }
+
+
+            .star {
+                width: 24px;
+                height: 24px;
+                margin-right: 3px;
+                cursor: pointer;
+            }
+
+            .rating__num {
+                font-size: 21px;
+                margin-left: 8px;
+            }
+        }
+
+        .my-review {
+            grid-area: text-review;
+        }
+
+        .my-name {
+            grid-area: text-review;
+        }
+
+        .pros-cons {
+            grid-area: pros;
+
+            .input-group__input {
+                position: relative;
+                margin-bottom: 25px;
+            }
+
+            .ico-pros,
+            .ico-cons {
+                position: absolute;
+                left: 12px;
+                top: 12px;
+            }
+
+            input {
+                padding-left: 45px;
+            }
+        }
+
+        .my-email,  .my-name{
+            margin-top: 30px;
+        }
+
+        .my-name {
+            grid-area: name;
+        }
+
+        .my-email {
+            grid-area: email;
+        }
+    }
+}
+
+#my-review{
+    padding-bottom: 0
+}
+
+.add-review_bottom{
+    max-width: 190px;
 }

@@ -7,15 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="../node_modules/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="../node_modules/nouislider/distribute/nouislider.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <!-- <link rel="stylesheet" href="../css/index.css"> -->
-    <!-- <link rel="stylesheet" href="../css/popular-sections.css"> -->
-    <!-- <link rel="stylesheet" href="../css/special-offers.css"> -->
-    <!-- <link rel="stylesheet" href="../css/blog-list.css"> -->
-    <link rel="stylesheet" href="../css/detail.css">
-    <link rel="stylesheet" href="../css/reviews.css">
+    <link rel="stylesheet" href="../css/catalog.css">
     <link rel="stylesheet" href="../css/catalog-item.css">
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="../css/filter.css">
+    <link rel="stylesheet" href="../css/personal.css">
 </head>
 
 <body>
@@ -420,355 +417,421 @@
             <ul>
                 <li class="disable"><a href="">Главная</a></li>
                 <li><a href="">Кухонные плиты с электрической духовкой</a></li>
-                <li><a href="">Плита электрическая NZ-456 334</a></li>
+
             </ul>
         </div>
     </div>
     <!-- breadcumbs end -->
 
-    <main class="detail">
+    <div class="catalog-outer personal">
         <div class="container">
-            <div class="detail-in">
-                <section class="detail__slider">
-                    <img src="../img/img.jpg" alt="">
-                    <!-- временно img потому что не понятно какой слайдер заюзать -->
-                </section>
-                <section class="detail__main-card catalog-item__info">
-                    <div class="catalog-item__info__status available">Есть в наличии</div>
-                    <div class="product-name catalog-item__info__name">Плита электрическая NZ-456 334 NZ-456 334</div>
-                    <div class="rating">
-                        <span class="star active"></span>
-                        <span class="star active"></span>
-                        <span class="star active"></span>
-                        <span class="star active"></span>
-                        <span class="star"></span>
-                        <div class="rating__num">
-                            5.6
+            <div class="catalog-wrapper">
+                <aside class="filter">
+                    <!-- список категорий -->
+                    <div class="category-list">
+                        <!-- раздел -->
+                        <div class="category-list__one-categoty active">
+                            <div class="category__head"><a href="">Корзина</a></div>
                         </div>
-                    </div>
-                    <div class="product-color">
-                        <div class="product-color__caption">
-                            Выберите цвет
+                        <!-- раздел end-->
+                        <!-- раздел -->
+                        <div class="category-list__one-categoty active">
+                            <div class="category__head"><a href="">Личные данные</a></div>
                         </div>
-                        <div class="catalog-item__info__colors">
-                            <a href="" class="one-product-color product-color-grey active"></a>
-                            <a href="" class="one-product-color product-color-black"></a>
-                            <a href="" class="one-product-color product-color-white"></a>
+                        <!-- раздел end-->
+                        <!-- раздел -->
+                        <div class="category-list__one-categoty active">
+                            <div class="category__head"><a href="">История покупок</a></div>
                         </div>
-                    </div>
-                    <div class="product-description">
-                        Варочная поверхность отличается высокой
-                        надежностью и удобством. Она позволяет
-                        блокировать сенсорные кнопки от случайного
-                        нажатия, оборудована индикаторамитепла.
-                    </div>
-                    <div class="product-price">
-                        <div class="product-price__value">
-                            <div class="current-price">14 500 грн</div>
-                            <div class="action-price"></div>
+                        <!-- раздел end-->
+                        <!-- раздел -->
+                        <div class="category-list__one-categoty active">
+                            <div class="category__head"><a href="">Лист желаний</a></div>
                         </div>
-                        <div class="product-price__count">
-                            В наличии: <br>
-                            7 шт
+                        <!-- раздел end-->
+                        <!-- раздел -->
+                        <div class="category-list__one-categoty active">
+                            <div class="category__head"><a href="">Дисконтная программа</a></div>
                         </div>
-                    </div>
-                    <div class="product-price-area">
-                        <div class="product-counter">
-                            <div class="counter">
-                                <div class="counter__button counter__button_minus"></div>
-                                <input type="text" class="counter__input" value="1">
-                                <div class="counter__button counter__button_plus"></div>
-                            </div>
+                        <!-- раздел end-->
+                        <!-- раздел -->
+                        <div class="category-list__one-categoty active">
+                            <div class="category__head"><a href="">Подписки</a></div>
                         </div>
-                        <div class="product-buy-btn">
-                            <div class="button button_arrow">
-                                <span>Купить</span><i></i>
-                            </div>
+                        <!-- раздел end-->
+                        <!-- раздел -->
+                        <div class="category-list__one-categoty active">
+                            <div class="category__head"><a href="">Выйти</a></div>
                         </div>
+                        <!-- раздел end-->
                     </div>
-                </section>
-                <section class="detail__delivery-card">
-                    <div class="delivery-description delivery-options">
-                        <div class="delivery-description__head">Способы доставки</div>
-                        <ul>
-                            <li>Укр Поштa</li>
-                            <li>Нова Поштa</li>
-                        </ul>
-                    </div>
-                    <div class="delivery-description delivery-types">
-                        <div class="delivery-description__head">Сроки доставки</div>
-                        <ul>
-                            <li>Доставка курьером</li>
-                            <li class="font-grey">По Киеву - 1 день</li>
-                            <li class="font-grey">По Украине - 1-2 дня</li>
-                        </ul>
-                    </div>
-                    <div class="delivery-description delivery-terms">
-                        <div class="delivery-description__head">Сроки доставки</div>
-                        <ul>
-                            <li>Обмен/Возврат в течении 14 дней</li>
-                            <li>Наши обязательства в разделе</li>
-                            <li><a href="">Гарантии</a> </li>
-                        </ul>
-                    </div>
-                    <div class="questions">
-                        Остались вопросы? - <a href="">Задать вопрос</a>
-                        <a href="">Отзывы </a> наших клиентов
-                    </div>
-                </section>
-                <section class="detail__description">
-                    <div class="description__tabs">
-                        <div class="one-tab active">Характеристики</div>
-                        <div class="one-tab">Отзывы</div>
-                        <div class="one-tab">Похожие товары</div>
-                    </div>
-                    <div class="description__table">
-                        <table>
-                            <tr>
-                                <th>Основные характеристики</th>
-                            </tr>
+                    <!-- список категорий end -->
 
-                            <tr>
-                                <td>Рабочая поверхность </td>
-                                <td><a href="">газовая</a></td>
-                            </tr>
-                            <tr>
-                                <td>Вид поверхности</td>
-                                <td>классическая</td>
-                            </tr>
-                            <tr>
-                                <td>Количество конфорок</td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>Функции</td>
-                                <td>электроподжиг</td>
-                            </tr>
-                        </table>
-
-                        <table>
-                            <tr>
-                                <th>Размеры</th>
-                            </tr>
-                            <tr>
-                                <td>Высота </td>
-                                <td><a href="">5.5 см</a></td>
-                            </tr>
-                            <tr>
-                                <td>Ширина</td>
-                                <td>58 см</td>
-                            </tr>
-                            <tr>
-                                <td>Глубина</td>
-                                <td>10 см</td>
-                            </tr>
-
-                        </table>
-                    </div>
-                </section>
-                <section class="reviews">
-                    <div class="section-head">
-                        <span class="section-title">Отзывы о Плита электрическая NZ-456 334</span>
-                    </div>
-                    <div class="add-review">
-                        <div class="button button_arrow">
-                            <span>Напистаь отзыв</span>
+                </aside>
+                <main class="catalog-main">
+                    <h1>Состав вашего заказа</h1>
+                    <div class="catalog-main__head-row">
+                        <span class="catalog-total">У вас в истории 15 заказов</span>
+                        <div class="catalog-sort">
+                            <!-- сортировка компонент -->
                         </div>
+
                     </div>
-                    <div class="reviews__list">
-                        <div class="one-review">
-                            <div class="review-avatar">
-                                <div class="review-avatar-in">
-                                    <img src="../img/Group 8122.jpg" alt="">
+                    <div class="orders-list-outer">
+                        <div class="orders-list__head">
+                            <table>
+                                <tr>
+                                    <td class="td_photo">Фото</td>
+                                    <td class="td_name">Наименование</td>
+                                    <td class="td_quan">Кол-во</td>
+                                    <td class="td_price">Цена</td>
+                                    <td class="td_summ">Сумма</td>
+                                    <td class="td_status">Статус</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="orders-accordion">
+                            <div class="one-order">
+                                <div class="orders-accordion__tab active">
+                                    <div class="order-name">Заказ #2432525 на сумму 28 000 р</div>
+                                    <div class="order-status">Ждет оплаты</div>
+                                    <i class="accordion-arrow">
+
+                                    </i>
                                 </div>
-                            </div>
-                            <div class="review-block">
-                                <div class="review-block__head">
-                                    <div class="user-name">Анна Селезнева</div>
-                                    <div class="rating">
-                                        <span class="star active"></span>
-                                        <span class="star active"></span>
-                                        <span class="star active"></span>
-                                        <span class="star active"></span>
-                                        <span class="star"></span>
-                                        <div class="rating__num">
-                                            5.6
+                                <div class="orders-accordion__content">
+                                    <div class="order-list">
+                                        <div class="order-item">
+                                            <div class="order-item__preview">
+                                                <img src="../img/Image 140.jpg" alt="">
+                                            </div>
+                                            <div class="order-item__name"><a href=""> Газовая панель NA3000H
+                                                    с конфоркой 3.8 кВт</a></div>
+                                            <div class="order-item__quantity">
+                                                1 шт.
+                                            </div>
+                                            <div class="order-item__price">
+                                                <span class="discount-color">12 500 грн</span>
+                                                <span >Скидка 15%</span>
+                                            </div>
+                                            <div class="order-item__total-price"><span>12 500 грн</span></div>
+                                            <div class="order-item__del close"></div>
+                                        </div>
+                                        <div class="order-item">
+                                            <div class="order-item__preview">
+                                                <img src="../img/Image 140.jpg" alt="">
+                                            </div>
+                                            <div class="order-item__name"><a href=""> Газовая панель NA3000H
+                                                    с конфоркой 3.8 кВт</a></div>
+                                            <div class="order-item__quantity">
+                                                1 шт.
+                                            </div>
+                                            <div class="order-item__price"><span>12 500 грн</span></div>
+                                            <div class="order-item__total-price"><span>12 500 грн</span></div>
+                                            <div class="order-item__del close"></div>
+                                        </div>
+                                        <div class="order-item">
+                                            <div class="order-item__preview">
+                                                <img src="../img/Image 140.jpg" alt="">
+                                            </div>
+                                            <div class="order-item__name"><a href=""> Газовая панель NA3000H
+                                                    с конфоркой 3.8 кВт</a></div>
+                                            <div class="order-item__quantity">
+                                                1 шт.
+                                            </div>
+                                            <div class="order-item__price"><span>12 500 грн</span></div>
+                                            <div class="order-item__total-price"><span>12 500 грн</span></div>
+                                            <div class="order-item__del close"></div>
+                                        </div>
+
+                                    </div>
+                                    <div class="order-footer">
+                                        <div class="checkout-aside__total">
+
+                                            <p class="total-head">Итого без учета доставки</p>
+                                            <span class="total-price">14 500 грн</span>
+                                            <span class="total-description">Ваша скидка 10 %</span>
+
+                                        </div>
+                                        <div class="bonus-code">
+                                            <!-- input-group -->
+                                            <div class="input-group">
+
+                                                <div class="input-group__input">
+                                                    <input type="text" placeholder="Код купона для скидки">
+                                                    <div class="button button_grey no-shadow" role="button">
+                                                        <span>Применить</span></div>
+                                                </div>
+                                            </div>
+                                            <!-- input-group -->
+                                        </div>
+                                        <div class="proceed-order">
+                                            <div class="button button_arrow">
+                                                <span>Оформить заказ</span><i></i>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="review-block__main">
-                                    <div class="review-text">
-                                        Выглядит и работает максимально просто для меня это было главным, наличие вок
-                                        конфорки порадовало потому что раньше
-                                        с таким не сталкивалась, в быту оказалось очень практично и быстро
-                                    </div>
-                                    <div class="pros-cons">
-                                        <div class="ico-pros">
-                                            <i class="ico-in"></i>
-                                        </div>
-                                        <div class="comment-content">
-                                            <div class="label">Достоинства</div>
-                                            <div class="descr">Есть усиленная конфорка, крепкие решетки, нержавеющая
-                                                сталь,
-                                                быстрый поджиг</div>
-                                        </div>
-                                    </div>
-                                    <div class="pros-cons">
-                                        <div class="ico-cons">
-                                            <i class="ico-in"></i>
-                                        </div>
-
-                                        <div class="comment-content">
-                                            <div class="label">Недостатки</div>
-                                            <div class="descr">Нет газ контроля</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="review-block__bottom">
-                                    <span class="reply">Ответить</span>
-                                    <div class="review-rating">
-                                        <span>Отзыв полезен</span>
-                                        <i class="good"></i>
-                                        <span class="rating-count">12</span>
-                                    </div>
-                                </div>
                             </div>
+
+
+
+                            <div class="one-order">
+                                    <div class="orders-accordion__tab">
+                                        <div class="order-name">Заказ #2432525 на сумму 28 000 р</div>
+                                        <div class="order-status">Ждет оплаты</div>
+                                        <i class="accordion-arrow">
+    
+                                        </i>
+                                    </div>
+                                    <div class="orders-accordion__content" style="display: none">
+                                        <div class="order-list">
+                                            <div class="order-item">
+                                                <div class="order-item__preview">
+                                                    <img src="../img/Image 140.jpg" alt="">
+                                                </div>
+                                                <div class="order-item__name"><a href=""> Газовая панель NA3000H
+                                                        с конфоркой 3.8 кВт</a></div>
+                                                <div class="order-item__quantity">
+                                                    1 шт.
+                                                </div>
+                                                <div class="order-item__price"><span>12 500 грн</span></div>
+                                                <div class="order-item__total-price"><span>12 500 грн</span></div>
+                                                <div class="order-item__del close"></div>
+                                            </div>
+                                            <div class="order-item">
+                                                <div class="order-item__preview">
+                                                    <img src="../img/Image 140.jpg" alt="">
+                                                </div>
+                                                <div class="order-item__name"><a href=""> Газовая панель NA3000H
+                                                        с конфоркой 3.8 кВт</a></div>
+                                                <div class="order-item__quantity">
+                                                    1 шт.
+                                                </div>
+                                                <div class="order-item__price"><span>12 500 грн</span></div>
+                                                <div class="order-item__total-price"><span>12 500 грн</span></div>
+                                                <div class="order-item__del close"></div>
+                                            </div>
+                                            <div class="order-item">
+                                                <div class="order-item__preview">
+                                                    <img src="../img/Image 140.jpg" alt="">
+                                                </div>
+                                                <div class="order-item__name"><a href=""> Газовая панель NA3000H
+                                                        с конфоркой 3.8 кВт</a></div>
+                                                <div class="order-item__quantity">
+                                                    1 шт.
+                                                </div>
+                                                <div class="order-item__price"><span>12 500 грн</span></div>
+                                                <div class="order-item__total-price"><span>12 500 грн</span></div>
+                                                <div class="order-item__del close"></div>
+                                            </div>
+    
+                                        </div>
+                                        <div class="order-footer">
+                                            <div class="checkout-aside__total">
+    
+                                                <p class="total-head">Итого без учета доставки</p>
+                                                <span class="total-price">14 500 грн</span>
+                                                <span class="total-description">Ваша скидка 10 %</span>
+    
+                                            </div>
+                                            <div class="bonus-code">
+                                                <!-- input-group -->
+                                                <div class="input-group">
+    
+                                                    <div class="input-group__input">
+                                                        <input type="text" placeholder="Код купона для скидки">
+                                                        <div class="button button_grey no-shadow" role="button">
+                                                            <span>Применить</span></div>
+                                                    </div>
+                                                </div>
+                                                <!-- input-group -->
+                                            </div>
+                                            <div class="proceed-order">
+                                                <div class="button button_arrow">
+                                                    <span>Оформить заказ</span><i></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="one-order">
+                                        <div class="orders-accordion__tab">
+                                            <div class="order-name">Заказ #2432525 на сумму 28 000 р</div>
+                                            <div class="order-status">Ждет оплаты</div>
+                                            <i class="accordion-arrow">
+        
+                                            </i>
+                                        </div>
+                                        <div class="orders-accordion__content" style="display: none">
+                                            <div class="order-list">
+                                                <div class="order-item">
+                                                    <div class="order-item__preview">
+                                                        <img src="../img/Image 140.jpg" alt="">
+                                                    </div>
+                                                    <div class="order-item__name"><a href=""> Газовая панель NA3000H
+                                                            с конфоркой 3.8 кВт</a></div>
+                                                    <div class="order-item__quantity">
+                                                        1 шт.
+                                                    </div>
+                                                    <div class="order-item__price"><span>12 500 грн</span></div>
+                                                    <div class="order-item__total-price"><span>12 500 грн</span></div>
+                                                    <div class="order-item__del close"></div>
+                                                </div>
+                                                <div class="order-item">
+                                                    <div class="order-item__preview">
+                                                        <img src="../img/Image 140.jpg" alt="">
+                                                    </div>
+                                                    <div class="order-item__name"><a href=""> Газовая панель NA3000H
+                                                            с конфоркой 3.8 кВт</a></div>
+                                                    <div class="order-item__quantity">
+                                                        1 шт.
+                                                    </div>
+                                                    <div class="order-item__price"><span>12 500 грн</span></div>
+                                                    <div class="order-item__total-price"><span>12 500 грн</span></div>
+                                                    <div class="order-item__del close"></div>
+                                                </div>
+                                                <div class="order-item">
+                                                    <div class="order-item__preview">
+                                                        <img src="../img/Image 140.jpg" alt="">
+                                                    </div>
+                                                    <div class="order-item__name"><a href=""> Газовая панель NA3000H
+                                                            с конфоркой 3.8 кВт</a></div>
+                                                    <div class="order-item__quantity">
+                                                        1 шт.
+                                                    </div>
+                                                    <div class="order-item__price"><span>12 500 грн</span></div>
+                                                    <div class="order-item__total-price"><span>12 500 грн</span></div>
+                                                    <div class="order-item__del close"></div>
+                                                </div>
+        
+                                            </div>
+                                            <div class="order-footer">
+                                                <div class="checkout-aside__total">
+        
+                                                    <p class="total-head">Итого без учета доставки</p>
+                                                    <span class="total-price">14 500 грн</span>
+                                                    <span class="total-description">Ваша скидка 10 %</span>
+        
+                                                </div>
+                                                <div class="bonus-code">
+                                                    <!-- input-group -->
+                                                    <div class="input-group">
+        
+                                                        <div class="input-group__input">
+                                                            <input type="text" placeholder="Код купона для скидки">
+                                                            <div class="button button_grey no-shadow" role="button">
+                                                                <span>Применить</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- input-group -->
+                                                </div>
+                                                <div class="proceed-order">
+                                                    <div class="button button_arrow">
+                                                        <span>Оформить заказ</span><i></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <div class="one-order">
+                                            <div class="orders-accordion__tab">
+                                                <div class="order-name">Заказ #2432525 на сумму 28 000 р</div>
+                                                <div class="order-status">Ждет оплаты</div>
+                                                <i class="accordion-arrow">
+            
+                                                </i>
+                                            </div>
+                                            <div class="orders-accordion__content" style="display: none">
+                                                <div class="order-list">
+                                                    <div class="order-item">
+                                                        <div class="order-item__preview">
+                                                            <img src="../img/Image 140.jpg" alt="">
+                                                        </div>
+                                                        <div class="order-item__name"><a href=""> Газовая панель NA3000H
+                                                                с конфоркой 3.8 кВт</a></div>
+                                                        <div class="order-item__quantity">
+                                                            1 шт.
+                                                        </div>
+                                                        <div class="order-item__price"><span>12 500 грн</span></div>
+                                                        <div class="order-item__total-price"><span>12 500 грн</span></div>
+                                                        <div class="order-item__del close"></div>
+                                                    </div>
+                                                    <div class="order-item">
+                                                        <div class="order-item__preview">
+                                                            <img src="../img/Image 140.jpg" alt="">
+                                                        </div>
+                                                        <div class="order-item__name"><a href=""> Газовая панель NA3000H
+                                                                с конфоркой 3.8 кВт</a></div>
+                                                        <div class="order-item__quantity">
+                                                            1 шт.
+                                                        </div>
+                                                        <div class="order-item__price"><span>12 500 грн</span></div>
+                                                        <div class="order-item__total-price"><span>12 500 грн</span></div>
+                                                        <div class="order-item__del close"></div>
+                                                    </div>
+                                                    <div class="order-item">
+                                                        <div class="order-item__preview">
+                                                            <img src="../img/Image 140.jpg" alt="">
+                                                        </div>
+                                                        <div class="order-item__name"><a href=""> Газовая панель NA3000H
+                                                                с конфоркой 3.8 кВт</a></div>
+                                                        <div class="order-item__quantity">
+                                                            1 шт.
+                                                        </div>
+                                                        <div class="order-item__price"><span>12 500 грн</span></div>
+                                                        <div class="order-item__total-price"><span>12 500 грн</span></div>
+                                                        <div class="order-item__del close"></div>
+                                                    </div>
+            
+                                                </div>
+                                                <div class="order-footer">
+                                                    <div class="checkout-aside__total">
+            
+                                                        <p class="total-head">Итого без учета доставки</p>
+                                                        <span class="total-price">14 500 грн</span>
+                                                        <span class="total-description">Ваша скидка 10 %</span>
+            
+                                                    </div>
+                                                    <div class="bonus-code">
+                                                        <!-- input-group -->
+                                                        <div class="input-group">
+            
+                                                            <div class="input-group__input">
+                                                                <input type="text" placeholder="Код купона для скидки">
+                                                                <div class="button button_grey no-shadow" role="button">
+                                                                    <span>Применить</span></div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- input-group -->
+                                                    </div>
+                                                    <div class="proceed-order">
+                                                        <div class="button button_arrow">
+                                                            <span>Оформить заказ</span><i></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                         </div>
-                        <div class="one-review">
-                            <div class="review-avatar">
-                                <div class="review-avatar-in">
-                                    <img src="../img/Group 8126.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="review-block">
-                                <div class="review-block__head">
-                                    <div class="user-name">Алена</div>
-                                    <div class="rating">
-                                        <span class="star active"></span>
-                                        <span class="star active"></span>
-                                        <span class="star active"></span>
-                                        <span class="star active"></span>
-                                        <span class="star"></span>
-                                        <div class="rating__num">
-                                            5.6
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="review-block__main">
-                                    <div class="review-text">
-                                        Удобная, комфортная варочная поверхность. Установка простая, не требующая
-                                        дополнительных знаний.
-                                        Пользуемся в течение 1 недели.
-                                    </div>
-                                    <div class="pros-cons">
-                                        <div class="ico-pros">
-                                            <i class="ico-in"></i>
-                                        </div>
-                                        <div class="comment-content">
-                                            <div class="label">Достоинства</div>
-                                            <div class="descr">Есть усиленная конфорка, крепкие решетки, нержавеющая
-                                                сталь,
-                                                быстрый поджиг</div>
-                                        </div>
-                                    </div>
-                                    <div class="pros-cons">
-                                        <div class="ico-cons">
-                                            <i class="ico-in"></i>
-                                        </div>
 
-                                        <div class="comment-content">
-                                            <div class="label">Недостатки</div>
-                                            <div class="descr">Нет газ контроля</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="review-block__bottom">
-                                    <span class="reply">Ответить</span>
-                                    <div class="review-rating">
-                                        <span>Отзыв полезен</span>
-                                        <i class="good"></i>
-                                        <span class="rating-count">12</span>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="orders-list__bottom">
+                            <span>Показать еще 12 заказов</span>
                         </div>
                     </div>
-                    <div class="reviews__pagination">
-                        <div class="button no-shadow"> <span>Показать еще 10 отзывов</span></div>
-                    </div>
-
-                </section>
-
-                <section class="add-feedback-block">
-                    <div class="section-head">
-                        <span class="section-title">Оставить отзыв</span>
-                    </div>
-
-                    <div class="add-feedback-container">
-                        <div class="add-feedback-block__input-group input-group my-score">
-                            <div class="input-group__label">Моя оценка</div>
-                            <div class="input-group__input">
-                                <div class="rating">
-                                    <span class="star active"></span>
-                                    <span class="star active"></span>
-                                    <span class="star active"></span>
-                                    <span class="star active"></span>
-                                    <span class="star"></span>
-                                    <div class="rating__num">
-                                        5.6
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="add-feedback-block__input-group input-group my-review">
-                            <div class="input-group__label">Ваш отзыв</div>
-                            <div class="input-group__input">
-                                <textarea name="my-review" id="my-review" cols="30" rows="10"></textarea>
-                            </div>
-                        </div>
-
-                        <div class="add-feedback-block__input-group input-group my-name">
-                            <div class="input-group__label">Ваше имя</div>
-                            <div class="input-group__input">
-                                <input type="text" placeholder="Анна">
-                            </div>
-                        </div>
-
-                        <div class="add-feedback-block__input-group input-group pros-cons">
-                            <div class="input-group__label">Достоинства и недостатки</div>
-                            <div class="input-group__input">
-                                <div class="ico-pros">
-                                    <i class="ico-in"></i>
-                                </div>
-                                <input type="text" placeholder="Достоинства">
-                            </div>
-                            <div class="input-group__input">
-                                <div class="ico-cons">
-                                    <i class="ico-in"></i>
-                                </div>
-                                <input type="text" placeholder="Недостатки">
-                            </div>
-                        </div>
-
-                        <div class="add-feedback-block__input-group input-group my-email">
-                            <div class="input-group__label">Email</div>
-                            <div class="input-group__input">
-                                <input type="text" placeholder="example@example.com">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="add-review add-review_bottom">
-                        <div class="button button_arrow">
-                            <span>Оставить отзыв</span>
-                        </div>
-                    </div>
-                </section>
-
+                </main>
             </div>
         </div>
-    </main>
-
+    </div>
     <!-- footer  -->
     <footer class="footer">
         <div class="footer__content">
@@ -822,7 +885,6 @@
             </div>
             <div class="footer__main__column">
                 <div class="footer-head"></div>
-                <!-- тут footer-head нужно оставить пустым для одинаковых отступов -->
                 <ul>
                     <li><a href="">Пункты выдачи
                         </a></li>
@@ -857,5 +919,11 @@
     <!-- footer end -->
 
 </body>
+
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../node_modules/nouislider/distribute/nouislider.min.js"></script>
+<script src="../node_modules/wnumb/wNumb.js"></script>
+<script src="../src/init.js"></script>
+<script src="main.js"></script>
 
 </html>

@@ -1,0 +1,46 @@
+@import 'variables.scss';
+
+.brands {
+    .catalog-wrapper{
+        grid-template-columns: 100%;
+    }
+}
+
+.catalog-brand-list{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 18px;
+    column-gap: 14px;
+    margin-bottom: 18px;
+
+    .one-brand, .one-brand a{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .one-brand{
+        min-height: 243px;
+        background-color: #fff;
+
+        a{
+            color: $blue;
+            font-size: 16px;
+        }
+
+        &__logo{
+            height: 130px;
+            margin-bottom: 7px;
+            display: flex;
+            align-items: center;
+        }
+
+        &__name{
+            font-size: 16px;
+            margin-bottom: 7px;
+            // font-family: 'medium';
+        }
+    }
+}

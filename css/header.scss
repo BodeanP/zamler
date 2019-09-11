@@ -48,6 +48,7 @@
         li {
             border: 1px solid #F5F8F9;
             margin-bottom: -1px;
+            max-width: 245px;
 
             &.active,
             &:hover {
@@ -124,12 +125,15 @@
                 &__preview {
                     margin-top: auto;
                     margin-bottom: auto;
+                    max-width: 120px;
                 }
 
                 &__caption {
                     font-size: 18px;
                     margin-bottom: 14px;
                     margin-top: 8px;
+                    @include row-dots(2);
+                    text-align: center;
                 }
 
             }

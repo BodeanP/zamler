@@ -1,14 +1,14 @@
-section.blog .section-head {
+.blog .section-head {
   margin-bottom: 40px;
 }
 
-section.blog .all-link {
+.blog .all-link {
   margin-right: 10px;
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
 }
 
-section.blog .blog-list {
+.blog .blog-list {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -16,7 +16,7 @@ section.blog .blog-list {
   gap: 15px;
 }
 
-section.blog .blog-list__item {
+.blog .blog-list__item {
   background-color: #fff;
   -webkit-transition: -webkit-box-shadow .2s;
   transition: -webkit-box-shadow .2s;
@@ -24,22 +24,22 @@ section.blog .blog-list__item {
   transition: box-shadow .2s, -webkit-box-shadow .2s;
 }
 
-section.blog .blog-list__item:hover {
+.blog .blog-list__item:hover {
   -webkit-box-shadow: 0px 3px 50px 0px #d8dcdd;
           box-shadow: 0px 3px 50px 0px #d8dcdd;
 }
 
-section.blog .blog-list__item .preview-pic {
+.blog .blog-list__item .preview-pic {
   margin-bottom: 25px;
 }
 
-section.blog .blog-list__item .preview-pic img {
+.blog .blog-list__item .preview-pic img {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-section.blog .blog-list__item .blog-item-description {
+.blog .blog-list__item .blog-item-description {
   padding: 0px 34px 34px 34px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,18 +50,23 @@ section.blog .blog-list__item .blog-item-description {
           flex-direction: column;
 }
 
-section.blog .blog-list__item .title {
+.blog .blog-list__item .title {
   font-size: 18px;
   margin-bottom: 25px;
 }
 
-section.blog .blog-list__item .preview-text {
+.blog .blog-list__item .preview-text {
   font-size: 16px;
   line-height: 22px;
   margin-bottom: 25px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
 }
 
-section.blog .blog-list__item .read-link {
+.blog .blog-list__item .read-link {
   color: #1876FB;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,7 +78,7 @@ section.blog .blog-list__item .read-link {
   font-size: 16px;
 }
 
-section.blog .blog-list__item .read-link i {
+.blog .blog-list__item .read-link i {
   margin-left: auto;
 }
 /*# sourceMappingURL=blog-list.css.map */

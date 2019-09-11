@@ -1,9 +1,11 @@
 .detail {
   padding-top: 60px;
+  padding-bottom: 45px;
 }
 
 .detail section {
   background-color: #fff;
+  padding-bottom: 30px;
 }
 
 .detail-in {
@@ -27,15 +29,20 @@
 .detail__main-card {
   -ms-grid-column: 2;
   grid-column: 2;
-  padding: 30px 35px;
+  padding: 35px;
+}
+
+.detail__main-card .catalog-item__info__status {
+  margin-bottom: 6px;
 }
 
 .detail__main-card .product-name {
   font-size: 22px;
+  margin-bottom: 5px;
 }
 
 .detail__main-card .rating {
-  margin-bottom: 22px;
+  margin-bottom: 17px;
 }
 
 .detail__main-card .product-color {
@@ -43,7 +50,7 @@
 }
 
 .detail__main-card .product-color__caption {
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .detail__main-card .product-color .active {
@@ -51,7 +58,11 @@
 }
 
 .detail__main-card .product-color .catalog-item__info__colors .one-product-color:not(:nth-last-child(1)) {
-  margin-right: 10px;
+  margin-right: 15px;
+}
+
+.detail__main-card .product-color .catalog-item__info__colors {
+  margin-bottom: 30px;
 }
 
 .detail__main-card .product-description {
@@ -67,7 +78,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 38px;
+  margin-bottom: 30px;
 }
 
 .detail__main-card .product-price__value {
@@ -89,6 +100,10 @@
 
 .detail__main-card .product-price-area .product-buy-btn {
   width: 130px;
+}
+
+.detail__main-card .product-price-area .product-buy-btn i {
+  margin-left: 15px;
 }
 
 .detail__main-card .product-price-area .product-counter {
@@ -121,6 +136,8 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1 / span 3;
+  padding-bottom: 55px !important;
+  margin-bottom: 5px;
 }
 
 .detail__description .description__tabs {
@@ -130,6 +147,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 25px;
 }
 
 .detail__description .description__tabs .one-tab {
@@ -171,7 +189,7 @@
 }
 
 .detail__description .description__table table td {
-  padding: 10px;
+  padding: 12px 17px;
 }
 
 .detail__description .description__table table tr {
@@ -185,29 +203,34 @@
 }
 
 .detail__description .description__table table tr td:nth-child(1) {
-  min-width: 60%;
+  min-width: 71%;
 }
 
 .detail__description .description__table table tr:nth-child(2n) {
   background-color: #F5F8F9;
 }
 
-.detail .reviews {
+.detail .reviews, .detail .add-feedback-block {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1 / span 3;
 }
 
 .detail .delivery-description {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
-.detail .delivery-description .delivery-options li {
-  list-style: circle;
+.detail .delivery-description.delivery-options li {
+  list-style: inside;
+  margin-bottom: 5px;
 }
 
 .detail .delivery-description__head {
   font-size: 16px;
-  margin-bottom: 12px;
+  margin-bottom: 7px;
+}
+
+.detail .questions {
+  padding-top: 10px;
 }
 /*# sourceMappingURL=detail.css.map */

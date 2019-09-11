@@ -1,4 +1,4 @@
-$('document').ready(function () {
+var initRangeInput = function () {
     var slider = document.getElementById('range');
 
     noUiSlider.create(slider, {
@@ -35,6 +35,17 @@ $('document').ready(function () {
 
     to.on('change', function () {
         slider.noUiSlider.set([null, this.value]);
+    })
+}
+
+$('document').ready(function () {
+    if($('#range').length > 0){
+        initRangeInput();
+    }
+
+    $('.orders-accordion__tab').on('click', function(){
+        $(this).parent().find('.orders-accordion__content').slideToggle();
+        $(this).toggleClass('active');
     })
 
     $('.category__head').on('click', function () {
