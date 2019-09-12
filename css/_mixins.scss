@@ -6,7 +6,7 @@
 	$index: str-index($string, $search);
 
 	@if $index {
-		@return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+		@return str-slice($string, 1, $index - 1)+$replace+str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
 	}
 
 	@return $string;
@@ -19,15 +19,12 @@
 @mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
 	$src: null;
 
-	$extmods: (
-		eot: "?",
-		svg: "#" + str-replace($name, " ", "_")
-	);
+	$extmods: (eot: "?",
+			svg: "#"+ str-replace($name, " ", "_"));
 
-	$formats: (
-		otf: "opentype",
-		ttf: "truetype"
-	);
+	$formats: (otf: "opentype",
+			ttf: "truetype"
+		);
 
 	@each $ext in $exts {
 		$extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
@@ -44,19 +41,24 @@
 }
 
 @mixin background_img($path) {
-    background: url($path) no-repeat center;
-    background-size: contain;
+	background: url($path) no-repeat center;
+	background-size: contain;
 }
 
 
 @mixin mobile {
-	@media (max-width: 749px) { @content; }
-}
-@mixin tablet {
-	@media (max-width: 1399px) { @content; }
+	@media (max-width: 749px) {
+		@content;
+	}
 }
 
-@mixin row-dots($rows){
+@mixin tablet {
+	@media (max-width: 1399px) {
+		@content;
+	}
+}
+
+@mixin row-dots($rows) {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	display: -webkit-box;
@@ -76,8 +78,14 @@
 
 @mixin clearfix {
 	&:after {
-	  content: "";
-	  display: table;
-	  clear: both;
+		content: "";
+		display: table;
+		clear: both;
 	}
-  }
+}
+
+@mixin media-mobile-devices {
+	@media screen and (max-width: 992px), screen and (pointer: coarse){
+		@content;
+	}
+}

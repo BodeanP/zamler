@@ -127,7 +127,8 @@ main {
         }
     }
 
-    &__input input, &__input textarea {
+    &__input input,
+    &__input textarea {
         display: block;
         background-color: $input-bg;
         border: 1px solid #CCD5DE;
@@ -174,14 +175,30 @@ main {
         max-width: 153px;
     }
 
-    &_cyan{
+    &_cyan {
 
         background-color: #F5F8F9;
         border: 1px solid #CCD5DE;
         color: #333;
 
-        &:hover{ background-color: #37D7E3; color: #fff; }
-       
+        &:hover {
+            background-color: #37D7E3;
+            color: #fff;
+        }
+
+    }
+
+    &_arrow-down{
+        
+            i {
+                display: inline-block;
+                margin-left: 10px;
+                width: 14px;
+                height: 7px;
+                vertical-align: middle;
+                @include background_img('../img/arrow-down.svg');
+            }
+        
     }
 
     &_arrow {
@@ -507,6 +524,184 @@ main {
     }
 }
 
-.discount-color{
+.discount-color {
     color: #FA6B2B
+}
+
+
+.preamble {
+    font-size: 22px;
+    line-height: 36px;
+}
+
+.selection {
+    padding: 20px 35px;
+    font-size: 19px;
+    position: relative;
+    width: calc(100% - 15px);
+    margin: 45px 0px;
+    margin-left: 15px;
+
+    p{
+        margin-bottom: 0 !important;
+    }
+
+    &__head {
+        font-size: 18px;
+        // font-family: 'medium';
+        margin-bottom: 5px;
+    }
+
+    &_blue {
+        background-color: #F5F8F9;
+
+        &::before {
+            background-color: $blue;
+        }
+    }
+
+    &_orange {
+        background-color: #FFEFDD;
+
+        &::before {
+            background-color: #DD7258;
+        }
+    }
+
+    &_green {
+        background-color: #F2FAE8;
+
+        &::before {
+            background-color: #54B582;
+        }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 4px;
+        left: 0;
+        top: 0;
+        transform: translateX(-15px);
+    }
+}
+
+.pre {
+    display: flex;
+    background-color: #F5F8F9;
+    padding: 53px 0px;
+    margin-bottom: 35px;
+
+    &-in {
+        font-size: 30px;
+        // font-family: 'medium';
+        align-self: center;
+        justify-self: center;
+        max-width: 510px;
+        margin: 0 auto;
+    }
+}
+
+.table {
+    width: 100%;
+
+    &_stripped {
+        font-size: 16px;
+        // font-family: 'medium';
+        border-collapse: collapse;
+        margin-top: 30px;
+        margin-bottom: 50px;
+
+        tr {
+            &:nth-child(odd) {
+                background-color: #F5F8F9;
+            }
+
+            &:nth-child(even) {
+                background-color: #ECF0F2;
+            }
+        }
+
+        td {
+            min-height: 70px;
+            padding: 25px 30px;
+        }
+    }
+}
+
+.full-width {
+    width: calc(100vw - 10px);
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+
+    @include media-mobile-devices {
+        width: 100vw;
+    }
+}
+
+.list-marked {
+    font-size: 19px;
+    line-height: 50px;
+    padding-top: 5px;
+
+    li {
+        // list-style-image: url('../img/check-circle.svg');
+
+        background: url(../img/check-circle.svg) no-repeat left center;
+        padding: 0 0px 0px 50px;
+        list-style: none;
+        margin: 0;
+    }
+}
+
+.list-numeric {
+    font-size: 19px;
+    line-height: 50px;
+    padding-top: 5px;
+
+    li {
+        list-style: decimal;
+    }
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0px 3px 50px 0px rgba(105, 105, 105, 0.11);
+    -moz-box-shadow: 0px 3px 50px 0px rgba(105, 105, 105, 0.11);
+    box-shadow: 0px 3px 50px 0px rgba(105, 105, 105, 0.11);
+}
+
+.mistake-found {
+    background-color: #fff;
+    padding: 38px 50px;
+
+    .section-head {
+        font-size: 22px;
+        // font-family: 'medium';
+        margin-bottom: 0 !important;
+    }
+
+    .button{
+        font-size: 18px;
+        // font-family: 'medium';
+        padding: 15px 0px;
+        max-width: 190px; 
+    }
+}
+
+.content-centered {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.font-default{
+    color: #333;
+    span{
+        color: #333;
+    }
 }

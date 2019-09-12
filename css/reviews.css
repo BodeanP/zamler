@@ -1,5 +1,6 @@
 .reviews {
   padding: 40px 37px;
+  background-color: #fff;
 }
 
 .reviews__list {
@@ -69,6 +70,12 @@
   height: 60px;
   border-radius: 50%;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .reviews .review-avatar img {
@@ -124,8 +131,15 @@
   margin-bottom: 5px;
 }
 
+.reviews .review-block__main .pros-cons .comment-content {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(100% - 35px);
+          flex: 0 0 calc(100% - 35px);
+}
+
 .reviews .review-block__main .pros-cons .comment-content .descr {
   font-size: 14px;
+  line-height: 22px;
 }
 
 .reviews .review-block__bottom {
@@ -175,6 +189,7 @@
 
 .add-feedback-block {
   padding: 40px 37px;
+  background-color: #fff;
 }
 
 .add-feedback-block .input-group__label {
