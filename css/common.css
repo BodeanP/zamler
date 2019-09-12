@@ -12,8 +12,16 @@ a {
   display: inline-block;
   width: 12px;
   height: 16px;
-  background: url("../img/1617454.svg") no-repeat;
   vertical-align: middle;
+  background: url("../img/1617454.svg") no-repeat center;
+  background-size: contain;
+}
+
+@media (max-width: 1399px) {
+  .city-picker i {
+    width: 7px;
+    height: 10px;
+  }
 }
 
 .city-picker__city-name {
@@ -21,6 +29,12 @@ a {
   cursor: pointer;
   border-bottom: 1px dashed #D8E8FF;
   padding-bottom: 2px;
+}
+
+@media (max-width: 1399px) {
+  .city-picker__city-name {
+    margin: 0px 2px;
+  }
 }
 
 main {
@@ -120,6 +134,12 @@ main {
   width: 100%;
 }
 
+@media (max-width: 1399px) {
+  .input-group__label {
+    font-size: 14px;
+  }
+}
+
 .input-group__label_radio {
   margin-bottom: 24px !important;
 }
@@ -133,6 +153,13 @@ main {
   width: 100%;
   color: #949FAF;
   font-size: 16px;
+}
+
+@media (max-width: 1399px) {
+  .input-group__input input,
+  .input-group__input textarea {
+    font-size: 14px;
+  }
 }
 
 .input-group__input input::-webkit-input-placeholder,
@@ -190,6 +217,12 @@ main {
   cursor: pointer;
 }
 
+@media (max-width: 1399px) {
+  .button {
+    font-size: 14px;
+  }
+}
+
 .button_round {
   border-radius: 25px;
   max-width: 153px;
@@ -224,6 +257,12 @@ main {
   vertical-align: middle;
   background: url("../img/arrow-right.svg") no-repeat center;
   background-size: contain;
+}
+
+@media (max-width: 1399px) {
+  .button_arrow i {
+    width: 12px;
+  }
 }
 
 .button_arrow_blue i {
@@ -263,6 +302,12 @@ main {
   font-size: 30px;
 }
 
+@media (max-width: 1399px) {
+  .section-title {
+    font-size: 22px;
+  }
+}
+
 .section-head {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -271,6 +316,12 @@ main {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 22px;
+}
+
+@media (max-width: 1399px) {
+  .section-head {
+    margin-bottom: 14px;
+  }
 }
 
 .counter {
@@ -299,6 +350,12 @@ main {
   font-size: 16px;
   background-color: #F5F8F9;
   cursor: pointer;
+}
+
+@media (max-width: 1399px) {
+  .counter__button {
+    font-size: 14px;
+  }
 }
 
 .counter__button_minus, .counter__button_plus {
@@ -437,6 +494,12 @@ main {
   line-height: 20px;
 }
 
+@media (max-width: 1399px) {
+  .order-list .order-item__name a {
+    font-size: 14px;
+  }
+}
+
 .order-list .order-item__counter {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
@@ -461,6 +524,12 @@ main {
           align-items: center;
   padding-left: 16px;
   font-size: 18px;
+}
+
+@media (max-width: 1399px) {
+  .order-list .order-item__price {
+    font-size: 14px;
+  }
 }
 
 .order-list .order-item__del {
@@ -489,8 +558,22 @@ main {
   font-size: 16px;
 }
 
+@media (max-width: 1399px) {
+  .all-link {
+    font-size: 12px;
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+  }
+}
+
 .all-link i {
   margin-left: 12px;
+}
+
+@media (max-width: 1399px) {
+  .all-link i {
+    margin-left: 2px;
+  }
 }
 
 .voblers {
@@ -612,6 +695,12 @@ main {
   margin-bottom: 5px;
 }
 
+@media (max-width: 1399px) {
+  .selection__head {
+    font-size: 14px;
+  }
+}
+
 .selection_blue {
   background-color: #F5F8F9;
 }
@@ -668,6 +757,12 @@ main {
   margin: 0 auto;
 }
 
+@media (max-width: 1399px) {
+  .pre-in {
+    font-size: 22px;
+  }
+}
+
 .table {
   width: 100%;
 }
@@ -677,6 +772,12 @@ main {
   border-collapse: collapse;
   margin-top: 30px;
   margin-bottom: 50px;
+}
+
+@media (max-width: 1399px) {
+  .table_stripped {
+    font-size: 14px;
+  }
 }
 
 .table_stripped tr:nth-child(odd) {
@@ -749,6 +850,12 @@ main {
   font-size: 18px;
   padding: 15px 0px;
   max-width: 190px;
+}
+
+@media (max-width: 1399px) {
+  .mistake-found .button {
+    font-size: 14px;
+  }
 }
 
 .content-centered {

@@ -104,6 +104,12 @@
   margin-right: 65px;
 }
 
+@media (max-width: 1399px) {
+  .orders-accordion__tab .order-status {
+    font-size: 12px;
+  }
+}
+
 .orders-accordion__tab .order-name {
   font-size: 18px;
 }
@@ -137,6 +143,12 @@
           align-items: center;
   padding: 0;
   font-size: 16px;
+}
+
+@media (max-width: 1399px) {
+  .orders-accordion .order-list .order-item > div {
+    font-size: 12px;
+  }
 }
 
 .orders-accordion .order-list .order-item__preview {
@@ -237,6 +249,12 @@
 
 .order-footer .checkout-aside__total .total-head {
   font-size: 16px;
+}
+
+@media (max-width: 1399px) {
+  .order-footer .checkout-aside__total .total-head {
+    font-size: 12px;
+  }
 }
 
 .order-footer .checkout-aside__total .total-price {

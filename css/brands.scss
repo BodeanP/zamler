@@ -1,4 +1,5 @@
 @import 'variables.scss';
+@import '_mixins.scss';
 
 .brands {
     .catalog-wrapper{
@@ -27,7 +28,7 @@
 
         a{
             color: $blue;
-            font-size: 16px;
+            font-size: 16px; @include tablet{font-size: 14px}
         }
 
         &__logo{
@@ -38,7 +39,7 @@
         }
 
         &__name{
-            font-size: 16px;
+            font-size: 16px; @include tablet{font-size: 14px}
             margin-bottom: 7px;
             // font-family: 'medium';
         }

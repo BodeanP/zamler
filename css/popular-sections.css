@@ -34,6 +34,12 @@
   color: #fff;
 }
 
+@media (max-width: 1399px) {
+  .popular-sections .one-popular-section_big {
+    min-height: 290px;
+  }
+}
+
 .popular-sections .one-popular-section_big span {
   color: #fff !important;
 }
@@ -54,6 +60,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 1399px) {
+  .popular-sections .one-popular-section_big .description-area {
+    padding-left: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .popular-sections .one-popular-section_big .one-popular-section__img {
@@ -88,6 +102,12 @@
           align-items: center;
 }
 
+@media (max-width: 1399px) {
+  .popular-sections .one-popular-section > a {
+    padding: 25px;
+  }
+}
+
 .popular-sections .one-popular-section:hover {
   -webkit-box-shadow: 0px 3px 50px 0px rgba(71, 91, 96, 0.24);
           box-shadow: 0px 3px 50px 0px rgba(71, 91, 96, 0.24);
@@ -109,6 +129,12 @@
           justify-content: center;
 }
 
+@media (max-width: 1399px) {
+  .popular-sections .one-popular-section__img {
+    height: 125px;
+  }
+}
+
 .popular-sections .one-popular-section__img img {
   -o-object-fit: scale-down;
      object-fit: scale-down;
@@ -122,15 +148,33 @@
   margin-top: auto;
 }
 
+@media (max-width: 1399px) {
+  .popular-sections .one-popular-section__caption {
+    font-size: 14px;
+  }
+}
+
 .popular-sections .one-popular-section__price {
   font-size: 16px;
   color: #949FAF;
   margin-bottom: 25px;
 }
 
+@media (max-width: 1399px) {
+  .popular-sections .one-popular-section__price {
+    font-size: 14px;
+  }
+}
+
 .popular-sections .one-popular-section__description {
   font-size: 16px;
   margin-bottom: 30px;
+}
+
+@media (max-width: 1399px) {
+  .popular-sections .one-popular-section__description {
+    font-size: 14px;
+  }
 }
 
 .popular-sections .one-popular-section__link i {
@@ -142,5 +186,11 @@
   font-size: 16px;
   color: #1876FB;
   border-bottom: 1px solid #D8E8FF;
+}
+
+@media (max-width: 1399px) {
+  .popular-sections .one-popular-section__link > span {
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=popular-sections.css.map */

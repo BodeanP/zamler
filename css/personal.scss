@@ -1,10 +1,11 @@
+@import 'variables.scss';
 @import '_mixins.scss';
 
 .personal{
     padding-top: 55px;
 
     h1{
-        font-size: 30px;
+        font-size: 30px; @include tablet{font-size: 22px;}
         // font-family: 'medium'
         margin-bottom: 17px;
     }
@@ -85,12 +86,12 @@
 
         .order-status {
             margin-left: auto;
-            font-size: 16px;
+            font-size: 16px; @include tablet{font-size: 14px}
             margin-right: 65px;
         }
 
         .order-name{
-            font-size: 18px;
+            font-size: 18px; @include tablet{font-size: 14px}
             // font-family: 'medium';
            
         }
@@ -118,7 +119,7 @@
                 display: flex;
                 align-items: center;
                 padding: 0;
-                font-size: 16px;
+                font-size: 16px; @include tablet{font-size: 14px}
             }
 
             &__preview{
@@ -193,11 +194,11 @@
         }
 
         .total-head {
-            font-size: 16px;
+            font-size: 16px; @include tablet{font-size: 14px}
         }
 
         .total-price {
-            font-size: 30px;
+            font-size: 30px; @include tablet{font-size: 22px;}
             // font-family: 'medium';
         }
 

@@ -1,3 +1,6 @@
+@import 'variables.scss';
+@import '_mixins.scss';
+
 .seo{
     color: #949FAF;
     padding-bottom: 75px;
@@ -17,7 +20,7 @@
         column-gap: 70px;
 
         li{
-            font-size: 16px;
+            font-size: 16px; @include tablet{font-size: 14px}
             line-height: 26px;
         }
     }

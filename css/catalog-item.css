@@ -54,6 +54,12 @@
   margin-bottom: 3px;
 }
 
+@media (max-width: 1399px) {
+  .catalog-item__info__name {
+    font-size: 14px;
+  }
+}
+
 .catalog-item__info__status {
   font-size: 12px;
   margin-bottom: 12px;
@@ -127,9 +133,21 @@
   font-weight: bold;
 }
 
+@media (max-width: 1399px) {
+  .catalog-item__info__price .item-price {
+    font-size: 14px;
+  }
+}
+
 .catalog-item__info__price .item-buy {
   font-size: 16px;
   color: #1876FB;
+}
+
+@media (max-width: 1399px) {
+  .catalog-item__info__price .item-buy {
+    font-size: 14px;
+  }
 }
 
 .catalog-item:hover .catalog-item__in {

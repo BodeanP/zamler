@@ -24,6 +24,12 @@
   line-height: 26px;
 }
 
+@media (max-width: 1399px) {
+  .catalog-article p.sub-paragraph {
+    font-size: 12px;
+  }
+}
+
 .catalog-article p:not(:nth-last-child(1)) {
   margin-bottom: 32px;
 }

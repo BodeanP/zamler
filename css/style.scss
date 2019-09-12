@@ -17,6 +17,10 @@ body{
     color: #333;
     font-family: $default_font_name;
     font-size: $default_font_size;
+
+    @include tablet{
+        font-size: $default_font_size_tablet;
+    }
 }
 
 img{

@@ -17,10 +17,22 @@
   line-height: 30px;
 }
 
+@media (max-width: 1399px) {
+  .sub__description {
+    font-size: 12px;
+  }
+}
+
 .sub .input {
   padding: 15px 28px;
   font-size: 16px;
   min-width: 295px;
+}
+
+@media (max-width: 1399px) {
+  .sub .input {
+    font-size: 12px;
+  }
 }
 
 .sub__left {

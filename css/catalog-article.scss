@@ -1,3 +1,6 @@
+@import 'variables.scss';
+@import '_mixins.scss';
+
 .catalog-article{
     padding: 44px 42px;
     background-color: #fff;
@@ -9,18 +12,18 @@
 
     &__title{
         // font-family: 'medium'
-        font-size: 30px;
+        font-size: 30px; @include tablet{font-size: 22px;}
         margin-bottom: 35px;
     }
 
     p.main{
-        font-size: 18px;
+        font-size: 18px; @include tablet{font-size: 14px}
         font-weight: 100;
         line-height: 26px;
     }
 
     p.sub-paragraph{
-        font-size: 16px;
+        font-size: 16px; @include tablet{font-size: 14px}
         line-height: 26px;
     }
 

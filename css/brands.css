@@ -41,6 +41,12 @@
   font-size: 16px;
 }
 
+@media (max-width: 1399px) {
+  .catalog-brand-list .one-brand a {
+    font-size: 12px;
+  }
+}
+
 .catalog-brand-list .one-brand__logo {
   height: 130px;
   margin-bottom: 7px;
@@ -55,5 +61,11 @@
 .catalog-brand-list .one-brand__name {
   font-size: 16px;
   margin-bottom: 7px;
+}
+
+@media (max-width: 1399px) {
+  .catalog-brand-list .one-brand__name {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=brands.css.map */

@@ -1,6 +1,7 @@
 @import 'variables.scss';
 @import 'pagination.scss';
 @import 'catalog-article.scss';
+@import '_mixins.scss';
 
 
 .catalog-outer {
@@ -10,7 +11,7 @@
 
     h1 {
         margin-bottom: 30px;
-        font-size: 30px;
+        font-size: 30px; @include tablet{font-size: 22px;}
         // font-family: 'medium';
     }
 }
@@ -22,7 +23,7 @@
 }
 
 .catalog-total {
-    font-size: 18px;
+    font-size: 18px; @include tablet{font-size: 14px}
     color: #949FAF;
 }
 
@@ -58,7 +59,7 @@
     padding-left: 60px;
 
     a {
-        font-size: 26px;
+        font-size: 26px; @include tablet{font-size: 14px;}
         font-weight: 100;
         color: #949FAF;
         border-bottom: 1px solid rgba(112, 112, 112, .1);

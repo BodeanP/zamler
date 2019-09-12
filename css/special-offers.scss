@@ -1,3 +1,4 @@
+@import 'variables.scss';
 @import '_mixins.scss';
 
 .special-offers{
@@ -37,13 +38,13 @@
         color: #fff;
 
         &-title{
-            font-size: 30px;
+            font-size: 30px; @include tablet{font-size: 22px;}
             // font-family: 'medium'
             margin-bottom: 10px;
         }
 
         &-text{
-            font-size: 18px;
+            font-size: 18px; @include tablet{font-size: 14px}
         }
 
         .special-offer-link{
@@ -65,7 +66,7 @@
 
     .special-offer-link{
         margin-top: auto;
-        font-size: 16px;
+        font-size: 16px; @include tablet{font-size: 14px}
         i{
             margin-left: 18px;
         }

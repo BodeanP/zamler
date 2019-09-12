@@ -61,6 +61,12 @@
   cursor: pointer;
 }
 
+@media (max-width: 1399px) {
+  .filter .category-list__one-categoty .category__head {
+    font-size: 12px;
+  }
+}
+
 .filter .category-list__one-categoty .category__head.active {
   color: #1876FB;
 }

@@ -40,7 +40,7 @@
         }
 
         &__name {
-            font-size: 18px;
+            font-size: 18px; @include tablet{font-size: 14px}
             // font-family: 'medium';
             @include row-dots(2);
             margin-bottom: 3px;
@@ -102,12 +102,12 @@
             justify-content: space-between;
 
             .item-price {
-                font-size: 18px;
+                font-size: 18px; @include tablet{font-size: 14px}
                 font-weight: bold;
             }
 
             .item-buy {
-                font-size: 16px;
+                font-size: 16px; @include tablet{font-size: 14px}
                 color: $blue;
             }
         }

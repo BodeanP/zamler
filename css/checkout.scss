@@ -64,7 +64,7 @@
         }
     
         &>span{
-            font-size: 16px;
+            font-size: 16px; @include tablet{font-size: 14px}
             margin-right: 13px;
         }
     }
@@ -102,7 +102,7 @@
     }
 
     &__head{
-        font-size: 16px;
+        font-size: 16px; @include tablet{font-size: 14px}
         // font-family: 'medium'
         margin-bottom: 35px;
         display: block;
@@ -112,12 +112,12 @@
         border-top: 1px solid #DEE9F4;
 
         .total-head{
-            font-size: 16px;
+            font-size: 16px; @include tablet{font-size: 14px}
             margin-bottom: 10px;
         }
         
         .total-price{
-            font-size: 30px;
+            font-size: 30px; @include tablet{font-size: 22px;}
             font-weight: bold;
             margin-right: 18px;
         }

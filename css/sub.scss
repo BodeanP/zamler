@@ -1,4 +1,5 @@
 @import 'variables.scss';
+@import '_mixins.scss';
 
 .sub{
     display: flex;
@@ -12,13 +13,13 @@
 
     &__description{
         margin-bottom: 25px;
-        font-size: 18px;
+        font-size: 18px; @include tablet{font-size: 14px}
         line-height: 30px;
     }
 
     .input{
         padding: 15px 28px;
-        font-size: 16px;
+        font-size: 16px; @include tablet{font-size: 14px}
         min-width: 295px;
     
     }

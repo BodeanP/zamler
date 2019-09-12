@@ -1,10 +1,11 @@
 @import 'variables.scss';
+@import '_mixins.scss';
 
 .filter {
     padding-top: 10px;
 
     &__head {
-        font-size: 18px;
+        font-size: 18px; @include tablet{font-size: 14px}
         // font-family: 'medium';
         margin-bottom: 32px;
     }
@@ -58,7 +59,7 @@
                 }
             }
             .category__head {
-                font-size: 16px;
+                font-size: 16px; @include tablet{font-size: 14px}
                 margin-bottom: 20px;
                 cursor: pointer;
 
