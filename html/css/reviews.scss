@@ -1,0 +1,459 @@
+@import '_mixins.scss';
+@import 'variables.scss';
+
+.reviews {
+    padding: 40px 37px;
+    background-color: #fff;
+
+    .section-head{
+        @include tablet{
+            margin-bottom: 10px;
+        }
+    }
+
+    @include tablet{
+        padding: 21px;
+    }
+
+    &__list {
+        margin-top: 45px;
+
+        @include tablet{
+            margin-top: 20px;
+        }
+    }
+
+    &__pagination {
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        margin-bottom: 25px;
+
+        @include tablet{
+            padding-top: 0px;
+            margin-top: -10px;
+        }
+
+        .button {
+            width: 240px;
+            background-color: #F5F8F9;
+            color: #949FAF;
+            
+            @include tablet{
+                padding: 14px 0px;
+                width: 185px;
+            }
+
+            &:hover {
+                filter: brightness(.9)
+            }
+        }
+    }
+
+    .section-title {
+        font-size: 22px;
+
+        @include tablet{
+            font-size: 18px;
+        }
+    }
+
+    .one-review {
+        display: flex;
+        margin-bottom: 20px;
+
+        @include tablet{
+            margin-bottom: 22px;
+        }
+    }
+
+    .add-review {
+        max-width: 150px;
+
+        @include tablet{
+            max-width: 120px;
+        }
+
+        .button{
+            font-size: 15px;
+
+            @include tablet{
+                font-size: 12px;
+            }
+        }
+
+        &_bottom{
+            margin-top: 5px;
+            max-width: 190px;
+        }
+    }
+
+    .review-avatar {
+
+
+        display: flex;
+        flex: 0 0 100px;
+        justify-content: flex-start;
+
+        @include tablet{
+            flex: 0 0 65px
+        }
+
+        &-in {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+
+            @include tablet{
+                width: 37px;
+                height: 37px;
+                margin-top: 8px;
+            }
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .review-block {
+        font-size: 16px; 
+        background-color: #F5F8F9;
+        width: 100%;
+
+        @include tablet{
+            font-size: 12px
+        }
+
+        &__head {
+            padding: 17px;
+            border-bottom: 1px solid #D9E6EA;
+
+            @include tablet{
+                padding-bottom: 7px;
+            }
+
+            .user-name {
+                margin-bottom: 10px;
+                // font-family: 'medium'
+
+                @include tablet{
+                    margin-bottom: 5px;
+                }
+
+            }
+        }
+
+        &__main {
+            padding: 17px;
+            padding-bottom: 0;
+            border-bottom: 1px solid #D9E6EA;
+
+            @include tablet{
+                padding: 9px 17px;
+                padding-bottom: 0px;
+            }
+
+            .review-text {
+                margin-bottom: 30px;
+                line-height: 22px;
+
+                @include tablet{
+                    line-height: 16px;
+                    margin-bottom: 12px;
+                }
+            }
+
+            .pros-cons {
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 25px;
+
+                @include tablet{
+                    margin-bottom: 10px;
+                }
+
+                .label,
+                .descr {
+                    display: block;
+                    width: 100%;
+                    flex: 1 0 100%;
+                }
+
+                .label {
+                    font-size: 16px;
+                    margin-bottom: 5px;
+
+                    @include tablet{
+                        font-size: 12px;
+                        margin-bottom: 2px;
+                    }
+                }
+
+                .comment-content {
+                    flex: 0 0 calc(100% - 35px);
+
+                    .descr {
+                        font-size: 14px;
+                        line-height: 22px;
+
+                        @include tablet{
+                            font-size: 12px;
+                            line-height: unset;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__bottom {
+            display: flex;
+            min-height: 55px;
+            align-items: center;
+            padding: 17px;
+
+            @include tablet{
+                padding: 11px 17px;
+                min-height: unset;
+            }
+
+            .reply {
+                cursor: pointer;
+                color: $blue;
+            }
+
+            .review-rating {
+                margin-left: auto;
+                margin-right: 22px;
+
+                @include tablet{
+                    margin-right: 4px;
+                }
+
+                i {
+                    display: inline-block;
+                    width: 16px;
+                    height: 16px;
+
+                    @include tablet{
+                        width: 11px;
+                        height: 11px;
+                    }
+
+                    &.good {
+                        @include background_img('../img/Like_2.svg');
+                    }
+
+                    &.bad {
+                        @include background_img('../img/Like_2.svg'); //dislike
+                    }
+
+                }
+
+                span {
+                    color: #949FAF;
+                }
+
+                .rating-count {
+                    color: #333
+                }
+            }
+        }
+    }
+
+    .rating__num{
+        @include tablet{
+            margin-left: 0px;
+        }
+    }
+
+    .rating .star{
+        @include tablet{
+            width: 8px;
+            height: 8px;
+        }
+    }
+}
+
+.add-feedback-block {
+    padding: 40px 37px;
+    background-color: #fff;
+
+    @include tablet{
+        padding: 25px 27px;
+        padding-bottom: 25px !important
+    }
+
+    .section-head{
+        @include tablet{
+            margin-bottom: 10px;
+        }
+    }
+
+    .section-title{
+        @include tablet{
+            font-size: 18px;
+
+        }
+    }
+
+   
+
+    .input-group__label {
+        margin-bottom: 16.5px;
+
+        @include tablet{
+            font-size: 12px;
+            margin-bottom: 11.5px;
+        }
+    }
+
+
+    .add-feedback-container {
+        display: grid;
+        grid-template-columns: minmax(auto, 510px) minmax(auto, 510px);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: 'score score'
+            'text-review pros'
+            'text-review empty'
+            'name email';
+        column-gap: 15px;
+
+        @include tablet{
+            grid-template-columns: minmax(auto, 295px) minmax(auto, 295px);
+            column-gap: 20px;
+        }
+
+
+        .my-score {
+            grid-area: score;
+            margin-bottom: 20px;
+
+            @include tablet{
+                margin-bottom: 10px;
+            }
+
+            .input-group__label {
+                font-size: 14px;
+                margin-bottom: 16px;
+                
+                @include tablet{
+                    font-size: 12px;
+                    margin-bottom: 9px;
+                }
+            }
+
+
+            .star {
+                width: 24px;
+                height: 24px;
+                margin-right: 3px;
+                cursor: pointer;
+                
+                @include tablet{
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 1px;
+                }
+            }
+
+            .rating__num {
+                font-size: 21px;
+                margin-left: 8px;
+
+                @include tablet{
+                    font-size: 12px;
+                    transform: translateY(-3px);
+                    margin-left: 3px;
+                    
+                }
+            }
+        }
+
+        .my-review {
+            grid-area: text-review;
+        }
+
+        .my-name {
+            grid-area: text-review;
+        }
+
+        .pros-cons {
+            grid-area: pros;
+
+            .input-group__input {
+                position: relative;
+                margin-bottom: 25px;
+
+                @include tablet{
+                    margin-bottom: 20px;
+                }
+            }
+
+            .ico-pros,
+            .ico-cons {
+                position: absolute;
+                left: 12px;
+                top: 12px;
+
+                @include tablet{
+                    left: 7px;
+                }
+            }
+
+            input {
+                padding-left: 45px;
+
+                @include tablet{
+                    
+                    font-size: 12px;
+                    padding: 11px;
+                    padding-left: 27px;
+                }
+            }
+        }
+
+        .my-email,  .my-name{
+            margin-top: 30px;
+
+            @include tablet{
+                margin-top: 0px;
+            }
+        }
+
+        .my-name {
+            grid-area: name;
+        }
+
+        .my-email {
+            grid-area: email;
+        }
+    }
+}
+
+#my-review{
+    padding-bottom: 0;
+    height: 207px;
+
+    @include tablet{
+        height: 125px;
+    }
+}
+
+.add-review_bottom{
+    max-width: 190px;
+
+    @include tablet{
+        max-width: 160px;
+    }
+
+    .button{
+        @include tablet{
+            font-size: 14px;
+
+        }
+    }
+}

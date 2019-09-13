@@ -1,0 +1,10 @@
+@import 'variables.scss';
+@import '_mixins.scss';
+
+.catalog-main .section-head{
+    margin-bottom: 40px;
+
+    @include tablet{
+        margin-bottom: 25px;
+    }
+}

@@ -1,0 +1,157 @@
+@import 'variables.scss';
+@import '_mixins.scss';
+
+.footer{
+    padding-top: 90px;
+    
+    &__main{
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+
+        &__column{
+
+            &:not(:nth-child(1)){
+                padding-left: 15px;
+
+                @include tablet{
+                    transform: translateX(35px);
+                }
+            }
+
+            flex: 1;
+
+            .footer-head{
+                font-size: 18px; 
+                margin-bottom: 22px;
+                display: block;
+                min-height: 21px;
+                // font-family: 'medium'
+
+                @include tablet{
+                    font-size: 12px;
+                    margin-bottom: 5px;
+                }
+            }
+
+            ul{
+                columns: 1;
+
+                li{
+                    margin-bottom: 13px;
+
+                   @include tablet{
+                       margin-bottom: 7px;
+                   }
+                }
+
+                a{
+                    color: $font-grey;
+                    max-width: 250px;
+                    @include row-dots(2);
+                }
+            }
+        }
+    }
+
+    &__bottom{
+        border-top: 1px solid #F5F8F9;
+        margin-top: 50px;
+
+        @include tablet{
+            margin-top: 3px;
+        }
+
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 85px;
+        }
+        
+        a{
+            color: $blue;
+        }
+
+        .copyright{
+            color: #484848;
+            font-size: 13px;
+
+            @include tablet{
+                font-size: 12px;
+            }
+        }
+
+        .developer{
+            font-size: 13px;
+            color: $font-grey;
+
+            @include tablet{
+                font-size: 12px;
+            }
+        }
+
+        .soc-block{
+            padding-right: 0;
+            display: flex;
+
+            a:nth-last-child(1) .soc-block__element{
+                margin-right: 0;
+            }
+
+            &__element{
+                margin: 0px 12px;
+
+                @include tablet{
+                    width: 24px;
+                    height: 24px;
+                    mask-size: contain;
+                    margin: 0px 9px;
+                }
+            }
+        }
+    }
+
+    &-contacts{
+        margin-top: 30px;
+        @include tablet{
+            margin-top: 10px;
+        }
+
+        .tel{
+        
+            margin-bottom: 12px;
+            @include tablet{
+                margin-bottom: 5px;
+            }
+        }
+
+        .schedule{
+            font-size: 13px;
+            color: $font-grey;
+        }
+
+        &__address{
+            line-height: 22px;
+            margin-bottom: 6px;
+            // font-family: 'light'
+            max-width: 250px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            @include tablet{
+                line-height: 18px;
+                margin-bottom: 3px;
+            }
+        }
+
+        &__email{
+            color: $font-grey;
+            margin-bottom: 30px;
+
+            a{
+                color: $blue;
+            }
+        }
+    }
+}

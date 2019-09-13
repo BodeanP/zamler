@@ -1,0 +1,96 @@
+@import 'variables.scss';
+@import 'pagination.scss';
+@import 'catalog-article.scss';
+@import '_mixins.scss';
+
+
+.catalog-outer {
+    background-color: $green-light;
+    padding-top: 45px;
+    padding-bottom: 88px;
+
+    @include tablet{
+        padding-top: 60px;
+    }
+
+    h1 {
+        margin-bottom: 30px;
+        font-size: 30px; 
+        // font-family: 'medium';
+        @include tablet{
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.catalog-wrapper {
+    display: grid;
+    grid-template-columns: 295px auto;
+    column-gap: 12px;
+
+    @include tablet{
+        grid-template-columns: 180px auto;
+        column-gap: 5px;
+    }
+}
+
+.catalog-total {
+    font-size: 18px; @include tablet{font-size: 14px}
+    color: #949FAF;
+}
+
+.catalog-main {
+
+    &__head-row {
+        margin-bottom: 18px;
+
+        @include tablet{
+            margin-bottom: 45px; //после добавления селекта поправить нижний отступ
+        }
+
+        p{
+            color: #949FAF;
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        .button {
+            min-height: 35px;
+            padding: 8px 0px;
+            width: auto;
+            min-width: 110px;
+            margin-right: 5px;
+        }
+    }
+
+    .catalog-product-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        margin-bottom: 12px;
+
+        @include tablet{
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.links-list {
+    padding-left: 60px;
+
+    @include tablet{
+        padding-left: 35px;
+    }
+
+    a {
+        font-size: 26px; @include tablet{font-size: 14px;}
+        font-weight: 100;
+        color: #949FAF;
+        border-bottom: 1px solid rgba(112, 112, 112, .1);
+
+        &:not(:nth-last-child(1)) {
+            margin-right: 40px;
+        }
+    }
+}

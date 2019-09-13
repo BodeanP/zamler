@@ -1,0 +1,10 @@
+.catalog-main .section-head {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1399px) {
+  .catalog-main .section-head {
+    margin-bottom: 25px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
