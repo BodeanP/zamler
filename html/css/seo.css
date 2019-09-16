@@ -42,6 +42,13 @@
   }
 }
 
+@media (max-width: 759px) {
+  .seo__description-cols ul {
+    -webkit-column-count: 1;
+            column-count: 1;
+  }
+}
+
 .seo__description-cols ul li {
   font-size: 16px;
   line-height: 26px;

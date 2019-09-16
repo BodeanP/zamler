@@ -33,4 +33,9 @@ img{
     @include tablet{
         width: $container-tablet-width;
     }
+
+    @include mobile{
+        width: 100%;
+        padding: 0px 15px;
+    }
 }

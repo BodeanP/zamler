@@ -26,6 +26,10 @@
             grid-template-columns: 295px 255px 177px;
             gap: 10px;
         }
+
+        @include mobile{
+            grid-template-columns: 100%
+        }
     }
 
     &__slider{
@@ -47,6 +51,10 @@
 
         @include tablet{
             padding: 10px 25px;
+        }
+
+        @include mobile{
+            grid-column: 1;
         }
 
         .catalog-item__info__status{
@@ -213,6 +221,10 @@
             margin-bottom: 40px;
         }
 
+        @include mobile{
+            grid-column: 1;
+        }
+
         .description__tabs{
             display: flex;
             justify-content: space-between;
@@ -304,6 +316,10 @@
 
     .reviews, .add-feedback-block{
         grid-column: 1 / span 3;
+
+        @include mobile{
+            grid-column: 1;
+        }
     }
 
     .delivery-description{

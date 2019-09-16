@@ -1,59 +1,94 @@
 @import 'variables.scss';
 @import '_mixins.scss';
 
-.personal{
+.personal {
     padding-top: 55px;
 
-    h1{
-        font-size: 30px; @include tablet{font-size: 22px;}
+    @include tablet {
+        padding-top: 40px;
+    }
+
+    .catalog-wrapper {
+        @include tablet {
+            column-gap: 10px;
+        }
+    }
+
+    h1 {
+        font-size: 30px;
         // font-family: 'medium'
         margin-bottom: 17px;
+
+        @include tablet {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
     }
 
-    .catalog-main__head-row{
+    .catalog-main__head-row {
         margin-bottom: 35px;
     }
-    
-    .filter{
+
+    .filter {
         padding-top: 17px;
+
+        @include tablet {
+            padding-top: 0px;
+        }
     }
 
-    .filter .category-list__one-categoty .category__head{
+    .filter .category-list__one-categoty .category__head {
         margin-bottom: 12px;
+
+        @include tablet {
+            margin-bottom: 14px;
+        }
     }
 }
 
 
-.orders-list__head{
+.orders-list__head {
     background-color: #fff;
     color: #949FAF;
     border-bottom: 1px solid #DEE9F4;
 
-    tr{
-        grid-template-areas: 'preview name quantity price price-total close';
-            grid-template-columns: 155px 240px 75px 130px 200px auto;
-            display: grid;
+    @include tablet {
+        font-size: 14px;
     }
 
-    td{
+    tr {
+        grid-template-areas: 'preview name quantity price price-total close';
+        grid-template-columns: 155px 240px 75px 130px 200px auto;
+        display: grid;
+
+        @include tablet {
+            grid-template-columns: 110px 115px 60px 120px 105px auto;
+        }
+    }
+
+    td {
         min-height: 60px;
         display: flex;
         align-items: center;
 
-        &:nth-child(1){
+        &:nth-child(1) {
             padding-left: 35px;
         }
     }
 }
 
-.orders-list__bottom{
+.orders-list__bottom {
     min-height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #fff;
 
-    span{
+    @include tablet{
+        font-size: 14px;
+    }
+
+    span {
         cursor: pointer;
         color: #949FAF;
     }
@@ -78,22 +113,38 @@
         cursor: pointer;
         border-bottom: 1px solid #DEE9F4;
 
-        &.active{
-            .accordion-arrow{
+        &.active {
+            .accordion-arrow {
                 transform: unset;
             }
         }
 
+        .order-date{
+            margin-left: auto;
+            font-size: 14px;
+        }
+
         .order-status {
             margin-left: auto;
-            font-size: 16px; @include tablet{font-size: 14px}
+            font-size: 16px;
+
+            @include tablet {
+                font-size: 16px;
+                margin-right: 25px;
+            }
+
             margin-right: 65px;
         }
 
-        .order-name{
-            font-size: 18px; @include tablet{font-size: 14px}
+        .order-name {
+            font-size: 18px;
+
+            @include tablet {
+                font-size: 12px
+            }
+
             // font-family: 'medium';
-           
+
         }
     }
 
@@ -105,7 +156,7 @@
         max-height: unset;
         margin-bottom: 0;
 
-        
+
         .order-item {
             grid-template-areas: 'preview name quantity price price-total close';
             grid-template-columns: 155px 240px 75px 130px 210px auto;
@@ -115,20 +166,32 @@
             margin-top: -1px;
             margin-bottom: 0;
 
+            @include tablet {
+                grid-template-columns: 110px 115px 60px 120px 105px auto;
+                padding: 20px 0px;
+                min-height: 139px;
+            }
+
             &>div {
                 display: flex;
                 align-items: center;
                 padding: 0;
-                font-size: 16px; @include tablet{font-size: 14px}
+                font-size: 16px;
+
+                @include tablet {
+                    // font-size: 14px
+                }
             }
 
-            &__preview{
+            &__preview {
                 padding: 0px 25px !important;
+                height: 100%;
+                min-height: 100%;
             }
 
             &__quantity {
                 grid-area: quantity;
-                color: rgba(51,51,51,.3)
+                color: rgba(51, 51, 51, .3)
             }
 
             &__total-price {
@@ -137,7 +200,7 @@
                 // font-family: 'medium';
             }
 
-            &__price{
+            &__price {
                 font-size: 14px;
                 justify-content: center;
                 flex-direction: column;
@@ -164,23 +227,42 @@
     border-bottom: 1px solid #DEE9F4;
     padding: 20px 35px;
 
-    .proceed-order{
-        display: flex;
-        align-items: center;
+    @include tablet{
+        padding: 22px 38px;
+        grid-template-columns: 265px 230px auto;
+        padding-right: 25px;
     }
 
-    .bonus-code{
+    .proceed-order {
+        display: flex;
+        // align-items: center;
+
+        @include tablet{
+            padding: 5px 0px;
+        }
+
+        .button i{
+            width: 30px;
+        }
+    }
+
+    .bonus-code {
         display: flex;
         align-items: center;
         margin-right: 15px;
 
-        .input-group{
+        @include tablet{
+            display: none;
+        }
+
+        .input-group {
             margin-bottom: 0;
         }
-        .input-group__input{
+
+        .input-group__input {
             display: flex;
 
-            input{
+            input {
                 flex: 0 0 210px;
                 margin-right: 15px;
             }
@@ -194,17 +276,32 @@
         }
 
         .total-head {
-            font-size: 16px; @include tablet{font-size: 14px}
+            font-size: 16px;
+
+            @include tablet{
+                margin-bottom: 3px;
+            }
         }
 
         .total-price {
-            font-size: 30px; @include tablet{font-size: 22px;}
+            font-size: 30px;
             // font-family: 'medium';
+
+            @include tablet{
+                display: inline-block;
+            }
         }
 
         .total-description {
             font-size: 12px;
             color: #969D97;
+
+            @include tablet{
+                display: inline-block;
+                vertical-align: bottom;
+                max-width: 100px;
+                padding-left: 25px;
+            }
         }
     }
 }

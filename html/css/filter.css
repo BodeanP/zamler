@@ -8,6 +8,12 @@
   }
 }
 
+@media (max-width: 759px) {
+  .filter {
+    display: none;
+  }
+}
+
 .filter__head {
   font-size: 18px;
   margin-bottom: 32px;
@@ -119,7 +125,7 @@
   }
 }
 
-.filter .category-list__one-categoty .category__head.active {
+.filter .category-list__one-categoty .category__head.active, .filter .category-list__one-categoty .category__head:hover {
   color: #1876FB;
 }
 

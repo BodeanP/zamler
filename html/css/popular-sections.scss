@@ -16,6 +16,10 @@
         @include tablet{
             gap: 10px;
         }
+
+        @include mobile{
+            grid-template-columns: 100%;
+        }
     }
 
     .one-popular-section {
@@ -95,7 +99,11 @@
         }
 
         &_big {
-            grid-column: 1 / span 2
+            grid-column: 1 / span 2;
+
+            @include mobile{
+                grid-column: 1;
+            }
         }
 
         &__img {

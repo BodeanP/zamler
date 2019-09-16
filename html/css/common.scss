@@ -141,6 +141,10 @@ main {
 
         &_radio {
             margin-bottom: 24px !important;
+
+            @include tablet{
+                margin-bottom: 18px !important;
+            }
         }
     }
 
@@ -193,7 +197,7 @@ main {
     cursor: pointer;
 
     @include tablet{
-        font-size: 12px;
+        font-size: 14px;
         min-height: 30px;
         padding: 8px 0px;
     }
@@ -230,6 +234,10 @@ main {
     }
 
     &_arrow {
+        span{
+            max-width: 150px;
+        }
+
         i {
             display: inline-block;
             margin-left: 10px;
@@ -305,9 +313,16 @@ main {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        font-size: 16px; @include tablet{font-size: 14px}
+        font-size: 16px; 
         background-color: #F5F8F9;
         cursor: pointer;
+
+        @include tablet{
+            font-size: 14px;
+            width: 23px;
+            height: 23px;
+            flex: 1 0 23px;
+        }
 
         &_minus,
         &_plus {
@@ -351,6 +366,13 @@ main {
         text-align: center;
         max-width: 35px;
         // font-family: 'pt-sans'
+
+        @include tablet{
+            flex: 1 0 26px;
+            width: 26px;
+            max-width: 26px;
+            max-height: 23px;
+        }
     }
 }
 
@@ -395,6 +417,12 @@ main {
         row-gap: 10px;
         margin-bottom: 30px;
 
+        @include tablet{
+            grid-template-columns: 75px 75px auto;
+            row-gap: 0;
+            margin-bottom: 23px;
+        }
+
         &__preview {
             grid-area: preview;
             max-height: 90px;
@@ -402,6 +430,10 @@ main {
             align-items: center;
             justify-content: center;
             padding-right: 10px;
+
+            @include tablet{
+                max-height: 62px;
+            }
 
             img {
                 object-fit: scale-down;
@@ -415,16 +447,22 @@ main {
 
             padding-right: 40px;
 
+            @include tablet{
+                margin-bottom: 10px;
+            }
+
 
             a {
-                font-size: 16px; @include tablet{font-size: 14px}
-                overflow: hidden;
-                text-overflow: ellipsis;
-                display: -webkit-box;
-                -webkit-line-clamp: 2;
-                -webkit-box-orient: vertical;
+                font-size: 16px; 
+                @include row-dots(2);
                 line-height: 20px;
                 // font-family: 'medium'
+
+                @include tablet{
+                    font-size: 12px;
+                    line-height: 14px;
+                    @include row-dots(4);
+                }
             }
         }
 
@@ -440,8 +478,13 @@ main {
             align-items: center;
             // justify-content: center;
             padding-left: 16px;
-            font-size: 18px; @include tablet{font-size: 14px}
+            font-size: 18px; 
             // font-family: 'medium'
+
+            @include tablet{
+                font-size: 12px;
+                padding-left: 10px;
+            }
         }
 
         &__del {
@@ -454,12 +497,21 @@ main {
                 filter: opacity(0.7);
             }
         }
+
+        .close{
+            width: 6px;
+            height: 6px;
+        }
     }
 }
 
 .grid-cols-4 {
     display: grid;
     grid-template-columns: repeat(4, 1fr) !important;
+
+    @include mobile{
+        grid-template-columns: 100% !important;
+    }
 }
 
 .all-link {
@@ -601,6 +653,12 @@ main {
 .preamble {
     font-size: 22px;
     line-height: 36px;
+    margin-bottom: 30px;
+
+    @include tablet{
+        font-size: 16px;
+        line-height: 22px;
+    }
 }
 
 .selection {
@@ -616,9 +674,11 @@ main {
     }
 
     &__head {
-        font-size: 18px; @include tablet{font-size: 14px}
+        font-size: 18px; 
         // font-family: 'medium';
         margin-bottom: 5px;
+
+        @include tablet{font-size: 16px}
     }
 
     &_blue {
@@ -655,6 +715,23 @@ main {
         top: 0;
         transform: translateX(-15px);
     }
+
+    @include tablet{
+        margin: 35px 0px;
+        padding: 10px 22px;
+        width: 100%;
+
+        &::before{
+            transform: translateX(-4px);
+            width: 2px;
+        }
+    }
+}
+
+.table-outer {
+    .section-title{
+        font-size: 19px;
+    }
 }
 
 .pre {
@@ -663,13 +740,23 @@ main {
     padding: 53px 0px;
     margin-bottom: 35px;
 
+    @include tablet{
+        padding: 30px 0px;
+        margin-bottom: 22px;
+    }
+
     &-in {
-        font-size: 30px; @include tablet{font-size: 22px;}
+        font-size: 30px; 
         // font-family: 'medium';
         align-self: center;
         justify-self: center;
         max-width: 510px;
         margin: 0 auto;
+        @include tablet{
+            font-size: 22px;
+            max-width: 360px;
+        }
+       
     }
 }
 
@@ -677,11 +764,17 @@ main {
     width: 100%;
 
     &_stripped {
-        font-size: 16px; @include tablet{font-size: 14px}
+        font-size: 16px;
         // font-family: 'medium';
         border-collapse: collapse;
         margin-top: 30px;
         margin-bottom: 50px;
+
+        @include tablet{
+            font-size: 12px;
+            margin-top: 22px;
+            margin-bottom: 25px;
+        }
 
         tr {
             &:nth-child(odd) {
@@ -696,6 +789,10 @@ main {
         td {
             min-height: 70px;
             padding: 25px 30px;
+
+            @include tablet{
+                padding: 15px 22px;
+            }
         }
     }
 }
@@ -718,6 +815,11 @@ main {
     line-height: 50px;
     padding-top: 5px;
 
+    @include tablet{
+        font-size: 12px;
+        line-height: 32px;
+    }
+
     li {
         // list-style-image: url('../img/check-circle.svg');
 
@@ -725,6 +827,11 @@ main {
         padding: 0 0px 0px 50px;
         list-style: none;
         margin: 0;
+
+        @include tablet{
+            background-size: 19px;
+            padding: 0 0px 0px 32px;
+        }
     }
 }
 
@@ -733,8 +840,17 @@ main {
     line-height: 50px;
     padding-top: 5px;
 
+    @include tablet{
+        font-size: 12px;
+        line-height: 25px;
+    }
+
     li {
         list-style: decimal;
+
+        @include tablet{
+            text-indent: 12px;
+        }
     }
 }
 
@@ -748,17 +864,31 @@ main {
     background-color: #fff;
     padding: 38px 50px;
 
+    @include tablet{
+        padding: 24px 35px;
+    }
+
     .section-head {
         font-size: 22px;
         // font-family: 'medium';
         margin-bottom: 0 !important;
+
+        @include tablet{
+            font-size: 16px;
+        }
     }
 
     .button{
-        font-size: 18px; @include tablet{font-size: 14px}
+        font-size: 18px; 
         // font-family: 'medium';
         padding: 15px 0px;
         max-width: 190px; 
+
+        @include tablet{
+            font-size: 11px;
+            max-width: 130px;
+            padding: 10px 0px;
+        }
     }
 }
 

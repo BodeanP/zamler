@@ -10,6 +10,10 @@
         @include tablet {
             column-gap: 10px;
         }
+
+        @include mobile{
+            grid-template-columns: 100%;
+        }
     }
     &__item{
         position: relative;
@@ -19,6 +23,10 @@
 
         @include tablet{
             min-height: 165px;
+        }
+
+        @include mobile{
+            flex-direction: column-reverse;
         }
         
 
@@ -53,6 +61,10 @@
             padding: 20px 10px 25px 15px;
         }
 
+        @include mobile{
+            align-items: center;
+        }
+
         &-title{
             font-size: 30px; 
             // font-family: 'medium'
@@ -79,9 +91,18 @@
             max-width: 175px;
         }
 
+        @include mobile{
+            align-self: center;
+        }
+
         img{
             position: absolute;
-            transform: translateY(-30px)
+            transform: translateY(-30px);
+
+            @include mobile{
+                position: relative;
+                transform: unset;
+            }
         }
     }
 

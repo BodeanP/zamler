@@ -3,9 +3,14 @@
 
 .filter {
     padding-top: 10px;
+    
 
     @include tablet{
         padding-top: 5px;
+    }
+
+    @include mobile{
+        display: none;
     }
 
     &__head {
@@ -104,7 +109,7 @@
 
                 @include tablet{font-size: 14px}
 
-                &.active {
+                &.active, &:hover {
                     color: $blue;
                 }
             }

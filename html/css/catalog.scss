@@ -33,6 +33,10 @@
         grid-template-columns: 180px auto;
         column-gap: 5px;
     }
+
+    @include mobile{
+        grid-template-columns: 100%;
+    }
 }
 
 .catalog-total {
@@ -61,6 +65,16 @@
             width: auto;
             min-width: 110px;
             margin-right: 5px;
+            margin-bottom: 5px;
+            // font-family: 'proximanova';
+
+            @include tablet{
+                font-size: 12px;
+                min-width: 65px;
+                min-height: 20px;
+                padding: 5px 0px;
+                margin-right: 10px;
+            }
         }
     }
 
@@ -72,6 +86,10 @@
 
         @include tablet{
             margin-bottom: 15px;
+        }
+
+        @include mobile{
+            grid-template-columns: 100%;
         }
     }
 }

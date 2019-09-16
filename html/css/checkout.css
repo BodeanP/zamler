@@ -28,15 +28,22 @@
   display: block;
 }
 
+@media (max-width: 1399px) {
+  .checkout-outer .checkout-fields__head {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+}
+
 .checkout-outer .checkout-fields .input-group_street {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .checkout-outer .checkout-fields .input-group_street .input-group__label {
@@ -45,6 +52,7 @@
 
 .checkout-outer .checkout-fields .input-group__input_street {
   width: 190px;
+  margin-right: 14px;
 }
 
 .checkout-outer .checkout-fields .input-group__input_house {
@@ -55,17 +63,43 @@
   margin-bottom: 33px;
 }
 
+@media (max-width: 1399px) {
+  .checkout-outer .input-group {
+    margin-bottom: 29px;
+  }
+}
+
 .checkout-outer .input-group__label {
   margin-bottom: 16.5px;
+}
+
+@media (max-width: 1399px) {
+  .checkout-outer .input-group input, .checkout-outer .input-group textarea {
+    padding: 15px;
+    font-size: 14px;
+  }
 }
 
 .checkout-outer .call-back {
   margin-bottom: 37px;
 }
 
+@media (max-width: 1399px) {
+  .checkout-outer .call-back {
+    margin-bottom: 30px;
+  }
+}
+
 .checkout-outer .call-back .button {
   min-height: 25px;
   padding: 11px 0px;
+}
+
+@media (max-width: 1399px) {
+  .checkout-outer .call-back .button {
+    font-size: 14px;
+    max-width: 140px;
+  }
 }
 
 .checkout-outer .call-back > span {
@@ -76,6 +110,7 @@
 @media (max-width: 1399px) {
   .checkout-outer .call-back > span {
     font-size: 14px;
+    margin-right: 2px;
   }
 }
 
@@ -92,8 +127,11 @@
 
 @media (max-width: 1399px) {
   .order-wrapper {
-    -ms-grid-columns: 440px 290px;
-        grid-template-columns: 440px 290px;
+    -ms-grid-columns: 445px 295px;
+        grid-template-columns: 445px 295px;
+    padding-top: 35px;
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
   }
 }
 
@@ -103,6 +141,12 @@
 
 .checkout-main {
   padding: 42px 37px;
+}
+
+@media (max-width: 1399px) {
+  .checkout-main {
+    padding: 30px 38px 30px 28px;
+  }
 }
 
 .checkout-aside {
@@ -118,6 +162,12 @@
   padding: 37px 17px 0px 37px;
 }
 
+@media (max-width: 1399px) {
+  .checkout-aside-in {
+    padding: 20px 0px 20px 30px;
+  }
+}
+
 .checkout-aside__head {
   font-size: 16px;
   margin-bottom: 35px;
@@ -126,7 +176,9 @@
 
 @media (max-width: 1399px) {
   .checkout-aside__head {
-    font-size: 14px;
+    font-size: 15px;
+    margin-bottom: 23px;
+    padding-left: 5px;
   }
 }
 
@@ -141,7 +193,8 @@
 
 @media (max-width: 1399px) {
   .checkout-aside__total .total-head {
-    font-size: 14px;
+    font-size: 9px;
+    margin-bottom: 2px;
   }
 }
 
@@ -153,7 +206,8 @@
 
 @media (max-width: 1399px) {
   .checkout-aside__total .total-price {
-    font-size: 22px;
+    font-size: 19px;
+    margin-right: 12px;
   }
 }
 
@@ -165,9 +219,22 @@
   vertical-align: middle;
 }
 
+@media (max-width: 1399px) {
+  .checkout-aside__total .total-description {
+    max-width: unset;
+  }
+}
+
 .checkout-aside__total .checkout-aside-in {
-  padding-top: 25px;
+  padding-top: 23px;
   padding-bottom: 20px;
+  padding-left: 43px;
+}
+
+@media (max-width: 1399px) {
+  .checkout-aside .bonus-code {
+    padding-right: 25px;
+  }
 }
 
 .checkout-aside .bonus-code .input-group__input {
@@ -187,11 +254,29 @@
   max-width: 190px;
 }
 
+@media (max-width: 1399px) {
+  .checkout-aside .bonus-code .input-group__input input {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 150px;
+            flex: 1 0 150px;
+    max-width: 150px;
+  }
+}
+
 .checkout-aside .bonus-code .input-group__input .button {
   max-width: 115px;
 }
 
 .input-group__radio:not(:nth-last-child(1)), .input-group__checkbox:not(:nth-last-child(1)) {
   margin-right: 37px;
+}
+
+@media (max-width: 1399px) {
+  #order-proceed {
+    max-width: 290px;
+    padding: 16px 0px;
+    margin-top: 3px;
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=checkout.css.map */

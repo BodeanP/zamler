@@ -1,4 +1,10 @@
 @charset "UTF-8";
+@media (max-width: 759px) {
+  .header {
+    display: none;
+  }
+}
+
 .menu {
   background-color: #1876FB;
   position: relative;

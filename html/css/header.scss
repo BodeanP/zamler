@@ -1,7 +1,12 @@
 @import 'variables.scss';
 @import '_mixins.scss';
 
-.header {}
+.header {
+
+    @include mobile{
+        display: none;
+    }
+}
 
 .menu {
     background-color: $blue;

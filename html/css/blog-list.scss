@@ -4,11 +4,19 @@
 .catalog-outer.blog,
 .catalog-outer.brands {
     padding-top: 60px;
+
+    @include tablet{
+        padding-top: 40px;
+    }
 }
 
 .blog-writer{
 
     margin-bottom: 80px;
+
+    @include tablet{
+        margin-bottom: 40px;
+    }
 
     &__avatar{
         display: inline-block;
@@ -18,23 +26,31 @@
         overflow: hidden;
         clear: both;
         margin-bottom: 18px;
+
+        @include tablet{
+            margin-bottom: 5px;
+        }
     }
 
     &__name{
         // font-family: 'futura';
         font-size: 20px;
         // font-weight: 'demi';
-        margin-bottom: 6px;
+        margin-bottom: 7px;
     }
 
     &__date{
         // font-family: 'proximanova';
-        font-size: 14x;
+        font-size: 14px;
     }
 }
 
 .blog-page{
     padding-top: 0 !important;
+
+    @include tablet{
+        padding-top: 10px !important;
+    }
 }
 
 .blog {
@@ -43,27 +59,51 @@
         font-size: 40px;
         // font-family: 'medium';
         margin-bottom: 17px;
+
+        @include tablet{
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
     }
 
     section, article{
         margin-bottom: 25px;
+
+        @include tablet{
+            margin-bottom: 10px;
+        }
     }
     
     .filter {
         padding-top: 50px;
+
+        @include tablet{
+            display: none;
+            padding-top: 42px;
+        }
     }
 
     &-schedule{
         max-width: 160px;
         // font-family: 'futuraPT';
-        font-size: 18px; @include tablet{font-size: 14px}
+        font-size: 18px; 
         // font-weight: 'book';
+
+        @include tablet{
+            font-size: 14px;
+            
+        }
 
         &__head{
             font-size: 22px;
             // font-family: 'futuraPT';
             // font-weight: 'demi';
             margin-bottom: 20px;
+
+            @include tablet{
+                font-size: 18px;
+                margin-bottom: 16px;
+            }
         }
 
         a{
@@ -72,6 +112,11 @@
             text-decoration-color: #E0E0E0;
             line-height: 24px;
             @include row-dots(2);
+
+            @include tablet{
+                line-height: 18px;
+                margin-bottom: 18px;
+            }
 
             &:hover{
                 color: $blue;
@@ -84,6 +129,20 @@
         padding: 38px 50px;
         transform: translateY(-140px);
         margin-bottom: -125px !important;
+
+        @include tablet{
+            padding: 30px 32px;
+            transform: translateY(-65px);
+            margin-bottom: -55px !important;
+        }
+
+        h1{
+            @include tablet{
+                font-size: 28px;
+                line-height: 16px;
+                margin-bottom: 22px;
+            }
+        }
     }
 
     &-background{
@@ -97,10 +156,20 @@
         font-size: 19px;
         line-height: 30px;
         margin-bottom: 30px;
+
+        @include tablet{
+            font-size: 12px;
+            line-height: 16px;
+            margin-bottom: 16px;
+        }
     }
 
     .catalog-main__head-row {
         margin-bottom: 30px;
+
+        @include tablet{
+            margin-bottom: 30px;
+        }
     }
 
     .section-head {
@@ -123,6 +192,11 @@
     .catalog-wrapper.aside {
         grid-template-columns: 245px auto;
         column-gap: 12px;
+
+        @include tablet{
+            grid-template-columns: 100%;
+            column-gap: 3px;
+        }
     }
 
     .blog-list {
@@ -133,6 +207,10 @@
 
         @include tablet{
             margin-bottom: 45px;
+        }
+
+        @include mobile{
+            grid-template-columns: 100%;
         }
 
         &_simple {
@@ -229,12 +307,19 @@
 
                     @include tablet{
                         padding: 0px 22px 22px 22px;
+                        margin-top: 25px;
                     }
                 }
 
                 .title {
-                    font-size: 26px; @include tablet{font-size: 14px;}
+                    font-size: 26px;
                     // font-family: 'medium';
+                    line-height: 18px;
+
+                    @include tablet{
+                        font-size: 14px;
+                        margin-bottom: 25px;
+                    }
                 }
 
                 img {
@@ -250,6 +335,10 @@
 
                 .preview-pic {
                     flex: 0 0 390px;
+
+                    @include tablet{
+                        flex: 0 0 225px;
+                    }
                 }
             }
         }
@@ -294,15 +383,29 @@
         max-width: 580px;
         @include clearfix;
 
+        @include tablet{
+            padding: 40px 42px;
+            max-width: 455px;
+        }
+
         .description__head{
-            font-size: 30px; @include tablet{font-size: 22px;}
+            font-size: 30px; 
             margin-bottom: 27px;
+
+            @include tablet{
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
         }
 
         .description__text{
             font-weight: 100;
-            font-size: 18px; @include tablet{font-size: 14px}
+            font-size: 18px; 
             line-height: 26px;
+            @include tablet{
+                font-size: 14px;
+                line-height: 22px;
+            }
         }
     }
 
@@ -324,9 +427,14 @@
 }
 
 .post-section-headline{
-    font-size: 30px; @include tablet{font-size: 22px;}
+    font-size: 30px; 
     // font-family: 'medium';
     margin-bottom: 12px;
+
+    @include tablet{
+        font-size: 22px;
+        margin-bottom: 14px;
+    }
 }
 
 .recomended-articles{
@@ -334,15 +442,39 @@
     background-color: #fff;
     font-size: 19px;
 
+    @include tablet{
+        font-size: 12px;
+        line-height: 25px;
+        padding: 24px 32px;
+    }
+
     a{
         color: $blue;
-        line-height: 40px;
+        line-height: 15px;
         border-bottom: 1px solid $blue;
+        display: inline-block;
+
+        @include tablet{
+            line-height: 15px;
+        }
     }
 
     .section-head{
         font-size: 22px;
         // font-family: 'medium';
         margin-bottom: 7px;
+
+        @include tablet{
+            font-size: 16px;
+            margin-bottom: 2px;
+        }
     }
+}
+
+.blog-page .catalog-wrapper .filter{
+    display: block;
+}
+
+.blog-page .catalog-wrapper.aside{
+    grid-template-columns: 120px auto;
 }
