@@ -7,6 +7,7 @@
 
     @include mobile{
         flex-direction: column;
+        @include full-width;
     }
 
     &__head{
@@ -17,6 +18,10 @@
         @include tablet{
             font-size: 14px;
             margin-bottom: 12px;
+        }
+
+        @include mobile{
+            margin-bottom: 15px;
         }
     }
 
@@ -63,6 +68,10 @@
             padding: 25px;
             flex: 1 1 100%;
         }
+
+        @include mobile{
+            padding: 45px 15px 55px;
+        }
     }
 
     &__right{
@@ -74,6 +83,16 @@
 
         @include tablet{
             padding: 25px;
+        }
+
+        @include mobile{
+            padding: 40px 15px;
+        }
+
+        .button{
+            @include mobile{
+                max-width: 100% !important;
+            }
         }
 
         .input-area{
@@ -88,14 +107,16 @@
                 color: #fff;
                 display: inline-block;
                 margin-right: 13px;
+
+                @include mobile{
+                    margin-bottom: 15px;
+                }
     
                 &::placeholder{
                     color: #fff;
                 }
             }
         }
-
-        
     }
 
     .button{

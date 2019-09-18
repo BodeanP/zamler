@@ -3,6 +3,10 @@
 
 .footer{
     padding-top: 90px;
+
+    @include mobile{
+        display: none;
+    }
     
     &__main{
         display: flex;

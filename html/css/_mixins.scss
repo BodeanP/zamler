@@ -96,3 +96,16 @@
 		@content;
 	}
 }
+
+@mixin full-width {
+	width: calc(100vw - 10px);
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+
+	@media screen and (pointer: coarse) {
+		width: 100vw;
+	}
+}

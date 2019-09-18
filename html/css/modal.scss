@@ -40,11 +40,22 @@
         .order-list {
             width: calc(100% + 35px);
 
+            @include mobile{
+                width: 100%;
+            }
+
             .order-item {
                 grid-template-columns: 77px 177px 140px 50px;
                 grid-template-rows: 1fr;
                 grid-template-areas: 'preview name price close';
                 row-gap: 0;
+
+                @include mobile{
+                    grid-template-columns: 1fr 1fr 20px;
+                    grid-template-areas:
+                    'preview name close'
+                    'price price price';
+                }
 
                 &>div {
                     display: flex;
@@ -80,6 +91,8 @@
                     align-self: center;
                     justify-self: center;
                     transform: translateY(-5px);
+                    padding: 10px;
+                    background-size: initial;
                 }
             }
         }

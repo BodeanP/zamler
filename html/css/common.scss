@@ -439,7 +439,8 @@ main {
     .order-item {
         display: grid;
         position: relative;
-        grid-template-areas: 'preview name name'
+        grid-template-areas: 
+            'preview name name'
             'preview counter price';
         grid-template-columns: 117px 100px auto;
         row-gap: 10px;
@@ -449,6 +450,16 @@ main {
             grid-template-columns: 75px 75px auto;
             row-gap: 0;
             margin-bottom: 23px;
+        }
+
+        @include mobile{
+            padding: 28px 0px;
+            margin-bottom: 10px;
+            grid-template-areas:
+            'preview name name'
+            'counter counter price';
+            row-gap: 12px;
+            grid-template-columns: 87px 65px auto;
         }
 
         &__preview {
@@ -461,6 +472,10 @@ main {
 
             @include tablet{
                 max-height: 62px;
+            }
+
+            @include mobile{
+                max-height: 60px;
             }
 
             img {
@@ -513,6 +528,12 @@ main {
                 font-size: 12px;
                 padding-left: 10px;
             }
+
+            @include mobile{
+                padding: 0px 15px;
+                text-align: right;
+                justify-content: flex-end;
+            }
         }
 
         &__del {
@@ -529,6 +550,12 @@ main {
         .close{
             width: 6px;
             height: 6px;
+
+            @include mobile{
+                width: 15px;
+                height: 15px;
+                background-size: cover;
+            }
         }
     }
 }

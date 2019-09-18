@@ -4,9 +4,23 @@
 .checkout-outer{
     background-color: $green-light;
 
+    @include mobile{
+        // background-color: #fff;
+    }
+
+    .container{
+        @include mobile{
+            padding: 0;
+        }
+    }
+
     h1{
         // font-family: 'medium'
         margin-bottom: 22px;
+
+        @include mobile{
+            margin-bottom: 15px;
+        }
     }
 
     .checkout-fields-outer{
@@ -15,7 +29,11 @@
         column-gap: 67px;
 
         @include tablet{
-            grid-template-columns: 100%
+            grid-template-columns: 100%;
+        }
+
+        @include mobile{
+            grid-template-columns: 100%;
         }
     }
     .checkout-fields{
@@ -60,6 +78,14 @@
             margin-bottom: 29px;
         }
 
+        @include mobile{
+            margin-bottom: 35px;
+
+            &:nth-last-child(1){
+                margin-bottom: 28px;
+            }
+        }
+
         &__label{
             margin-bottom: 16.5px;
         }
@@ -80,6 +106,10 @@
         @include tablet{
             margin-bottom: 30px;
         }
+
+        @include mobile{
+            margin-bottom: 35px;
+        }
     
         .button{
             min-height: 25px;
@@ -88,6 +118,10 @@
             @include tablet{
                 font-size: 14px;
                 max-width: 140px;
+            }
+
+            @include mobile{
+                margin-top: 10px;
             }
             
         }
@@ -115,10 +149,22 @@
         padding-top: 35px;
         column-gap: 10px;
     }
+
+    @include mobile{
+        grid-template-columns: 100%;
+        padding-top: 10px;
+        row-gap: 15px;
+    }
 }
 
 .checkout-main, .checkout-aside{
     background-color: #fff;
+
+    @include mobile{
+        // padding: 0px 15px;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
 }
 
 
@@ -127,6 +173,11 @@
 
     @include tablet{
         padding: 30px 38px 30px 28px;
+    }
+
+    @include mobile{
+        padding: 12px 0px;
+        padding-bottom: 20px;
     }
 }
 
@@ -142,6 +193,10 @@
         @include tablet{
             padding: 20px 0px 20px 30px;
         }
+
+        @include mobile{
+            padding: 25px 0px 0px 0px;
+        }
     }
 
     &__head{
@@ -154,6 +209,11 @@
             font-size: 15px;
             margin-bottom: 23px;
             padding-left: 5px;
+        }
+
+        @include mobile{
+            font-size: 22px;
+            margin-bottom: 10px;
         }
     }
 
@@ -209,6 +269,10 @@
             display: flex;
             justify-content: flex-start;
 
+            @include mobile{
+                flex-direction: column;
+            }
+
             input{
                 margin-right: 15px;
                 flex: 1 0 190px;
@@ -217,6 +281,10 @@
                 @include tablet{
                     flex: 1 0 150px;
                     max-width: 150px;
+                }
+
+                @include mobile{
+                    flex: unset;
                 }
             }
 

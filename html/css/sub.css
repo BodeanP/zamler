@@ -12,6 +12,18 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: calc(100vw - 10px);
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+}
+
+@media screen and (max-width: 759px) and (pointer: coarse) {
+  .sub {
+    width: 100vw;
   }
 }
 
@@ -24,6 +36,12 @@
   .sub__head {
     font-size: 14px;
     margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 759px) {
+  .sub__head {
+    margin-bottom: 15px;
   }
 }
 
@@ -79,6 +97,12 @@
   }
 }
 
+@media (max-width: 759px) {
+  .sub__left {
+    padding: 45px 15px 55px;
+  }
+}
+
 .sub__right {
   background-color: #1876FB;
   color: #fff;
@@ -90,6 +114,18 @@
 @media (max-width: 1399px) and (min-width: 760px) {
   .sub__right {
     padding: 25px;
+  }
+}
+
+@media (max-width: 759px) {
+  .sub__right {
+    padding: 40px 15px;
+  }
+}
+
+@media (max-width: 759px) {
+  .sub__right .button {
+    max-width: 100% !important;
   }
 }
 
@@ -113,6 +149,12 @@
   color: #fff;
   display: inline-block;
   margin-right: 13px;
+}
+
+@media (max-width: 759px) {
+  .sub__right .input-area .input {
+    margin-bottom: 15px;
+  }
 }
 
 .sub__right .input-area .input::-webkit-input-placeholder {
