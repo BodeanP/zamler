@@ -24,7 +24,7 @@
   overflow: auto;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .breadcumbs ul {
     height: 45px;
     min-height: unset;
@@ -36,10 +36,16 @@
   font-size: 14px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .breadcumbs li {
     font-size: 12px;
     line-height: 25px;
+  }
+}
+
+@media (max-width: 759px) {
+  .breadcumbs li {
+    font-size: 14px;
   }
 }
 

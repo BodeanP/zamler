@@ -2,6 +2,12 @@
   margin-bottom: 50px;
 }
 
+@media (max-width: 759px) {
+  .pagination {
+    margin-bottom: 33px;
+  }
+}
+
 .pagination ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10,7 +16,7 @@
   background-color: #fff;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .pagination ul {
     min-height: 39px;
   }
@@ -45,13 +51,22 @@
   border-right: none;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .pagination ul li {
     width: 39px;
     height: 39px;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 39px;
             flex: 0 1 39px;
+  }
+}
+
+@media (max-width: 759px) {
+  .pagination ul li {
+    width: 43px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 43px;
+            flex: 0 0 43px;
   }
 }
 
@@ -93,7 +108,7 @@
   display: flex;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .pagination ul li a {
     font-size: 12px;
   }

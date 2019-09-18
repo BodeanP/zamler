@@ -136,9 +136,15 @@ main {
     }
 
     &__label {
-        font-size: 16px; @include tablet{font-size: 14px}
+        font-size: 16px; 
         margin-bottom: 8.5px;
         width: 100%;
+
+        @include tablet{font-size: 14px}
+
+        @include mobile{
+            font-size: 16px; 
+        }
 
         &_radio {
             margin-bottom: 24px !important;
@@ -162,6 +168,11 @@ main {
         @include tablet{
             font-size: 12px;
             padding: 10px;
+        }
+
+        @include mobile{
+            font-size: 16px;
+            padding: 13px;
         }
 
         &::placeholder {
@@ -203,6 +214,10 @@ main {
         padding: 8px 0px;
     }
 
+    @include mobile{
+
+    }
+
     &_round {
         border-radius: 25px;
         max-width: 153px;
@@ -235,6 +250,8 @@ main {
     }
 
     &_arrow {
+        white-space: nowrap;
+
         span{
             max-width: 150px;
         }
@@ -249,6 +266,10 @@ main {
 
             @include tablet{
                 width: 12px;
+            }
+
+            @include mobile{
+                width: 21px;
             }
         }
 
@@ -288,8 +309,14 @@ main {
 }
 
 .section-title {
-    font-size: 30px; @include tablet{font-size: 22px;}
+    font-size: 30px; 
     // font-family: 'medium'
+
+    @include tablet{font-size: 22px;}
+    @include mobile{
+        font-size: 30px; 
+        line-height: 30px;
+    }
 }
 
 .section-head {
@@ -551,6 +578,13 @@ main {
 
         @include tablet{
             font-size: 11px;
+        }
+
+        @include mobile{
+            font-size: 12px;
+            min-width: 110px;
+            padding: 7px;
+            text-align: center;
         }
 
         &_rounded {

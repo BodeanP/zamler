@@ -22,7 +22,7 @@ a {
           mask-repeat: no-repeat;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .city-picker i {
     width: 7px;
     height: 10px;
@@ -36,7 +36,7 @@ a {
   padding-bottom: 2px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .city-picker__city-name {
     margin: 0px 2px;
   }
@@ -52,7 +52,7 @@ main {
   width: 100%;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .input-group {
     margin-bottom: 28.5px;
   }
@@ -92,7 +92,7 @@ main {
   transition: box-shadow .3s, -webkit-box-shadow .3s;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .input-group__checkbox .styled-checkbox {
     margin-right: 14px;
   }
@@ -151,9 +151,15 @@ main {
   width: 100%;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .input-group__label {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 759px) {
+  .input-group__label {
+    font-size: 16px;
   }
 }
 
@@ -161,7 +167,7 @@ main {
   margin-bottom: 24px !important;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .input-group__label_radio {
     margin-bottom: 18px !important;
   }
@@ -178,11 +184,19 @@ main {
   font-size: 16px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .input-group__input input,
   .input-group__input textarea {
     font-size: 12px;
     padding: 10px;
+  }
+}
+
+@media (max-width: 759px) {
+  .input-group__input input,
+  .input-group__input textarea {
+    font-size: 16px;
+    padding: 13px;
   }
 }
 
@@ -241,7 +255,7 @@ main {
   cursor: pointer;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .button {
     font-size: 14px;
     min-height: 30px;
@@ -275,6 +289,10 @@ main {
   background-size: contain;
 }
 
+.button_arrow {
+  white-space: nowrap;
+}
+
 .button_arrow span {
   max-width: 150px;
 }
@@ -289,9 +307,15 @@ main {
   background-size: contain;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .button_arrow i {
     width: 12px;
+  }
+}
+
+@media (max-width: 759px) {
+  .button_arrow i {
+    width: 21px;
   }
 }
 
@@ -332,9 +356,16 @@ main {
   font-size: 30px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .section-title {
     font-size: 22px;
+  }
+}
+
+@media (max-width: 759px) {
+  .section-title {
+    font-size: 30px;
+    line-height: 30px;
   }
 }
 
@@ -348,7 +379,7 @@ main {
   margin-bottom: 22px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .section-head {
     margin-bottom: 14px;
   }
@@ -382,7 +413,7 @@ main {
   cursor: pointer;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .counter__button {
     font-size: 14px;
     width: 23px;
@@ -437,7 +468,7 @@ main {
   max-width: 35px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .counter__input {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 26px;
@@ -497,7 +528,7 @@ main {
   margin-bottom: 30px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .order-list .order-item {
     -ms-grid-columns: 75px 75px auto;
         grid-template-columns: 75px 75px auto;
@@ -524,7 +555,7 @@ main {
   padding-right: 10px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .order-list .order-item__preview {
     max-height: 62px;
   }
@@ -545,7 +576,7 @@ main {
   padding-right: 40px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .order-list .order-item__name {
     margin-bottom: 10px;
   }
@@ -561,7 +592,7 @@ main {
   line-height: 20px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .order-list .order-item__name a {
     font-size: 12px;
     line-height: 14px;
@@ -599,7 +630,7 @@ main {
   font-size: 18px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .order-list .order-item__price {
     font-size: 12px;
     padding-left: 10px;
@@ -644,7 +675,7 @@ main {
   font-size: 16px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .all-link {
     font-size: 12px;
     -webkit-transform: translateY(3px);
@@ -656,7 +687,7 @@ main {
   margin-left: 12px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .all-link i {
     margin-left: 2px;
   }
@@ -683,9 +714,18 @@ main {
   margin-bottom: 10px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .voblers .vobler {
     font-size: 11px;
+  }
+}
+
+@media (max-width: 759px) {
+  .voblers .vobler {
+    font-size: 12px;
+    min-width: 110px;
+    padding: 7px;
+    text-align: center;
   }
 }
 
@@ -712,7 +752,7 @@ main {
           transform: translateY(-2px);
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .rating__num {
     -webkit-transform: unset;
             transform: unset;
@@ -729,7 +769,7 @@ main {
   background-size: contain;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .rating .star {
     margin-right: 1px;
     width: 12px;
@@ -759,7 +799,7 @@ main {
           justify-content: flex-start;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .ico-cons,
   .ico-pros {
     -webkit-box-flex: 0;
@@ -775,7 +815,7 @@ main {
   height: 24px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .ico-cons .ico-in,
   .ico-pros .ico-in {
     width: 15px;
@@ -803,7 +843,7 @@ main {
   margin-bottom: 30px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .preamble {
     font-size: 16px;
     line-height: 22px;
@@ -828,7 +868,7 @@ main {
   margin-bottom: 5px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .selection__head {
     font-size: 16px;
   }
@@ -870,7 +910,7 @@ main {
           transform: translateX(-15px);
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .selection {
     margin: 35px 0px;
     padding: 10px 22px;
@@ -896,7 +936,7 @@ main {
   margin-bottom: 35px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .pre {
     padding: 30px 0px;
     margin-bottom: 22px;
@@ -914,7 +954,7 @@ main {
   margin: 0 auto;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .pre-in {
     font-size: 22px;
     max-width: 360px;
@@ -932,7 +972,7 @@ main {
   margin-bottom: 50px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .table_stripped {
     font-size: 12px;
     margin-top: 22px;
@@ -953,7 +993,7 @@ main {
   padding: 25px 30px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .table_stripped td {
     padding: 15px 22px;
   }
@@ -980,7 +1020,7 @@ main {
   padding-top: 5px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .list-marked {
     font-size: 12px;
     line-height: 32px;
@@ -994,7 +1034,7 @@ main {
   margin: 0;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .list-marked li {
     background-size: 19px;
     padding: 0 0px 0px 32px;
@@ -1007,7 +1047,7 @@ main {
   padding-top: 5px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .list-numeric {
     font-size: 12px;
     line-height: 25px;
@@ -1018,7 +1058,7 @@ main {
   list-style: decimal;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .list-numeric li {
     text-indent: 12px;
   }
@@ -1034,7 +1074,7 @@ main {
   padding: 38px 50px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .mistake-found {
     padding: 24px 35px;
   }
@@ -1045,7 +1085,7 @@ main {
   margin-bottom: 0 !important;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .mistake-found .section-head {
     font-size: 16px;
   }
@@ -1057,7 +1097,7 @@ main {
   max-width: 190px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .mistake-found .button {
     font-size: 11px;
     max-width: 130px;

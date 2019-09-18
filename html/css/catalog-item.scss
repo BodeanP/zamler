@@ -11,6 +11,10 @@
         min-height: 395px; // затем убрать
     }
 
+    @include mobile{
+        min-height: 460px;
+    }
+
     &__in {
         padding: 36px 25px;
         max-height: 445px;
@@ -22,6 +26,10 @@
 
         @include tablet{
             padding: 11px 14px;
+        }
+
+        @include mobile{
+            padding: 11px 30px;
         }
     }
 
@@ -37,6 +45,12 @@
 
         @include tablet{
             margin-bottom: 5px;
+        }
+
+        @include mobile{
+            height: 235px;
+            max-height: unset;
+            margin-bottom: 30px;
         }
 
         img{
@@ -55,13 +69,22 @@
             @include tablet{
                 font-size: 11px;
             }
+
+            @include mobile{
+                font-size: 12px;
+            }
         }
 
         &__name {
-            font-size: 18px; @include tablet{font-size: 14px}
+            font-size: 18px;
             // font-family: 'medium';
             @include row-dots(2);
             margin-bottom: 3px;
+
+            @include tablet{font-size: 14px}
+            @include mobile{
+                font-size: 18px;
+            }
         }
 
         &__status {
@@ -70,6 +93,10 @@
 
             @include tablet{
                 margin-bottom: 5px;
+            }
+
+            @include mobile{
+                margin-bottom: 12px;
             }
 
             &.available{
@@ -102,6 +129,10 @@
                 margin-bottom: 15px;
             }
 
+            @include mobile{
+                margin-bottom: 17px;
+            }
+
             .product-color{
                 &-grey{
                     background-color: #F0F3F7
@@ -131,6 +162,14 @@
                         margin-right: 8px;
                     }
                 }
+
+                @include mobile{
+                    height: 21px;
+                    width: 21px;
+                    &:not(:nth-last-child(1)){
+                        margin-right: 15px;
+                    }
+                }
             }
         }
 
@@ -145,6 +184,11 @@
                 @include tablet{
                     font-size: 12px
                 }
+
+                @include mobile{
+                    font-size: 18px; 
+                    // font-weight: 'medium'
+                }
             }
 
             .item-buy {
@@ -153,6 +197,11 @@
 
                 @include tablet{
                     font-size: 12px
+                }
+
+                @include mobile{
+                    font-size: 16px;
+                    transform: translateX(7px);
                 }
             }
         }
@@ -175,6 +224,12 @@
                 transform: translate(-10px, -12px);
                 width: calc(100% + 15px);
                 padding: 23px 19px 24px 24px;
+            }
+
+            @include mobile{
+                transform: unset;
+                width: 100%;
+                padding: 11px 30px;
             }
         }
     }

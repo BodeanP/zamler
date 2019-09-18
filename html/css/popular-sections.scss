@@ -4,7 +4,7 @@
 .popular-sections {
     margin-bottom: 105px;
 
-    @include tablet{
+    @include tablet {
         margin-bottom: 60px;
     }
 
@@ -13,11 +13,11 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 20px;
 
-        @include tablet{
+        @include tablet {
             gap: 10px;
         }
 
-        @include mobile{
+        @include mobile {
             grid-template-columns: 100%;
         }
     }
@@ -28,9 +28,18 @@
         display: flex;
         justify-content: center;
 
-        div:not(.one-popular-section__img){
-            z-index: 10;
+        @include mobile {
+            justify-content: flex-start;
         }
+
+        div:not(.one-popular-section__img) {
+            z-index: 10;
+
+            @include mobile {
+                padding-left: 10px;
+            }
+        }
+
 
         &_big {
             background-size: cover;
@@ -38,19 +47,19 @@
             justify-content: flex-start;
             color: #fff; //??
 
-            @include tablet{
+            @include tablet {
                 min-height: 290px;
             }
 
-            span{
+            span {
                 color: #fff !important //??
             }
 
-            .voblers{
+            .voblers {
                 position: relative;
             }
 
-            .description-area{
+            .description-area {
                 padding-left: 40px;
                 padding-top: 40px;
                 padding-bottom: 45px;
@@ -58,13 +67,13 @@
                 display: flex;
                 flex-direction: column;
 
-                @include tablet{
+                @include tablet {
                     padding-left: 25px;
                     padding-top: 30px;
                     padding-bottom: 30px;
                 }
             }
-            
+
             .one-popular-section__img {
                 position: absolute;
                 left: 0;
@@ -73,12 +82,17 @@
                 height: 100%;
                 z-index: 0;
 
-                img{
+                img {
                     width: 100%;
                     object-fit: cover;
                 }
             }
+
+
+
         }
+
+
 
 
         &>a {
@@ -88,8 +102,16 @@
             justify-content: space-between;
             align-items: center;
 
-            @include tablet{
+            @include tablet {
                 padding: 25px; //по шаблону непонятный разный отступ у каждого из элементов
+            }
+
+            @include mobile {
+                display: grid;
+                grid-template-columns: 50% 50%;
+                padding: 25px 10px;
+                padding-bottom: 0;
+                width: 100%
             }
         }
 
@@ -101,9 +123,40 @@
         &_big {
             grid-column: 1 / span 2;
 
-            @include mobile{
+            @include mobile {
                 grid-column: 1;
             }
+        }
+
+        &_large-preview {
+
+            a {
+                padding-top: 0;
+            }
+
+            .one-popular-section__caption{
+                padding-top: 25px;
+            }
+
+            .one-popular-section__img {
+
+                width: 100%;
+
+                @include tablet{
+                    width: calc(100% + 50px);
+                }
+
+                @include mobile{
+                    width: 100%;
+                    padding: 0;
+
+                    img{
+                        object-fit: cover;
+                    }
+                }
+               
+            }
+
         }
 
         &__img {
@@ -111,41 +164,65 @@
             display: flex;
             justify-content: center;
 
-            @include tablet{
+            @include tablet {
                 height: 125px;
+            }
+
+            @include mobile {
+                grid-row: 1 / span 3;
+                padding: 0px 30px 15px 15px;
+                align-items: center;
             }
 
             img {
                 object-fit: scale-down;
                 object-position: top;
+                height: 100%;
+
+                @include mobile {
+                    // object-position: center;
+                }
             }
         }
 
         &__caption {
-            font-size: 18px; 
+            font-size: 18px;
             // font-family: 'medium';
             margin-bottom: 5px;
             margin-top: auto;
             @include row-dots(2);
 
-            @include tablet{font-size: 14px}
+            @include tablet {
+                font-size: 14px
+            }
+
+            @include mobile {
+                font-size: 16px;
+                line-height: 22px;
+            }
         }
 
         &__price {
-            font-size: 16px; 
+            font-size: 16px;
             color: #949FAF;
             margin-bottom: 25px;
 
-            @include tablet{
+            @include tablet {
                 font-size: 12px;
                 margin-bottom: 15px;
+            }
+
+            @include mobile {
+                font-size: 14px;
+                margin-bottom: 0;
             }
         }
 
         &__description {
-            font-size: 16px; 
+            font-size: 16px;
             margin-bottom: 30px;
-            @include tablet{
+
+            @include tablet {
                 font-size: 14px;
                 margin-bottom: 5px;
             }
@@ -153,23 +230,38 @@
 
         &__link {
 
-            @include tablet{
+            @include tablet {
                 margin-bottom: 10px;
             }
 
-            i{
+            @include mobile {
+                margin-bottom: 35px;
+            }
+
+            i {
                 transform: translateX(12px);
 
-                @include tablet{
+                @include tablet {
                     transform: unset;
+                }
+
+                @include mobile {
+                    display: none;
                 }
             }
 
             &>span {
-                font-size: 16px; 
+                font-size: 16px;
                 color: $blue;
                 border-bottom: 1px solid #D8E8FF;
-                @include tablet{font-size: 11px}
+
+                @include tablet {
+                    font-size: 11px
+                }
+
+                @include mobile {
+                    font-size: 14px
+                }
             }
 
         }

@@ -1,4 +1,4 @@
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .brands {
     padding-top: 40px;
   }
@@ -9,7 +9,7 @@
       grid-template-columns: 100%;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .brands .catalog-main__head-row {
     margin-bottom: 30px;
   }
@@ -26,7 +26,7 @@
   margin-bottom: 18px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .catalog-brand-list {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
@@ -63,7 +63,7 @@
   font-size: 16px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .catalog-brand-list .one-brand a {
     font-size: 14px;
   }
@@ -85,13 +85,13 @@
   margin-bottom: 7px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .catalog-brand-list .one-brand__name {
     margin-bottom: 8px;
   }
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .catalog-brand-list .one-brand__site {
     font-size: 16px;
   }

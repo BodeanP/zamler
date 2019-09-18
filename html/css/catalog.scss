@@ -101,6 +101,10 @@
         padding-left: 35px;
     }
 
+    @include mobile{
+        display: none;
+    }
+
     a {
         font-size: 26px; @include tablet{font-size: 14px;}
         font-weight: 100;

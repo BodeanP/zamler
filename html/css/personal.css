@@ -2,13 +2,13 @@
   padding-top: 55px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .personal {
     padding-top: 40px;
   }
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .personal .catalog-wrapper {
     -webkit-column-gap: 10px;
             column-gap: 10px;
@@ -20,7 +20,7 @@
   margin-bottom: 17px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .personal h1 {
     font-size: 22px;
     margin-bottom: 20px;
@@ -35,7 +35,7 @@
   padding-top: 17px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .personal .filter {
     padding-top: 0px;
   }
@@ -45,7 +45,7 @@
   margin-bottom: 12px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .personal .filter .category-list__one-categoty .category__head {
     margin-bottom: 14px;
   }
@@ -57,7 +57,7 @@
   border-bottom: 1px solid #DEE9F4;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .orders-list__head {
     font-size: 14px;
   }
@@ -71,7 +71,7 @@
   display: grid;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .orders-list__head tr {
     -ms-grid-columns: 110px 115px 60px 120px 105px auto;
         grid-template-columns: 110px 115px 60px 120px 105px auto;
@@ -106,7 +106,7 @@
   background-color: #fff;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .orders-list__bottom {
     font-size: 14px;
   }
@@ -160,7 +160,7 @@
   margin-right: 65px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .orders-accordion__tab .order-status {
     font-size: 16px;
     margin-right: 25px;
@@ -171,7 +171,7 @@
   font-size: 18px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .orders-accordion__tab .order-name {
     font-size: 12px;
   }
@@ -197,7 +197,7 @@
   margin-bottom: 0;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .orders-accordion .order-list .order-item {
     -ms-grid-columns: 110px 115px 60px 120px 105px auto;
         grid-template-columns: 110px 115px 60px 120px 105px auto;
@@ -275,7 +275,7 @@
   padding: 20px 35px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .order-footer {
     padding: 22px 38px;
     -ms-grid-columns: 265px 230px auto;
@@ -288,9 +288,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .order-footer .proceed-order {
     padding: 5px 0px;
   }
@@ -310,7 +313,7 @@
   margin-right: 15px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .order-footer .bonus-code {
     display: none;
   }
@@ -341,7 +344,7 @@
   font-size: 16px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .order-footer .checkout-aside__total .total-head {
     margin-bottom: 3px;
   }
@@ -351,7 +354,7 @@
   font-size: 30px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .order-footer .checkout-aside__total .total-price {
     display: inline-block;
   }
@@ -362,7 +365,7 @@
   color: #969D97;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .order-footer .checkout-aside__total .total-description {
     display: inline-block;
     vertical-align: bottom;

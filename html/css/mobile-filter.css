@@ -10,6 +10,9 @@
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -18,6 +21,9 @@
 .mobile-filter-section_price .input-group__input input {
   background-color: #fff;
   border: 1px solid #fff;
+  width: auto;
+  font-size: 18px;
+  text-align: right;
 }
 
 .mobile-filter__caption {
@@ -62,7 +68,7 @@
       -ms-flex-align: center;
           align-items: center;
   min-height: 40px;
-  padding: 0px 15px;
+  padding: 0px 18px;
 }
 
 .mobile-filter__list-item {
@@ -76,7 +82,7 @@
           align-items: center;
   border-bottom: 1px solid #ECEEEF;
   padding: 0px 25px;
-  padding-right: 15px;
+  padding-right: 20px;
 }
 
 .mobile-filter .input-group {
@@ -99,9 +105,37 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .mobile-filter .input-group label i {
   margin-right: 0;
+}
+
+.mobile-filter .input-group__checkbox .styled-checkbox {
+  width: 25px;
+  height: 25px;
+}
+
+.mobile-filter .input-group__checkbox input[type="checkbox"]:checked + label .styled-checkbox::after {
+  width: 14px;
+  height: 10px;
+  -webkit-transform: translate(4px, 6px);
+          transform: translate(4px, 6px);
+}
+
+.mobile-filter #apply {
+  min-height: 50px;
+}
+
+.mobile-filter #clear {
+  display: block;
+  font-size: 14px;
+  text-decoration: underline;
+  text-align: center;
+  padding: 15px 0px;
+  color: #808080;
 }
 /*# sourceMappingURL=mobile-filter.css.map */

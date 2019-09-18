@@ -5,6 +5,10 @@
     display: flex;
     box-shadow: 0px 3px 50px 0px rgba(216,220,221,1);
 
+    @include mobile{
+        flex-direction: column;
+    }
+
     &__head{
         // font-family: 'medium';
         font-size: 22px;
@@ -38,6 +42,11 @@
             padding: 5px 18px;
             min-width: 185px;
         }
+
+        @include mobile{
+            min-width: unset;
+            width: 100%;
+        }
     
     }
 
@@ -69,6 +78,10 @@
 
         .input-area{
             display: flex;
+            
+            @include mobile{
+                flex-direction: column;
+            }
 
             .input{
                 border: 1px solid #4AC7FF;

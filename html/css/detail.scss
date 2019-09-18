@@ -9,12 +9,23 @@
         padding-top: 50px;
     }
 
+    @include mobile{
+        padding-top: 35px;
+    }
+
     section{
         background-color: #fff;
         padding-bottom: 30px;
 
         @include tablet{
             padding-bottom: 12px;
+        }
+
+        @include mobile{
+            &:not(.detail__slider){
+                transform: translateX(-15px);
+                width: calc(100% + 30px);
+            }
         }
     }
     &-in{
@@ -40,6 +51,10 @@
             padding: 14px;
         }
 
+        @include mobile{
+            padding: 35px 10px;
+        }
+
         img{
             max-width: 100%;
         }
@@ -55,10 +70,15 @@
 
         @include mobile{
             grid-column: 1;
+            padding: 22px 17px;
         }
 
         .catalog-item__info__status{
             margin-bottom: 6px;
+
+            @include mobile{
+                margin-bottom: 8px;
+            }
         }
 
         .product-name{
@@ -206,6 +226,10 @@
             line-height: 12px;
         }
 
+        @include mobile{
+            padding: 14px 18px;
+        }
+
         a{
             color: $blue;
         }
@@ -223,6 +247,7 @@
 
         @include mobile{
             grid-column: 1;
+            padding-bottom: 0 !important
         }
 
         .description__tabs{
@@ -264,6 +289,10 @@
                 padding: 0px 22px;
             }
 
+            @include mobile{
+                padding: 0px 15px;
+            }
+
             table{
                 font-size: 16px; 
                 // font-family: 'medium'
@@ -273,6 +302,10 @@
                 @include tablet{
                     font-size: 14px;
                     margin-bottom: 14px;
+                }
+
+                @include mobile{
+                    margin-bottom: 30px;
                 }
 
                 th{
@@ -302,8 +335,25 @@
                         min-height: 25px;
                     }
 
+                    @include mobile{
+                        flex-direction: column;
+                        align-items: flex-start;
+                        min-height: 30px;
+                    }
+
                     td:nth-child(1){
                         min-width: 71%;
+
+                        @include mobile{
+                            padding-bottom: 0;
+                        }
+                    }
+
+                    td:nth-child(2){
+
+                        @include mobile{
+                            padding-top: 0;
+                        }
                     }
 
                     &:nth-child(2n){
@@ -356,6 +406,10 @@
             @include tablet{
                 font-size: 14px;
                 margin-bottom: 14px;
+            }
+
+            @include mobile{
+                margin-bottom: 5px;
             }
         }
     }

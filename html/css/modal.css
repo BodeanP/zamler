@@ -11,16 +11,28 @@
   padding: 38px 53px 0 53px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .modal_login {
     padding: 38px 40px 0 40px;
     max-width: 372px;
   }
 }
 
+@media (max-width: 759px) {
+  .modal_login {
+    padding: 75px 15px 0 15px;
+  }
+}
+
 .modal_cart {
   max-width: 495px;
   padding: 35px;
+}
+
+@media (max-width: 759px) {
+  .modal_cart {
+    padding: 77px 15px 15px 15px;
+  }
 }
 
 .modal_cart .buttons-row {
@@ -105,6 +117,18 @@
   top: 12px;
 }
 
+@media (max-width: 759px) {
+  .modal__close {
+    width: 24px;
+    height: 18px;
+    right: unset;
+    left: 12px;
+    top: 37px;
+    background: url("../img/mobile_close.svg") no-repeat center;
+    background-size: contain;
+  }
+}
+
 .modal__bottom {
   min-height: 60px;
   border-top: 1px solid #CCD5DE;
@@ -123,10 +147,18 @@
   font-size: 16px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .modal__bottom {
     font-size: 14px;
     width: calc(100% + 93px);
+  }
+}
+
+@media (max-width: 759px) {
+  .modal__bottom {
+    -webkit-transform: translateX(-15px);
+            transform: translateX(-15px);
+    width: calc(100% + 30px);
   }
 }
 
@@ -150,7 +182,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .modal .forgot-link {
     font-size: 14px;
   }
@@ -160,7 +192,7 @@
   margin-top: 7px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .modal .button {
     margin-top: 3px;
     font-size: 16px;
@@ -207,7 +239,7 @@
   -webkit-box-orient: vertical;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .modal .one-modal-item__name {
     font-size: 14px;
   }

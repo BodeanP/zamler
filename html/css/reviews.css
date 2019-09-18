@@ -3,13 +3,19 @@
   background-color: #fff;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 759px) {
+  .reviews {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 1399px) and (min-width: 760px) {
   .reviews .section-head {
     margin-bottom: 10px;
   }
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .reviews {
     padding: 21px;
   }
@@ -19,9 +25,15 @@
   margin-top: 45px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .reviews__list {
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 759px) {
+  .reviews__list {
+    margin-top: 35px;
   }
 }
 
@@ -36,7 +48,7 @@
   margin-bottom: 25px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .reviews__pagination {
     padding-top: 0px;
     margin-top: -10px;
@@ -49,7 +61,7 @@
   color: #949FAF;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .reviews__pagination .button {
     padding: 14px 0px;
     width: 185px;
@@ -65,9 +77,15 @@
   font-size: 22px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .reviews .section-title {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 759px) {
+  .reviews .section-title {
+    line-height: 26px;
   }
 }
 
@@ -78,9 +96,22 @@
   margin-bottom: 20px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .reviews .one-review {
     margin-bottom: 22px;
+  }
+}
+
+@media (max-width: 759px) {
+  .reviews .one-review {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 52px;
+  }
+  .reviews .one-review:nth-last-child(1) {
+    margin-bottom: 5px;
   }
 }
 
@@ -88,9 +119,15 @@
   max-width: 150px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .reviews .add-review {
     max-width: 120px;
+  }
+}
+
+@media (max-width: 759px) {
+  .reviews .add-review {
+    max-width: 100%;
   }
 }
 
@@ -98,7 +135,7 @@
   font-size: 15px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .reviews .add-review .button {
     font-size: 12px;
   }
@@ -121,11 +158,19 @@
           justify-content: flex-start;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .reviews .review-avatar {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 65px;
             flex: 0 0 65px;
+  }
+}
+
+@media (max-width: 759px) {
+  .reviews .review-avatar {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 80px;
+            flex: 0 0 80px;
   }
 }
 
@@ -142,7 +187,7 @@
           align-items: center;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .reviews .review-avatar-in {
     width: 37px;
     height: 37px;
@@ -160,7 +205,7 @@
   width: 100%;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .reviews .review-block {
     font-size: 12px;
   }
@@ -171,7 +216,7 @@
   border-bottom: 1px solid #D9E6EA;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .reviews .review-block__head {
     padding-bottom: 7px;
   }
@@ -181,7 +226,7 @@
   margin-bottom: 10px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .reviews .review-block__head .user-name {
     margin-bottom: 5px;
   }
@@ -193,7 +238,7 @@
   border-bottom: 1px solid #D9E6EA;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .reviews .review-block__main {
     padding: 9px 17px;
     padding-bottom: 0px;
@@ -205,7 +250,7 @@
   line-height: 22px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .reviews .review-block__main .review-text {
     line-height: 16px;
     margin-bottom: 12px;
@@ -221,7 +266,7 @@
   margin-bottom: 25px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .reviews .review-block__main .pros-cons {
     margin-bottom: 10px;
   }
@@ -241,7 +286,7 @@
   margin-bottom: 5px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .reviews .review-block__main .pros-cons .label {
     font-size: 12px;
     margin-bottom: 2px;
@@ -259,7 +304,7 @@
   line-height: 22px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .reviews .review-block__main .pros-cons .comment-content .descr {
     font-size: 12px;
     line-height: unset;
@@ -277,7 +322,7 @@
   padding: 17px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .reviews .review-block__bottom {
     padding: 11px 17px;
     min-height: unset;
@@ -294,7 +339,7 @@
   margin-right: 22px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .reviews .review-block__bottom .review-rating {
     margin-right: 4px;
   }
@@ -306,7 +351,7 @@
   height: 16px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .reviews .review-block__bottom .review-rating i {
     width: 11px;
     height: 11px;
@@ -331,13 +376,13 @@
   color: #333;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .reviews .rating__num {
     margin-left: 0px;
   }
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .reviews .rating .star {
     width: 8px;
     height: 8px;
@@ -349,22 +394,34 @@
   background-color: #fff;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .add-feedback-block {
     padding: 25px 27px;
     padding-bottom: 25px !important;
   }
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 759px) {
+  .add-feedback-block {
+    padding: 21px 14px;
+  }
+}
+
+@media (max-width: 1399px) and (min-width: 760px) {
   .add-feedback-block .section-head {
     margin-bottom: 10px;
   }
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .add-feedback-block .section-title {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 759px) {
+  .add-feedback-block .section-title {
+    font-size: 22px;
   }
 }
 
@@ -372,7 +429,7 @@
   margin-bottom: 16.5px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .add-feedback-block .input-group__label {
     font-size: 12px;
     margin-bottom: 11.5px;
@@ -391,12 +448,20 @@
           column-gap: 15px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .add-feedback-block .add-feedback-container {
     -ms-grid-columns: minmax(auto, 295px) minmax(auto, 295px);
         grid-template-columns: minmax(auto, 295px) minmax(auto, 295px);
     -webkit-column-gap: 20px;
             column-gap: 20px;
+  }
+}
+
+@media (max-width: 759px) {
+  .add-feedback-block .add-feedback-container {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+        grid-template-areas: 'score' 'text-review' 'pros' 'name' 'email';
   }
 }
 
@@ -408,7 +473,7 @@
   margin-bottom: 20px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .add-feedback-block .add-feedback-container .my-score {
     margin-bottom: 10px;
   }
@@ -419,7 +484,7 @@
   margin-bottom: 16px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .add-feedback-block .add-feedback-container .my-score .input-group__label {
     font-size: 12px;
     margin-bottom: 9px;
@@ -433,7 +498,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .add-feedback-block .add-feedback-container .my-score .star {
     width: 15px;
     height: 15px;
@@ -446,7 +511,7 @@
   margin-left: 8px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .add-feedback-block .add-feedback-container .my-score .rating__num {
     font-size: 12px;
     -webkit-transform: translateY(-3px);
@@ -475,12 +540,18 @@
   grid-area: pros;
 }
 
+@media (max-width: 759px) {
+  .add-feedback-block .add-feedback-container .pros-cons {
+    margin-bottom: 10px;
+  }
+}
+
 .add-feedback-block .add-feedback-container .pros-cons .input-group__input {
   position: relative;
   margin-bottom: 25px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .add-feedback-block .add-feedback-container .pros-cons .input-group__input {
     margin-bottom: 20px;
   }
@@ -493,7 +564,7 @@
   top: 12px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .add-feedback-block .add-feedback-container .pros-cons .ico-pros,
   .add-feedback-block .add-feedback-container .pros-cons .ico-cons {
     left: 7px;
@@ -504,7 +575,7 @@
   padding-left: 45px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .add-feedback-block .add-feedback-container .pros-cons input {
     font-size: 12px;
     padding: 11px;
@@ -512,12 +583,21 @@
   }
 }
 
-.add-feedback-block .add-feedback-container .my-email, .add-feedback-block .add-feedback-container .my-name {
+.add-feedback-block .add-feedback-container .my-email,
+.add-feedback-block .add-feedback-container .my-name {
   margin-top: 30px;
 }
 
-@media (max-width: 1399px) {
-  .add-feedback-block .add-feedback-container .my-email, .add-feedback-block .add-feedback-container .my-name {
+@media (max-width: 1399px) and (min-width: 760px) {
+  .add-feedback-block .add-feedback-container .my-email,
+  .add-feedback-block .add-feedback-container .my-name {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 759px) {
+  .add-feedback-block .add-feedback-container .my-email,
+  .add-feedback-block .add-feedback-container .my-name {
     margin-top: 0px;
   }
 }
@@ -539,7 +619,7 @@
   height: 207px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   #my-review {
     height: 125px;
   }
@@ -549,13 +629,20 @@
   max-width: 190px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .add-review_bottom {
     max-width: 160px;
   }
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 759px) {
+  .add-review_bottom {
+    max-width: 100%;
+    margin-top: 17px;
+  }
+}
+
+@media (max-width: 1399px) and (min-width: 760px) {
   .add-review_bottom .button {
     font-size: 14px;
   }

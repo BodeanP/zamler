@@ -3,9 +3,18 @@
   background-color: #fff;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .catalog-article {
     padding: 24px 24px;
+  }
+}
+
+@media (max-width: 759px) {
+  .catalog-article {
+    padding: 0;
+    float: left;
+    margin-top: 25px;
+    background-color: unset;
   }
 }
 
@@ -14,15 +23,27 @@
   margin-bottom: 28.5px;
 }
 
+@media (max-width: 759px) {
+  .catalog-article__img {
+    margin-bottom: 35.5px;
+  }
+}
+
 .catalog-article__title {
   font-size: 30px;
   margin-bottom: 35px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .catalog-article__title {
     font-size: 18px;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 759px) {
+  .catalog-article__title {
+    font-size: 22px;
   }
 }
 
@@ -32,11 +53,18 @@
   line-height: 26px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .catalog-article p.main {
     font-size: 14px;
     font-weight: 100;
     line-height: 18px;
+  }
+}
+
+@media (max-width: 759px) {
+  .catalog-article p.main {
+    font-size: 18px;
+    line-height: 26px;
   }
 }
 
@@ -45,10 +73,17 @@
   line-height: 26px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) and (min-width: 760px) {
   .catalog-article p.sub-paragraph {
     font-size: 12px;
     line-height: 18px;
+  }
+}
+
+@media (max-width: 759px) {
+  .catalog-article p.sub-paragraph {
+    font-size: 16px;
+    line-height: 26px;
   }
 }
 

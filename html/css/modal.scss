@@ -15,11 +15,19 @@
             padding: 38px 40px 0 40px;
             max-width: 372px;
         }
+
+        @include mobile{
+            padding: 75px 15px 0 15px;
+        }
     }
 
     &_cart {
         max-width: 495px;
         padding: 35px;
+
+        @include mobile{
+            padding: 77px 15px 15px 15px;
+        }
 
         .buttons-row {
             display: flex;
@@ -92,6 +100,15 @@
         position: absolute;
         right: 12px;
         top: 12px;
+
+        @include mobile{
+            width: 24px;
+            height: 18px;
+            right: unset;
+            left: 12px;
+            top: 37px;
+            @include background_img('../img/mobile_close.svg');
+        }
     }
 
     &__bottom {
@@ -102,9 +119,15 @@
         justify-content: center;
         width: calc(100% + 106px);
         transform: translateX(-53px);
-        font-size: 16px; @include tablet{
+        font-size: 16px; 
+        @include tablet{
             font-size: 14px;
             width: calc(100% + 93px);
+        }
+
+        @include mobile{
+            transform: translateX(-15px);
+            width: calc(100% + 30px);
         }
 
         a {

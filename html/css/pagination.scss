@@ -2,6 +2,10 @@
 
 .pagination{
     margin-bottom: 50px;
+
+    @include mobile{
+        margin-bottom: 33px;
+    }
     
     ul{
         display: flex;
@@ -35,6 +39,11 @@
                 width: 39px;
                 height: 39px;
                 flex: 0 1 39px;
+            }
+
+            @include mobile{
+                width: 43px;
+                flex: 0 0 43px;
             }
 
             &:hover{
