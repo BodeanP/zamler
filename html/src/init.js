@@ -51,4 +51,21 @@ $('document').ready(function () {
     $('.category__head').on('click', function () {
         $(this).parent().find('.category-list__subcategory').slideToggle();
     })
+
+    $('.mobile-menu__item a').on('click', function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        $(this).parent().toggleClass('opened')
+    })
+
+    $('.menu-toggle').on('click', function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        $('.mobile-menu').toggleClass('opened');
+    })
+
+    $('.menu-back').on('click', function(){
+        $('.mobile-menu__item').removeClass('opened');
+    })
 })
+

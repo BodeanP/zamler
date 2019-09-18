@@ -1,0 +1,107 @@
+.mobile-filter {
+  overflow: scroll;
+}
+
+.mobile-filter-section_price .input-group__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobile-filter-section_price .input-group__input input {
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.mobile-filter__caption {
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 65px;
+  padding: 0px 10px;
+}
+
+.mobile-filter__caption i {
+  -webkit-mask-image: url("../img/menu-arrow.svg");
+  mask-image: url("../img/menu-arrow.svg");
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  background-color: #C0CAD0;
+  width: 25px;
+  height: 25px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-mask-size: initial;
+          mask-size: initial;
+  -webkit-mask-position: center;
+          mask-position: center;
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.mobile-filter__head {
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 40px;
+  padding: 0px 15px;
+}
+
+.mobile-filter__list-item {
+  font-size: 14px;
+  min-height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #ECEEEF;
+  padding: 0px 25px;
+  padding-right: 15px;
+}
+
+.mobile-filter .input-group {
+  margin-bottom: 0;
+}
+
+.mobile-filter .input-group > div {
+  width: 100%;
+}
+
+.mobile-filter .input-group label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mobile-filter .input-group label i {
+  margin-right: 0;
+}
+/*# sourceMappingURL=mobile-filter.css.map */

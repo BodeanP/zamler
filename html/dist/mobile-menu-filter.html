@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/header-mobile.css">
+    <link rel="stylesheet" href="../css/mobile-filter.css">
+    <link rel="stylesheet" href="../css/mobile-menu.css">
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../src/init.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header header-mobile">
+        <div class="container">
+            <div class="header-mobile-in">
+                <div class="header-mobile__top-row">
+                    <div class="logo">Zemmler</div>
+                    <div class="user-menu">
+                        <div class="user-menu-element">
+                            <a href="">
+                                <div class="user-menu-element__ico user-menu-element__ico_favorite"></div>
+                            </a>
+                        </div>
+                        <div class="user-menu-element">
+                            <a href="">
+                                <div class="user-menu-element__ico user-menu-element__ico_cart"></div>
+                            </a>
+                        </div>
+                        <div class="user-menu-element">
+                            <a href="">
+                                <div class="user-menu-element__ico user-menu-element__ico_profile"></div>
+                            </a>
+                        </div>
+                        <div class="user-menu-element menu-toggle">
+                            <a href="">
+                                <div class="user-menu-element__ico user-menu-element__ico_burger"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <div class="mobile-menu">
+        <div class="mobile-menu__search">
+            <input type="text" placeholder="Поиск по бренду или названию товара">
+            <div class="menu__item_search"><a href=""></a></div>
+        </div>
+        <div class="mobile-menu__item">
+            <a href="">Техника для дома</a>
+            <ul class="mobile-menu__submenu">
+                <li class="menu-back"><i></i></li>
+                <li><a href="">item</a></li>
+                <li><a href="">item</a></li>
+                <li><a href="">item</a></li>
+                <li><a href="">item</a></li>
+            </ul>
+        </div>
+        <div class="mobile-menu__item">
+            <a href="">Аксессуары <i class="menu-arrow"></i></a>
+            <ul class="mobile-menu__submenu">
+                <li class="menu-back"><i></i></li>
+                <li><a href="">item</a></li>
+                <li><a href="">item</a></li>
+                <li><a href="">item</a></li>
+                <li><a href="">item</a></li>
+            </ul>
+        </div>
+        <div class="mobile-menu__item">
+            <a href="">Техника для сада</a>
+            <ul class="mobile-menu__submenu">
+                <li class="menu-back"><i></i></li>
+                <li><a href="">item</a></li>
+                <li><a href="">item</a></li>
+                <li><a href="">item</a></li>
+                <li><a href="">item</a></li>
+            </ul>
+        </div>
+        <div class="mobile-menu__item">
+            <a href="">Пункты выдачи</a>
+        </div>
+        <div class="mobile-menu__item">
+            <a href="">Бесплатная доставка</a>
+        </div>
+        <div class="mobile-menu__item">
+            <a href="">Достака и оплата</a>
+        </div>
+        <div class="mobile-menu__item">
+            <a href="">Условия возврата</a>
+        </div>
+        <div class="mobile-menu__item">
+            <a href="">Помощь</a>
+        </div>
+        <div class="mobile-menu__item">
+            <div class="city-picker">
+                <i></i>
+                <span class="city-picker__city-name">Киев</span>
+            </div>
+        </div>
+        <div class="mobile-menu__footer">
+            <div class="schedule">
+                <p>График работы колл центра</p>
+                <p>Пн-Вс: 09:00 - 20:00</p>
+            </div>
+            <div class="tel">
+                <a href="tel:88005443434">8 800 544 34 34</a>
+            </div>
+            <div class="call-back">
+                <a href="tel:88005443434">Обратный звонок</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mobile-filter">
+        <div class="mobile-filter__caption">
+            <i></i>
+            <span>Фильтры</span>
+        </div>
+
+        <div class="mobile-filter__list">
+
+
+            <!-- секция фильтра -->
+            <div class="mobile-filter-section mobile-filter-section_price">
+                <div class="mobile-filter__head">
+                    Цена
+                </div>
+
+                <div class="mobile-filter__list-item">
+                    <div class="input-group">
+                        <div class="input-group__input">
+
+                            <input type="text" name="price-from" id="price-from" placeholder="150 грн.">
+                            <div class="filter-description">
+                                    <span class="checkbox-caption">От</span>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile-filter__list-item">
+                    <div class="input-group">
+                        <div class="input-group__input">
+                            <input type="text" name="price-to" id="price-to" placeholder="15000 грн.">
+                            <div class="filter-description">
+                                    <span class="checkbox-caption">До</span>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- конец секция фильтра -->
+
+            <!-- секция фильтра -->
+            <div class="mobile-filter-section">
+                <div class="mobile-filter__head">
+                    Форма
+                </div>
+
+                <div class="mobile-filter__list-item">
+                    <div class="input-group">
+                        <div class="input-group__checkbox">
+                            <input type="checkbox" name="form" id="round">
+                            <label for="round">
+                                <i class="styled-checkbox"></i>
+                                <div class="filter-description">
+                                    <span class="checkbox-caption">Круглая </span><span class="filter-count">/ 84</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile-filter__list-item">
+                    <div class="input-group">
+                        <div class="input-group__checkbox">
+                            <input type="checkbox" name="form" id="square">
+                            <label for="square">
+                                <i class="styled-checkbox"></i>
+                                <div class="filter-description">
+                                    <span class="checkbox-caption">Квадратная </span><span class="filter-count">/
+                                        84</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile-filter__list-item">
+                    <div class="input-group">
+                        <div class="input-group__checkbox">
+                            <input type="checkbox" name="form" id="triangle">
+                            <label for="triangle">
+                                <i class="styled-checkbox"></i>
+                                <div class="filter-description">
+                                    <span class="checkbox-caption">Треугольная </span><span class="filter-count">/
+                                        84</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- конец секция фильтра -->
+
+
+            <!-- секция фильтра -->
+            <div class="mobile-filter-section">
+                <div class="mobile-filter__head">
+                    Тип варочной поверхности
+                </div>
+
+                <div class="mobile-filter__list-item">
+                    <div class="input-group">
+                        <div class="input-group__checkbox">
+                            <input type="checkbox" name="type" id="gas">
+                            <label for="gas">
+                                <i class="styled-checkbox"></i>
+                                <div class="filter-description">
+                                    <span class="checkbox-caption">Газовая </span><span class="filter-count">/ 84</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile-filter__list-item">
+                    <div class="input-group">
+                        <div class="input-group__checkbox">
+                            <input type="checkbox" name="type" id="electro">
+                            <label for="electro">
+                                <i class="styled-checkbox"></i>
+                                <div class="filter-description">
+                                    <span class="checkbox-caption">Электрическая </span><span class="filter-count">/
+                                        84</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile-filter__list-item">
+                    <div class="input-group">
+                        <div class="input-group__checkbox">
+                            <input type="checkbox" name="type" id="induct">
+                            <label for="induct">
+                                <i class="styled-checkbox"></i>
+                                <div class="filter-description">
+                                    <span class="checkbox-caption">Индукционная </span><span class="filter-count">/
+                                        84</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- конец секция фильтра -->
+
+
+
+            <!-- секция фильтра -->
+            <div class="mobile-filter-section">
+                <div class="mobile-filter__head">
+                    Цвет
+                </div>
+
+                <div class="mobile-filter__list-item">
+                    <div class="input-group">
+                        <div class="input-group__checkbox">
+                            <input type="checkbox" name="color" id="black">
+                            <label for="black">
+                                <i class="styled-checkbox"></i>
+                                <div class="filter-description">
+                                    <span class="checkbox-caption">Черный </span><span class="filter-count">/ 84</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile-filter__list-item">
+                    <div class="input-group">
+                        <div class="input-group__checkbox">
+                            <input type="checkbox" name="color" id="grey">
+                            <label for="grey">
+                                <i class="styled-checkbox"></i>
+                                <div class="filter-description">
+                                    <span class="checkbox-caption">Серый </span><span class="filter-count">/
+                                        84</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile-filter__list-item">
+                    <div class="input-group">
+                        <div class="input-group__checkbox">
+                            <input type="checkbox" name="color" id="white">
+                            <label for="white">
+                                <i class="styled-checkbox"></i>
+                                <div class="filter-description">
+                                    <span class="checkbox-caption">Белый </span><span class="filter-count">/
+                                        84</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- конец секция фильтра -->
+
+        </div>
+        <div class="apply-filter">
+            <div class="button" id="apply"><span>Применить</span></div>
+            <span class="clear-filter" id="clear">Сбросить все</span>
+        </div>
+    </div>
+    <!-- header end -->

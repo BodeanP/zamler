@@ -45,6 +45,13 @@
 	background-size: contain;
 }
 
+@mixin mask_svg($path) {
+	-webkit-mask-image: url($path);
+	mask-image: url($path);
+	mask-size: contain;
+	mask-repeat: no-repeat;
+}
+
 
 @mixin mobile {
 	@media (max-width: 759px) {

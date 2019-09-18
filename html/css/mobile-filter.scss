@@ -1,0 +1,86 @@
+@import '_mixins.scss';
+
+.mobile-filter {
+
+    overflow: scroll;
+
+    &-section_price {
+
+        .input-group__input {
+            display: flex;
+            flex-direction: row-reverse;
+
+            align-items: center;
+
+            input {
+                background-color: #fff;
+                border: 1px solid #fff
+            }
+        }
+
+    }
+
+
+
+    &__caption {
+
+        font-size: 18px;
+        // font-family: 'medium';
+        display: flex;
+        align-items: center;
+        min-height: 65px;
+        padding: 0px 10px;
+
+        i {
+            @include mask_svg('../img/menu-arrow.svg');
+            background-color: #C0CAD0;
+            width: 25px;
+            height: 25px;
+            display: inline-flex;
+            mask-size: initial;
+            mask-position: center;
+            transform: scale(-1, 1)
+        }
+    }
+
+    &__head {
+        font-size: 18px;
+        // font-family: 'medium';
+        display: flex;
+        align-items: center;
+        min-height: 40px;
+        padding: 0px 15px;
+
+
+    }
+
+    &__list-item {
+        font-size: 14px;
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #ECEEEF;
+        padding: 0px 25px;
+        padding-right: 15px;
+    }
+
+
+    .input-group {
+        margin-bottom: 0;
+
+        &>div {
+            width: 100%;
+        }
+
+        label {
+            display: flex;
+            flex-direction: row-reverse;
+            width: 100%;
+            justify-content: space-between;
+
+            i {
+                margin-right: 0
+            }
+        }
+    }
+}

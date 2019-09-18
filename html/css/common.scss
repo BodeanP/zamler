@@ -18,7 +18,8 @@ a {
         width: 12px;
         height: 16px;
         vertical-align: middle;
-        @include background_img('../img/1617454.svg');
+        background-color: #333;
+        @include mask_svg('../img/1617454.svg');
 
         @include tablet{
             width: 7px;

@@ -13,8 +13,13 @@ a {
   width: 12px;
   height: 16px;
   vertical-align: middle;
-  background: url("../img/1617454.svg") no-repeat center;
-  background-size: contain;
+  background-color: #333;
+  -webkit-mask-image: url("../img/1617454.svg");
+  mask-image: url("../img/1617454.svg");
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
 }
 
 @media (max-width: 1399px) {

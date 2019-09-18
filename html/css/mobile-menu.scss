@@ -1,0 +1,135 @@
+@import 'variables.scss';
+@import '_mixins.scss';
+
+.mobile-menu{
+   
+    float: right;
+    background-color: #136EE8;
+    color: #fff;
+    width: 0px;
+    overflow: scroll;
+    transition: transform .5s, width .5s;
+    height: calc(100vh - 50px);
+
+    transform: translateX(320px);
+
+    &.opened{
+        transform: translateX(0px);
+        width: 320px;
+    }
+
+    &__item{
+        font-size: 18px;
+        // font-family: 'PTSans';
+        display: flex;
+        // align-items: center;
+        min-height: 50px;
+        border-bottom: 1px solid #1876FB;
+        padding: 0px 15px;
+
+        a{
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &.opened .mobile-menu__submenu{
+            z-index: 200;
+            opacity: 1;
+            height: 100%;
+        }
+
+        .city-picker{
+            font-size: 14px;
+            align-items: center;
+            display: flex;
+
+            i{
+                width: 15px;
+                height: 15px;
+                background-color: #fff;
+            }
+        }
+    }
+
+    &__search{
+        font-size: 13px;
+        display: flex;
+         // font-family: 'PTSans';
+         height: 60px;
+         padding: 0px 15px;
+         border-bottom: 1px solid #1876FB;
+         padding-right: 0;
+         
+
+         input{
+             flex: 1;
+         }
+    }
+
+    &__footer{
+        padding: 55px 15px 0px 15px
+    }
+
+    &__submenu{
+        display: block;
+        position: fixed;
+        z-index: -1;
+        background-color: #fff;
+        width: 100%;
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        transition: all .3s;
+        top: 0;
+        left: 0;
+        overflow-y: scroll;
+        background-color: #136EE8;
+
+        li{
+            padding: 0px 15px;
+            min-height: 60px;
+            border-bottom: 1px solid #1876FB;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .schedule, &__search input::placeholder{color: #fff}
+
+    .schedule{
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    .tel{
+        font-size: 22px;
+    }
+
+    .call-back{
+        font-size: 14px;
+    }
+}
+
+.menu-back i{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    
+    transform: scale(-1, 1);
+    @include background_img('../img/menu-arrow.svg');
+    background-size: initial;
+}
+
+.menu-arrow {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    
+    @include background_img('../img/menu-arrow.svg');
+    background-size: initial;
+    
+}
+

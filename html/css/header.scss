@@ -253,6 +253,10 @@
                 @include tablet{
                     width: 12.5px;
                 }
+
+                @include mobile{
+                    width: 17px;
+                }
             }
         }
     }
@@ -337,8 +341,7 @@
             &.soc-block__element_blue{
                 background: unset;
                 background-color: $blue;
-                -webkit-mask-image: url('../img/facebook-with-circle.svg');
-                mask-image: url('../img/facebook-with-circle.svg');
+                @include mask_svg('../img/facebook-with-circle.svg');
 
                 &:hover{
                     background-color: #4AC7FF
@@ -352,8 +355,7 @@
             &.soc-block__element_blue{
                 background: unset;
                 background-color: $blue;
-                -webkit-mask-image: url('../img/Subtraction 2.svg');
-                mask-image: url('../img/Subtraction 2.svg');
+                @include mask_svg('../img/Subtraction 2.svg');
 
                 &:hover{
                     background-color: #4AC7FF
@@ -367,8 +369,7 @@
             &.soc-block__element_blue{
                 background: unset;
                 background-color: $blue;
-                -webkit-mask-image: url('../img/youtube-with-circle.svg');
-                mask-image: url('../img/youtube-with-circle.svg');
+                @include mask_svg('../img/youtube-with-circle.svg');
 
                 &:hover{
                     background-color: #4AC7FF
@@ -410,67 +411,97 @@
         color: $blue;
         border-bottom: 1px dashed $border-color;
     }
+}
 
-    .user-menu {
+.user-menu {
+    display: flex;
+    min-height: 80px;
+    width: max-content;
+    transform: translateX(1px);
+    // margin-left: auto;
+
+    @include tablet{
+        height: 60px;
+        min-height: unset;
+    }
+
+    @include mobile{
+        height: 50px;
+        transform: translateX(15px);
+    }
+
+    .user-menu-element {
+        position: relative;
         display: flex;
-        min-height: 80px;
-        width: max-content;
-        transform: translateX(1px);
-        // margin-left: auto;
+        align-items: center;
+        justify-content: center;
+        border-left: 1px solid $border-color-grey;
+        border-right: 1px solid $border-color-grey;
+        margin-left: -1px;
+        width: 95px;
 
-        @include tablet{
-            height: 60px;
-            min-height: unset;
-        }
-
-        .user-menu-element {
-            position: relative;
+        a{
             display: flex;
             align-items: center;
             justify-content: center;
-            border-left: 1px solid $border-color-grey;
-            border-right: 1px solid $border-color-grey;
-            margin-left: -1px;
-            width: 95px;
+        }
+
+        @include tablet{
+            width: 60px;
+        }
+
+        @include mobile{
+            width: 52px;
+            border-left: 1px solid #1568DD;
+            border-right: 1px solid #1568DD;
+        }
+
+        &__badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #F4F4F4;
+            border-radius: 5px;
+            font-size: 11px;
+            min-width: 25px;
+            text-align: center;
+            padding: 2px 0px;
+        }
+
+        &__ico {
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            background-color: #949FAF;
+
+        
 
             @include tablet{
-                width: 60px;
+                width: 20px;
+                height: 20px;
+                transform: translateY(7px);
             }
 
-            &__badge {
-                position: absolute;
-                top: 10px;
-                right: 10px;
-                background-color: #F4F4F4;
-                border-radius: 5px;
-                font-size: 11px;
-                min-width: 25px;
-                text-align: center;
-                padding: 2px 0px;
+            @include mobile{
+                background-color: #71ACFF;
+                transform: unset;
             }
 
-            &__ico {
-                display: inline-block;
-                width: 35px;
-                height: 35px;
+            &_favorite {
+                @include mask_svg('../img/favorite.svg')
+            }
 
-                @include tablet{
-                    width: 20px;
-                    height: 20px;
-                    transform: translateY(7px);
-                }
+            &_cart {
+                @include mask_svg('../img/cart.svg')
+            }
 
-                &_favorite {
-                    @include background_img('../img/favorite.svg')
-                }
+            &_profile {
+                @include mask_svg('../img/profile.svg')
+            }
 
-                &_cart {
-                    @include background_img('../img/cart.svg')
-                }
-
-                &_profile {
-                    @include background_img('../img/profile.svg')
-                }
+            &_burger {
+                background-color: #fff;
+                @include mask_svg('../img/burger.svg')
             }
         }
     }
