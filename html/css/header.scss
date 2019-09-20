@@ -428,6 +428,7 @@
     @include mobile{
         height: 50px;
         transform: translateX(15px);
+        min-height: unset;
     }
 
     .user-menu-element {
@@ -485,6 +486,8 @@
             @include mobile{
                 background-color: #71ACFF;
                 transform: unset;
+                width: 20px;
+                height: 20px;
             }
 
             &_favorite {

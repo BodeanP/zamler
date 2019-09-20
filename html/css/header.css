@@ -582,6 +582,7 @@
     height: 50px;
     -webkit-transform: translateX(15px);
             transform: translateX(15px);
+    min-height: unset;
   }
 }
 
@@ -661,6 +662,8 @@
     background-color: #71ACFF;
     -webkit-transform: unset;
             transform: unset;
+    width: 20px;
+    height: 20px;
   }
 }
 
