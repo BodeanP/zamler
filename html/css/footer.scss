@@ -159,3 +159,62 @@
         }
     }
 }
+
+.footer-mobile{
+    @include mobile{
+        padding: 30px 20px;
+    }
+
+    .links{
+        columns: 2;
+        font-size: 12px;
+        color: #707070;
+        column-gap: 50px;
+
+        li{
+            margin-bottom: 15px;
+        }
+    }
+
+    .contacts{
+        font-size: 14px;
+        color: #707070;
+        text-align: center;
+    }
+
+    .footer-info{
+        font-size: 10px;
+        font-weight: 100;
+        text-align: center;
+        color: #5F5F5F;
+        line-height: 16px;
+        margin-bottom: 15px;
+        // font-family: 'light'
+    }
+
+    .developer{
+        text-align: center;
+        font-size: 14px;
+
+        a{
+            color: #F2CA5F
+        }
+    }
+
+    .copyright{
+        text-align: center;
+        color: #707070;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .tel{
+        color: #333333;
+        padding: 8px 0;
+    }
+
+    .email{
+        line-height: 30px;
+        margin-bottom: 70px;
+    }
+}

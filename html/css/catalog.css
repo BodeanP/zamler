@@ -231,6 +231,13 @@
   }
 }
 
+@media (max-width: 759px) {
+  .catalog-outer h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+}
+
 .catalog-wrapper {
   display: -ms-grid;
   display: grid;

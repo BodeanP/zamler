@@ -436,6 +436,11 @@ main {
     overflow-y: auto;
     margin-bottom: 25px;
 
+    @include mobile{
+        max-height: 495px;
+        margin-bottom: 30px;
+    }
+
     .order-item {
         display: grid;
         position: relative;
@@ -454,12 +459,13 @@ main {
 
         @include mobile{
             padding: 28px 0px;
-            margin-bottom: 10px;
+            margin-bottom: 0px;
             grid-template-areas:
             'preview name name'
             'counter counter price';
             row-gap: 12px;
             grid-template-columns: 87px 65px auto;
+            border-bottom: 1px solid #DEE9F4;
         }
 
         &__preview {
@@ -506,6 +512,10 @@ main {
                     line-height: 14px;
                     @include row-dots(4);
                 }
+
+                @include mobile{
+                    @include row-dots(3);
+                }
             }
         }
 
@@ -533,6 +543,7 @@ main {
                 padding: 0px 15px;
                 text-align: right;
                 justify-content: flex-end;
+                font-size: 22px;
             }
         }
 
@@ -542,6 +553,11 @@ main {
             top: 5px;
             @include background_img('../img/close-orange.svg');
 
+            @include mobile{
+                right: 2px;
+                top: 12px;
+            }
+
             &:hover {
                 filter: opacity(0.7);
             }
@@ -550,11 +566,13 @@ main {
         .close{
             width: 6px;
             height: 6px;
+            padding: 10px !important;
+            background-size: initial;
 
             @include mobile{
                 width: 15px;
                 height: 15px;
-                background-size: cover;
+                background-size: 15px;
             }
         }
     }
@@ -721,6 +739,11 @@ main {
         font-size: 16px;
         line-height: 22px;
     }
+
+    @include mobile{
+        font-size: 16px;
+        line-height: 22px;
+    }
 }
 
 .selection {
@@ -730,6 +753,12 @@ main {
     width: calc(100% - 15px);
     margin: 45px 0px;
     margin-left: 15px;
+
+    @include mobile{
+        padding: 20px;
+        margin: 35px 0px;
+        transform: translateX(15px);
+    }
 
     p{
         margin-bottom: 0 !important;
@@ -741,6 +770,9 @@ main {
         margin-bottom: 5px;
 
         @include tablet{font-size: 16px}
+        @include mobile{
+            margin-bottom: 20px;
+        }
     }
 
     &_blue {
@@ -807,6 +839,10 @@ main {
         margin-bottom: 22px;
     }
 
+    @include mobile{
+        padding: 60px 0px;
+    }
+
     &-in {
         font-size: 30px; 
         // font-family: 'medium';
@@ -818,12 +854,25 @@ main {
             font-size: 22px;
             max-width: 360px;
         }
+
+        @include mobile{
+            font-size: 22px;
+            text-align: center;
+            padding: 0px 35px;
+            line-height: 30px;
+        }
        
     }
 }
 
 .table {
     width: 100%;
+
+    @include mobile{
+        display: block;
+        width: 100%;
+        overflow: scroll;
+    }
 
     &_stripped {
         font-size: 16px;
@@ -882,6 +931,11 @@ main {
         line-height: 32px;
     }
 
+    @include mobile{
+        font-size: 16px;
+        line-height: initial;
+    }
+
     li {
         // list-style-image: url('../img/check-circle.svg');
 
@@ -894,6 +948,10 @@ main {
             background-size: 19px;
             padding: 0 0px 0px 32px;
         }
+
+        @include mobile{
+            padding: 14px 0px 14px 40px;
+        }
     }
 }
 
@@ -905,6 +963,12 @@ main {
     @include tablet{
         font-size: 12px;
         line-height: 25px;
+    }
+
+    @include mobile{
+        padding-left: 20px;
+        font-size: 16px;
+        line-height: 40px;
     }
 
     li {
@@ -930,6 +994,10 @@ main {
         padding: 24px 35px;
     }
 
+    @include mobile{
+        padding: 31px 15px;
+    }
+
     .section-head {
         font-size: 22px;
         // font-family: 'medium';
@@ -937,6 +1005,12 @@ main {
 
         @include tablet{
             font-size: 16px;
+        }
+
+        @include mobile{
+            text-align: center;
+            margin-bottom: 15px !important;
+            display: block;
         }
     }
 
@@ -958,6 +1032,10 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include mobile{
+        flex-direction: column;
+    }
 }
 
 .font-default{

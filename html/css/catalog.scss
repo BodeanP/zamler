@@ -21,6 +21,11 @@
             font-size: 22px;
             margin-bottom: 20px;
         }
+
+        @include mobile{
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
     }
 }
 

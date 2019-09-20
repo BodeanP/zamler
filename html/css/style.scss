@@ -39,3 +39,29 @@ img{
         padding: 0px 15px;
     }
 }
+
+.css-scrollbar::-webkit-scrollbar{
+    width: 37px;
+    height: 14px;
+
+    @include mobile{
+        width: 3px;
+    }
+}
+
+.css-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #CCD5DE;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-bottom: 0 solid transparent;
+
+    @include mobile{
+        border-right: 5px solid transparent;
+    }
+}
+
+.css-scrollbar::-webkit-scrollbar-track {
+    background-color: #fff;
+}

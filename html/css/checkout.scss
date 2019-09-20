@@ -187,6 +187,10 @@
     position: sticky;
     top: 0;
 
+    @include mobile{
+        padding-right: 0px !important;
+    }
+
     &-in{
         padding: 37px 17px 0px 37px;
 
@@ -219,6 +223,10 @@
 
     &__total{
         border-top: 1px solid #DEE9F4;
+
+        @include mobile{
+            border-top: unset;
+        }
 
         .total-head{
             font-size: 16px; 
@@ -256,6 +264,12 @@
             padding-top: 23px;
             padding-bottom: 20px;
             padding-left: 43px;
+
+            @include mobile{
+                padding-top: 0px;
+                padding-bottom: 20px;
+                padding-left: 0;
+            }
         }
     }
 
@@ -263,6 +277,17 @@
 
         @include tablet{
             padding-right: 25px;
+        }
+
+        @include mobile{
+            padding-right: 15px;
+            
+        }
+
+        .input-group__label{
+            @include mobile{
+                display: none;
+            }
         }
         
         .input-group__input{
@@ -285,11 +310,17 @@
 
                 @include mobile{
                     flex: unset;
+                    max-width: 100%;
+                    margin-bottom: 10px;
                 }
             }
 
             .button{
                 max-width: 115px;
+
+                @include mobile{
+                    max-width: 100%;
+                }
             }
         }
     }

@@ -221,6 +221,12 @@
   top: 0;
 }
 
+@media (max-width: 759px) {
+  .checkout-aside {
+    padding-right: 0px !important;
+  }
+}
+
 .checkout-aside-in {
   padding: 37px 17px 0px 37px;
 }
@@ -260,6 +266,12 @@
 
 .checkout-aside__total {
   border-top: 1px solid #DEE9F4;
+}
+
+@media (max-width: 759px) {
+  .checkout-aside__total {
+    border-top: unset;
+  }
 }
 
 .checkout-aside__total .total-head {
@@ -307,9 +319,29 @@
   padding-left: 43px;
 }
 
+@media (max-width: 759px) {
+  .checkout-aside__total .checkout-aside-in {
+    padding-top: 0px;
+    padding-bottom: 20px;
+    padding-left: 0;
+  }
+}
+
 @media (max-width: 1399px) and (min-width: 760px) {
   .checkout-aside .bonus-code {
     padding-right: 25px;
+  }
+}
+
+@media (max-width: 759px) {
+  .checkout-aside .bonus-code {
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 759px) {
+  .checkout-aside .bonus-code .input-group__label {
+    display: none;
   }
 }
 
@@ -353,11 +385,19 @@
     -webkit-box-flex: unset;
         -ms-flex: unset;
             flex: unset;
+    max-width: 100%;
+    margin-bottom: 10px;
   }
 }
 
 .checkout-aside .bonus-code .input-group__input .button {
   max-width: 115px;
+}
+
+@media (max-width: 759px) {
+  .checkout-aside .bonus-code .input-group__input .button {
+    max-width: 100%;
+  }
 }
 
 .input-group__radio:not(:nth-last-child(1)), .input-group__checkbox:not(:nth-last-child(1)) {

@@ -2,8 +2,23 @@
 @import '_mixins.scss';
 
 .brands {
+
+    @include mobile{
+        padding-top: 25px;
+    }
+
+    h1{
+        @include mobile{
+
+        }
+    }
+
     @include tablet{
         padding-top: 40px;
+    }
+
+    @include mobile{
+        padding-top: 25px;
     }
     .catalog-wrapper{
         grid-template-columns: 100%;
@@ -29,6 +44,11 @@
         row-gap: 15px;
     }
 
+    @include mobile{
+        grid-template-columns: 100%;
+        row-gap: 10px;
+    }
+
     .one-brand, .one-brand a{
         display: flex;
         justify-content: center;
@@ -41,6 +61,13 @@
         min-height: 243px;
         background-color: #fff;
 
+        @include mobile{
+            display: grid;
+            grid-template-columns: 45% 1fr;
+            grid-template-rows: 1fr 1fr;
+            min-height: 120px;
+        }
+
         a{
             color: $blue;
             font-size: 16px; @include tablet{font-size: 14px}
@@ -51,6 +78,12 @@
             margin-bottom: 7px;
             display: flex;
             align-items: center;
+
+            @include mobile{
+                grid-row: 1 / span 2;
+                justify-content: center;
+                margin-bottom: 0px;
+            }
         }
 
         &__name{
@@ -61,11 +94,19 @@
             @include tablet{
                 margin-bottom: 8px;
             }
+
+            @include mobile{
+                align-self: flex-end;
+            }
         }
 
         &__site{
             @include tablet{
                 font-size: 16px;
+            }
+
+            @include mobile{
+                align-self: flex-start;
             }
         }
     }

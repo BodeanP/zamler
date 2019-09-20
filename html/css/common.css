@@ -517,6 +517,13 @@ main {
   margin-bottom: 25px;
 }
 
+@media (max-width: 759px) {
+  .order-list {
+    max-height: 495px;
+    margin-bottom: 30px;
+  }
+}
+
 .order-list .order-item {
   display: -ms-grid;
   display: grid;
@@ -540,11 +547,12 @@ main {
 @media (max-width: 759px) {
   .order-list .order-item {
     padding: 28px 0px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
         grid-template-areas: 'preview name name' 'counter counter price';
     row-gap: 12px;
     -ms-grid-columns: 87px 65px auto;
         grid-template-columns: 87px 65px auto;
+    border-bottom: 1px solid #DEE9F4;
   }
 }
 
@@ -621,6 +629,16 @@ main {
   }
 }
 
+@media (max-width: 759px) {
+  .order-list .order-item__name a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+}
+
 .order-list .order-item__counter {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
@@ -661,6 +679,7 @@ main {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    font-size: 22px;
   }
 }
 
@@ -672,6 +691,13 @@ main {
   background-size: contain;
 }
 
+@media (max-width: 759px) {
+  .order-list .order-item__del {
+    right: 2px;
+    top: 12px;
+  }
+}
+
 .order-list .order-item__del:hover {
   -webkit-filter: opacity(0.7);
           filter: opacity(0.7);
@@ -680,13 +706,15 @@ main {
 .order-list .order-item .close {
   width: 6px;
   height: 6px;
+  padding: 10px !important;
+  background-size: initial;
 }
 
 @media (max-width: 759px) {
   .order-list .order-item .close {
     width: 15px;
     height: 15px;
-    background-size: cover;
+    background-size: 15px;
   }
 }
 
@@ -885,6 +913,13 @@ main {
   }
 }
 
+@media (max-width: 759px) {
+  .preamble {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
 .selection {
   padding: 20px 35px;
   font-size: 19px;
@@ -892,6 +927,15 @@ main {
   width: calc(100% - 15px);
   margin: 45px 0px;
   margin-left: 15px;
+}
+
+@media (max-width: 759px) {
+  .selection {
+    padding: 20px;
+    margin: 35px 0px;
+    -webkit-transform: translateX(15px);
+            transform: translateX(15px);
+  }
 }
 
 .selection p {
@@ -906,6 +950,12 @@ main {
 @media (max-width: 1399px) and (min-width: 760px) {
   .selection__head {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 759px) {
+  .selection__head {
+    margin-bottom: 20px;
   }
 }
 
@@ -978,6 +1028,12 @@ main {
   }
 }
 
+@media (max-width: 759px) {
+  .pre {
+    padding: 60px 0px;
+  }
+}
+
 .pre-in {
   font-size: 30px;
   -ms-flex-item-align: center;
@@ -996,8 +1052,25 @@ main {
   }
 }
 
+@media (max-width: 759px) {
+  .pre-in {
+    font-size: 22px;
+    text-align: center;
+    padding: 0px 35px;
+    line-height: 30px;
+  }
+}
+
 .table {
   width: 100%;
+}
+
+@media (max-width: 759px) {
+  .table {
+    display: block;
+    width: 100%;
+    overflow: scroll;
+  }
 }
 
 .table_stripped {
@@ -1062,6 +1135,13 @@ main {
   }
 }
 
+@media (max-width: 759px) {
+  .list-marked {
+    font-size: 16px;
+    line-height: initial;
+  }
+}
+
 .list-marked li {
   background: url(../img/check-circle.svg) no-repeat left center;
   padding: 0 0px 0px 50px;
@@ -1076,6 +1156,12 @@ main {
   }
 }
 
+@media (max-width: 759px) {
+  .list-marked li {
+    padding: 14px 0px 14px 40px;
+  }
+}
+
 .list-numeric {
   font-size: 19px;
   line-height: 50px;
@@ -1086,6 +1172,14 @@ main {
   .list-numeric {
     font-size: 12px;
     line-height: 25px;
+  }
+}
+
+@media (max-width: 759px) {
+  .list-numeric {
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 40px;
   }
 }
 
@@ -1115,6 +1209,12 @@ main {
   }
 }
 
+@media (max-width: 759px) {
+  .mistake-found {
+    padding: 31px 15px;
+  }
+}
+
 .mistake-found .section-head {
   font-size: 22px;
   margin-bottom: 0 !important;
@@ -1123,6 +1223,14 @@ main {
 @media (max-width: 1399px) and (min-width: 760px) {
   .mistake-found .section-head {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 759px) {
+  .mistake-found .section-head {
+    text-align: center;
+    margin-bottom: 15px !important;
+    display: block;
   }
 }
 
@@ -1150,6 +1258,15 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 759px) {
+  .content-centered {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .font-default {

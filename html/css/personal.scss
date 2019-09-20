@@ -8,6 +8,16 @@
         padding-top: 40px;
     }
 
+    @include mobile{
+
+        background-color: #fff;
+
+        main{
+            background-color: #fff;
+        }
+       
+    }
+
     .catalog-wrapper {
         @include tablet {
             column-gap: 10px;
@@ -23,10 +33,20 @@
             font-size: 22px;
             margin-bottom: 20px;
         }
+
+        @include mobile{
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
     }
 
     .catalog-main__head-row {
         margin-bottom: 35px;
+
+
+        @include mobile{
+            margin-bottom: 28px;
+        }
     }
 
     .filter {
@@ -54,6 +74,10 @@
 
     @include tablet {
         font-size: 14px;
+    }
+
+    @include mobile{
+        display: none;
     }
 
     tr {
@@ -96,6 +120,12 @@
 
 .orders-accordion {
 
+    @include mobile{
+        transform: translateX(-15px);
+        width: calc(100% + 30px);
+    
+    }
+
     .accordion-arrow {
         display: inline-block;
         width: 19px;
@@ -103,6 +133,10 @@
         @include background_img('../img/accordion-arrow.svg');
         transform: rotate(180deg);
         transition: transform .3s;
+
+        @include mobile{
+            display: none;
+        }
     }
 
     &__tab {
@@ -113,6 +147,13 @@
         cursor: pointer;
         border-bottom: 1px solid #DEE9F4;
 
+        @include mobile{
+            padding: 22px 15px;
+            font-size: 16px;
+            line-height: 22px;
+            background-color: #F5F8F9;
+        }
+
         &.active {
             .accordion-arrow {
                 transform: unset;
@@ -122,6 +163,10 @@
         .order-date{
             margin-left: auto;
             font-size: 14px;
+
+            @include mobile{
+                display: none;
+            }
         }
 
         .order-status {
@@ -131,6 +176,12 @@
             @include tablet {
                 font-size: 16px;
                 margin-right: 25px;
+            }
+
+            @include mobile{
+                margin-right: 0;
+                text-align: right;
+                flex: 1;
             }
 
             margin-right: 65px;
@@ -143,6 +194,11 @@
                 font-size: 12px
             }
 
+            @include mobile{
+                font-size: 16px;
+                flex: 1;
+            }
+
             // font-family: 'medium';
 
         }
@@ -150,11 +206,21 @@
 
     &__content {
         background-color: #fff;
+
+        @include mobile{
+            padding: 0px 15px;
+            padding-right: 0;
+        }
     }
 
     .order-list {
         max-height: unset;
         margin-bottom: 0;
+
+        @include mobile{
+            max-height: 480px;
+            margin-bottom: 25px;
+        }
 
 
         .order-item {
@@ -172,6 +238,15 @@
                 min-height: 139px;
             }
 
+            @include mobile{
+                grid-template-areas:
+                'preview name name close'
+                'quantity price price-total price-total';
+
+                grid-template-columns: 28.5% 33% 33% 15px;
+                padding: 28px 0px;
+            }
+
             &>div {
                 display: flex;
                 align-items: center;
@@ -187,6 +262,14 @@
                 padding: 0px 25px !important;
                 height: 100%;
                 min-height: 100%;
+
+                @include mobile{
+                    padding: 0px 5px !important;
+                }
+            }
+
+            &__name{
+                align-items: flex-start !important;
             }
 
             &__quantity {
@@ -198,13 +281,17 @@
                 grid-area: price-total;
                 font-size: 18px !important;
                 // font-family: 'medium';
+
+                @include mobile{
+                    font-size: 22px !important;
+                }
             }
 
             &__price {
                 font-size: 14px;
                 justify-content: center;
                 flex-direction: column;
-                align-items: flex-start !important;
+                align-items: flex-start !important;                
             }
 
             &__del {
@@ -215,6 +302,12 @@
                 left: unset;
                 right: unset;
                 top: unset;
+
+                @include mobile{
+                    align-self: flex-start;
+                    right: 6px;
+                    top: -18px;
+                }
             }
 
         }
@@ -233,12 +326,26 @@
         padding-right: 25px;
     }
 
+    @include mobile{
+        overflow: hidden;
+        grid-template-columns: 100%;
+        padding: 0px;
+        padding-right: 15px;
+        grid-template-areas: 'bonus' 'summ' 'proceed';
+        margin-bottom: 30px;
+        border-bottom: unset;
+    }
+
     .proceed-order {
         display: flex;
         align-items: center;
 
         @include tablet{
             padding: 5px 0px;
+        }
+
+        @include mobile{
+            grid-area: proceed;
         }
 
         .button i{
@@ -255,6 +362,13 @@
             display: none;
         }
 
+        @include mobile{
+            flex-direction: column;
+            margin-right: 0px;
+            grid-area: bonus;
+            margin-bottom: 28px;
+        }
+
         .input-group {
             margin-bottom: 0;
         }
@@ -262,15 +376,30 @@
         .input-group__input {
             display: flex;
 
+            @include mobile{
+                flex-direction: column;
+            }
+
             input {
                 flex: 0 0 210px;
                 margin-right: 15px;
+
+                @include mobile{
+                    flex: auto;
+                    margin-bottom: 14px;
+                }
             }
 
         }
     }
 
     .checkout-aside__total {
+
+        @include mobile{
+            grid-area: summ;
+            margin-bottom: 15px;
+        }
+
         &>* {
             display: block;
         }
@@ -281,6 +410,10 @@
             @include tablet{
                 margin-bottom: 3px;
             }
+
+            @include mobile{
+                margin-bottom: 10px;
+            }
         }
 
         .total-price {
@@ -289,6 +422,13 @@
 
             @include tablet{
                 display: inline-block;
+            }
+
+            @include mobile{
+                font-weight: bold;
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 15px;
             }
         }
 
@@ -301,6 +441,10 @@
                 vertical-align: bottom;
                 max-width: 100px;
                 padding-left: 25px;
+            }
+
+            @include mobile{
+                display: inline-block;
             }
         }
     }
